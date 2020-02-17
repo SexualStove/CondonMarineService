@@ -1,5 +1,6 @@
 <template>
   <div >
+    <MainNavBar></MainNavBar>
     <home-page-splash-screen ></home-page-splash-screen>
     <div id="NavBackground">
       <div id="NavCricle"></div>
@@ -12,16 +13,18 @@
 
 <script>
     import HomePageSplashScreen from "./HomePageSplashScreen";
+    import MainNavBar from "../Global/MainNavBar";
     import {EventBus} from "../../App";
     import {  TimelineMax, Back } from "gsap"
 
     import JQuery from 'jquery';
-    import HomeContent from "./HomeContent";
     let $ = JQuery;
+    import HomeContent from "./HomeContent";
+
     //style="background: linear-gradient(to left,#A4B0F5, #FFFCF2); width: 100vw"
     export default {
         name: "HomePage",
-        components: {HomeContent, HomePageSplashScreen},
+        components: {HomeContent, HomePageSplashScreen, MainNavBar},
         data() {
             return {
                 NavBar: false,

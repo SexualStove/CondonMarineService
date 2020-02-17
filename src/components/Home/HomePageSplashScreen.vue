@@ -80,7 +80,7 @@
   #TestImage {
     position: absolute;
     bottom: 0%;
-    animation: swell 7s ease -1.25s infinite;;
+    animation: Bigswell 7s ease -1.25s infinite;;
   }
   #SplashZone {
     background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #b7e8eb 100%);
@@ -124,6 +124,14 @@
       transform: translate3d(0, 5px, 0);
     }
   }
+  @keyframes Bigswell {
+    0%, 100% {
+      transform: translate3d(0, -5vw, 0);
+    }
+    50% {
+      transform: translate3d(0, 1vw, 0);
+    }
+  }
 
 
 
@@ -154,6 +162,9 @@
     margin: 0;
     top: 25%;
     left: 40%
+  }
+  #LogoImage:hover {
+    cursor: pointer;
   }
   #Letter1, #Letter2, #Letter3, .MainLetters  {
     margin-bottom: 2%;
