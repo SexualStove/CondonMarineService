@@ -6,11 +6,8 @@ pipeline {
         docker {
             image 'node'
             args '-u root'
+            customWorkspace '../../../../www/html/Vue/'
         }
-        node {
-              label 'my-defined-label'
-              customWorkspace '../../../../www/html/Vue/'
-            }
     }
 
     stages {
