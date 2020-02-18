@@ -1,6 +1,9 @@
 #!/usr/bin/env groovy
 
 pipeline {
+    dir("../../../../www/html/Vue/") {
+        sh "pwd"
+    }
 
     agent {
         docker {
