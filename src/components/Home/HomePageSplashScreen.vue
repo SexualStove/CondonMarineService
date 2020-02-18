@@ -129,13 +129,13 @@
       transform: translate3d(0, -5vw, 0) rotate(0deg);
     }
     25% {
-      transform: rotate(-5deg);
+      transform: rotate(-3deg);
     }
     50% {
       transform: translate3d(0, 1vw, 0)
     }
     75% {
-      transform: rotate(-5deg);
+      transform: rotate(-3deg);
     }
   }
 
