@@ -1,15 +1,16 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    dir("../../../../www/html/Vue/") {
-        sh "pwd"
-    }
 
     agent {
         docker {
             image 'node'
             args '-u root'
         }
+        node {
+              label 'my-defined-label'
+              customWorkspace '../../../../www/html/Vue/'
+            }
     }
 
     stages {
