@@ -126,10 +126,16 @@
   }
   @keyframes Bigswell {
     0%, 100% {
-      transform: translate3d(0, -5vw, 0);
+      transform: translate3d(0, -5vw, 0) rotate(0deg);
+    }
+    25% {
+      transform: rotate(-5deg);
     }
     50% {
-      transform: translate3d(0, 1vw, 0);
+      transform: translate3d(0, 1vw, 0)
+    }
+    75% {
+      transform: rotate(-5deg);
     }
   }
 
