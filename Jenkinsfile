@@ -22,11 +22,6 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('Refresh') {
-            steps {
-                echo 'Refreashing...'
-                sh 'systemctl restart nginx'
-            }
-        }
+
     }
 }
