@@ -8,7 +8,7 @@
         <h1 class="MainLetters">M</h1>
         <h1 id="Letter2">arine </h1>
         <h1 class="MainLetters">S</h1>
-        <h1 id="Letter3">ervices stinkys again</h1>
+        <h1 id="Letter3">ervices</h1>
         <div id="Line"></div>
         <h3 id="SemiBlurb">Boat building, repairs, maintenance</h3>
       </div>
