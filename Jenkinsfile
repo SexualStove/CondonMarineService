@@ -24,8 +24,8 @@ pipeline {
         }
         stage('Refresh') {
             steps {
-                echo 'Building...'
-                sh 'sudo systemctl restart nginx'
+                echo 'Refreashing...'
+                sh 'systemctl restart nginx'
             }
         }
     }
