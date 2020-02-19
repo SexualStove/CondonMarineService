@@ -80,7 +80,7 @@
   #TestImage {
     position: absolute;
     bottom: 0%;
-    animation: Bigswell 7s ease -1.25s infinite;;
+    animation: Bigswell 7s  -1.25s infinite;;
   }
   #SplashZone {
     background: radial-gradient(ellipse at center, rgba(255, 254, 234, 1) 0%, rgba(255, 254, 234, 1) 35%, #b7e8eb 100%);
