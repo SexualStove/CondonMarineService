@@ -1,37 +1,22 @@
 <template>
-  <div>
-    <div style="" id="toggle-Button" class="toggle.btn">
 
-    </div>
-
-    <div class="menu">
-      <div class="data">
-        <ul>
-          <li id="ItemOne">
-            Navigation
-          </li>
-          <li id="ItemTwo">
-            Home
-          </li>
-          <li id="ItemThree">
-            About Us
-          </li>
-          <li id="ItemFour">
-            Portfolio
-          </li>
-          <li id="ItemFive">
-            Contact Us
-          </li>
-        </ul>
+    <div id="Nav-content">
+      <router-link tag="div" to="/"><div id="Title"> ST </div></router-link>
+      <div id="navOptions">
+        <div class="Option"><router-link tag="div" to="/#AboutArea">About</router-link> <div class="Line"></div></div>
+        <div class="Option"><router-link tag="div" to="/Menu"> Menu  </router-link><div class="Line"></div></div>
+        <div class="Option"><router-link tag="div" to="/Menu#OrderHerf"> Order Online </router-link> <div class="Line"></div></div>
+      </div>
+      <div class="footer-social-links">
+        <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
       </div>
     </div>
-  </div>
+
 </template>
 
 <script>
-    import JQuery from 'jquery';
-    let $ = JQuery;
-    import {TimelineMax, Expo } from "gsap"
     export default {
         data() {
             return {
@@ -40,69 +25,127 @@
             }
         },
         methods: {
-
         },
         mounted() {
-          var NavBarTimeline = new TimelineMax({paused: true});
-
-
-          $('#toggle-Button').click( function () {
-              if(this.Reverse) {
-                  NavBarTimeline.reverse();
-              } else {
-                  if(!this.FirstTime) {
-                      NavBarTimeline.to(".menu", 2, {top: 0, ease: Expo.easeInOut, delay: -1.5});
-                      NavBarTimeline.from("#ItemOne", 0.4, {x: -200, opacity: 0});
-                      NavBarTimeline.from("#ItemTwo", 0.4, {x: -200, opacity: 0}, '-=0.25');
-                      NavBarTimeline.from("#ItemThree", 0.4, {x: -200, opacity: 0}, '-=0.25');
-                      NavBarTimeline.from("#ItemFour", 0.4, {x: -200, opacity: 0}, '-=0.25');
-                      NavBarTimeline.from("#ItemFive", 0.4, {x: -200, opacity: 0}, '-=0.25');
-                      this.FirstTime = true;
-                  }
-                  NavBarTimeline.play();
-              }
-              this.Reverse = !this.Reverse;
-          });
-
         }
     }
 </script>
 
 <style scoped>
-  .menu{
-    position: absolute;
-    background-color: #261D4F;
+  @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+  #Nav-content {
+    grid-area: Nav;
+    width: 100vw;
+    background-image: url("../../assets/images/dust_scratches.png");
+  }
+  #Nav-content {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    grid-template-areas:
+      "Title Options Socials"
+  }
+  #Title {
+    font-size: 3vw;
+    font-weight: 600;
+    font-family: 'Amatic SC', cursive;
+    display: inline-block;
+    width: 4vw;
+    grid-area: Title;
+    border-radius: 100%;
+    border: slategray solid 3px;
+    margin-left: 4vw;
+    cursor: pointer;
+  }
+  #navOptions {
+    grid-area: Options;
+  }
+  .Option {
+    display: inline-block;
+    height: 100%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    cursor: pointer;
+    font-size: 2vw;
+    font-family: 'Oswald', sans-serif;
+  }
+  .Option:hover .Line {
+    width: 110%;
+   }
+  .Line {
+    transform: translate(-0.2vw, -0.2vw);
+    width: 2vw;
+    height: 2px;
+    background-color: black;
+    transition: 1.5s  ;
+  }
+  .Option:first-child {
+    margin-left: 0vw;
+  }
+
+
+  .footer-social-links{
+    font-size: 0.8vw;
+    text-align: center;
+    //margin-top: 20%;
+    grid-area: Socials;
+    //transform: translateX(-29vw);
+    width: 30vw;
+  }
+  .footer-social-links a{
+    width: 1.5vw;
+    height: 1.5vw;
+    line-height: 1.5vw !important;
+    position: relative;
+    margin: 0 0.3vw;
+    text-align: center;
+    display: inline-block;
+    color: #111;
+
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+  }
+  .footer-social-links a i,
+  .footer-social-links a span{
+    position: relative;
+    top: 0.1vw;
+    left: 0.05vw;
+  }
+  .footer-social-links a:before{
+    content: "";
+    display: inline-block;
     width: 100%;
-    height: 100vh;
-    line-height: 80px;
-    z-index: 3;
-    top: -100vh;
-  }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #111;
 
-  .data {
-    padding: 13em 0 0 2em;
-    text-align: left;
-  }
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 
-  ul {
-    list-style: none;
-  }
-  li:first-child {
-    color: grey;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-  }
-  li:not(:first-child) {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    color: #FFFCF2;
-    font-size: 52px;
-  }
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 
-  #toggle-Button {
-    position: absolute; width: 150px; height: 150px; z-index: 4;
+    -webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+
   }
-  #ItemOne, #ItemTwo, #ItemThree,#ItemFour, #ItemFive {
-    opacity: 1;
+  .footer-social-links a:hover{
+    color: #fff;
+  }
+  .footer-social-links a:hover:before{
+    background: #111;
   }
 </style>

@@ -1,105 +1,50 @@
 <template>
-  <div >
-    <MainNavBar></MainNavBar>
-    <home-page-splash-screen ></home-page-splash-screen>
-    <div id="NavBackground">
-      <div id="NavCricle"></div>
-      <div id="NavBar"></div>
-      <div id="NavBarBacking"></div>
-    </div>
-    <HomeContent></HomeContent>
+  <div id="WholePage">
+    <HomePageSplashScreen></HomePageSplashScreen>
+    <About></About>
+    <hr class="section-break" />
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
     import HomePageSplashScreen from "./HomePageSplashScreen";
-    import MainNavBar from "../Global/MainNavBar";
-    import {EventBus} from "../../App";
-    import {  TimelineMax, Back } from "gsap"
-
-    import JQuery from 'jquery';
-    let $ = JQuery;
-    import HomeContent from "./HomeContent";
-
-    //style="background: linear-gradient(to left,#A4B0F5, #FFFCF2); width: 100vw"
+    import About from "./About";
+    import Footer from "../Global/Footer";
     export default {
-        name: "HomePage",
-        components: {HomeContent, HomePageSplashScreen, MainNavBar},
-        data() {
-            return {
-                NavBar: false,
-            }
-        },
-        methods: {
-            ServiceClick() {
-                $('html, body').animate({
-                    scrollTop: $('#Content').offset().top
-                }, 2000);
-            }
-        },
-        mounted() {
-            EventBus.$on('Page', changed => {
-                this.NavBar = !this.NavBar;
-                console.log(`Oh, that's nice. It's gotten ${changed} clicks! :)`);
-                if(this.NavBar) {
-                    var NavComeTimeLine = new TimelineMax({});
-                    NavComeTimeLine.to(
-                        "#NavCricle", 0.3, { scale: 1, transformOrigin: "left center", ease: Back.easeInOut.config(0.5) }).to(
-                        "#NavBar", 0.3, { scale: 1, transformOrigin: "left center", ease: Back.easeInOut.config(0.5)}, '-=0.3').to(
-                        "#NavBarBacking", 0.3, { scale: 1, transformOrigin: "left center", ease: Back.easeInOut.config(0.5)}, '-=0.3')
-                } else {
-                    var NavBackTimeLine = new TimelineMax({});
-                    NavBackTimeLine.to(
-                        "#NavCricle", 0.3, { scale: 0, scaleX: 0, scaleY: 0, transformOrigin: "left center", ease: Back.easeInOut.config(0.5) }).to(
-                        "#NavBar", 0.3, { scale: 0, transformOrigin: "left center", ease: Back.easeInOut.config(0.5)}, '-=0.3').to(
-                        "#NavBarBacking", 0.3, { scale: 0, transformOrigin: "left center", ease: Back.easeInOut.config(0.5)}, '-=0.3')
-                }
-            });
-        }
+        components: {Footer,  About, HomePageSplashScreen}
     }
-    //"
 </script>
 
 <style scoped>
-#Divider {
-  position: absolute;
-  width: 100vw;
-  transform: translate(-49.65vw, -11.8vh);
-  overflow-x: hidden;
-  max-width: 100%;
-}
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
-  #NavBackground {
-    position: fixed;
-    top: 0;
-    left: 0;
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+  #WholePage {
+    width: 100vw;
   }
-  #NavCricle {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    height: 12vw;
-    width: 12vw;
-    transform: translate(-4.5vw, -6vw) scale(0);
+  #MenuArea {
+    background-image: url("../../assets/images/triangle-mosaic.png");
+    padding-bottom: 3vw;
   }
-  #NavBar {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    width: 50vw;
-    height: 4vw;
-    transform: scale(0);
+  .section-break {
+    background-color: #4d4d4d;
+    border: 0;
+    border-top: 1px solid #4d4d4d;
+    height: 1px;
+    margin: initial;
+    text-align: center;
+    width: 100%;
   }
-  #NavBarBacking {
-    position: absolute;
-    background-color: white;
-    width: 50vw;
-    height: 2vw;
-    transform: scale(0);
+  .section-break:before {
+    background-color: snow;
+    color: #1a1a1a;
+    content: '\25C9';
+    display: inline-block;
+    font-size: 1.6rem;
+    left: 50%;
+    line-height: 1;
+    padding: 0 0.5rem;
+    text-rendering: geometricPrecision;
+    transform: translateY(-53%);
+    z-index: 1;
   }
 </style>

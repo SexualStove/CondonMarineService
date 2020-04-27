@@ -4,7 +4,6 @@ import router from './router'
 import { gsap } from 'gsap'
 import { CSSPlugin } from 'gsap/CSSPlugin'
 gsap.registerPlugin(CSSPlugin);
-
 Vue.config.productionTip = false;
 
 new Vue({

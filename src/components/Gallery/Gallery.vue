@@ -1,212 +1,259 @@
 <template>
-    <div class="blog">
-        <div>
-            <button style="display: inline-block" v-on:click="SortNewBlogs">New Order</button>
-            <input v-on:change="SortNewBlogs" style="display: inline-block" id="SearchBlog" type="text" placeholder="Search">
-        </div>
-        <div>
+    <div id="GallerySolo">
+        <div >
+            <div id="BlackBackground"></div>
 
-        <div style="transition: 1s" v-for="blog in this.ShownBlogs" v-bind:key="blog.thumbnail" >
-            <transition name="BlogLoad" :key="blog.thumbnail">
-            <div style="transition: 1s" class="BlogPost" v-if="blog.Type < TotalBlogSize">
-
-                <img class="Thumbnail" v-bind:src="blog.Thumbnail" alt="../assets/images/BrokenImage.png">
-                <div class="BlogContent">
-                    <router-link tag="div" v-bind:to="'/Blog/'+blog.id">
-                        <h1 class="BlogTitle">{{blog.Title}} </h1>
-                    </router-link>
-
+            <div style="padding-top: 2%; position: relative">
+                <div id="ButtonBoi" v-on:click="BackOut()">
+                    <img id="ExitCar" src="../../assets/images/ExitCar.png" alt="None">
+                    <h3 id="BackButton">Back!</h3>
                 </div>
+                <h1 id="Title">{{GalleryVue.Title}}</h1>
+
+                <img class="Thumbnail" v-bind:src="GalleryVue.Image" alt="None">
             </div>
-            </transition>
-        </div>
+            <div style="height: 5vw"></div>
+            <div v-for="Image in FilteredList" v-bind:key="Image.id" class="GalleryImages" >
+                <img v-on:click="FullSize"  class="ImageGallery" v-bind:src="Image.Image" alt="None">
+            </div>
+            <div class="close-container" v-if="this.FullSized && !this.FullSize">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+                <label id="Close" class="close">close</label>
+            </div>
 
         </div>
-
-
-
-
-
     </div>
 </template>
 
 <script>
-    import GalleryController from '@/services/GalleryController'
-
-
+    import {EventBus} from "../../App";
     import JQuery from 'jquery';
     let $ = JQuery;
-
-
     export default {
 
         data() {
             return {
                 myUrl: 'asdfb',
-                blogContent:"",
+                blogContent: "",
                 blogs: '',
                 thumbnail: '',
-                TotalBlogSize: 2,
-                ShownBlogs: undefined,
+                TotalBlogSize: 3,
+
                 TransferBlogList: undefined,
                 Reversed: false,
-            }
-        },
-        methods: {
-            async getBlogs() {
-                try {
-
-                    const blogs = await GalleryController.getAll();
-
-                    console.log(blogs.data.Blogs);
-                    this.blogs = blogs.data.Blogs;
-                    this.ReRollBlogs();
-                    this.thumbnail = this.blogs[9].Thumbnail.data;
-
-                    // this.blogContent = blogData.data.blog.Content;
-                    // document.getElementById('blog').innerHTML = this.blogContent
-                } catch (e) {
-                    console.log(e);
-                    this.myUrl = e;
-                }
-            },
-
-            async ReRollBlogs() {
-
-                this.ShownBlogs = this.blogs.slice();
-                this.SortNewBlogs();
-            },
-            SortNewBlogs: function() {
-                this.ShownBlogs = this.blogs.slice();
-                let BlogLength = this.ShownBlogs.length;
-                let SearchText = document.getElementById('SearchBlog').value;
-                if(this.Reversed) {
-                    this.ShownBlogs = this.ShownBlogs.reverse();
-                }
-                this.Reversed = !this.Reversed;
-                let FilterList = [];
-                let i = 0;
-                for(i=0; i < BlogLength; i++) {
-                    if((this.ShownBlogs[i].Title.includes(SearchText) || this.ShownBlogs[i].Blurb.includes(SearchText))) {
-                        FilterList.push(this.ShownBlogs[i]);
-                        console.log("Added new chunk to list");
-                        console.log(FilterList);
-                    }
-                }
-                console.log(FilterList);
-                this.ShownBlogs = FilterList.slice();
-                for(i=0; i < this.ShownBlogs.length; i++) {
-                    this.ShownBlogs[i]["Type"] = i;
-                }
-                this.TotalBlogSize = 2;
+                FullSized: false,
 
             }
         },
-        beforeMount() {
-            this.getBlogs()
-        },
-
         computed: {
+            FilteredList() {
+                return this.ImageTable.filter(x => parseInt(x.GalleryLink) === parseInt(this.GalleryVue.id));
+            }
+        },
+        props: ['GalleryVue', 'ImageTable'],
+        methods: {
+          BackOut() {
+                  EventBus.$emit('CurrentGallery', undefined);
+            },
 
+            FullSize() {
+
+            }
         },
         mounted() {
-            var self = this;
-            this.$nextTick(function(){
-                window.addEventListener("scroll", function() {
-                    self.Scrolled = document.documentElement.scrollTop;
-                    if ($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
-                        if(self.TotalBlogSize < self.blogs.length) {
-                            self.TotalBlogSize += 1;
-                        }
-                    }
-                })
+            let self= this;
+            $('.ImageGallery').click(function () {
+                $('.active').not(this).addClass('non_active');
+                $('.active').not(this).removeClass('active');
+                if ($(this).hasClass('active')) {
+                    $(this).addClass('non_active');
+                    $(this).removeClass('active');
+                    $('#BlackBackground').backgroundColor = -1;
+                    $('#BlackBackground').backgroundColor = 'rgba(0, 0, 0, 0);';
+                    self.FullSized = false;
+                } else {
+                    $(this).removeClass('non_active');
+                    $(this).addClass('active');
+                    $('#BlackBackground').zIndex = 2;
+                    $('#BlackBackground').backgroundColor = 'rgba(0, 0, 0, 0.2);';
+                    self.FullSized = true;
+                }
             })
         }
     }
 </script>
+
 <style scoped>
-    .Thumbnail {
-        width: auto;
-        max-width: 30vw;
-        min-height: 17vw;
-        height: auto;
-        max-height: 19vw;
-        horiz-align: center;
-        margin: 2vw 3vw 2vw 3vw;
-        align-self: center;
-        justify-self: center;
-    }
-    .ImageContent {
-        width: 30vw;
-        height: 19vw;
-    }
-    .BlogPost {
-        display: inline-grid;
-        grid-template-columns: 50% 50%;
-        top: 0;
-        margin: 2vw 0 2vw 0;
-        min-width: 72.5vw;
-        height: 23vw;
-
-        box-shadow:  1px 10px 18px #888888;
-        overflow: hidden; /* make sure it hides the content that overflows */
-        text-overflow: ellipsis;
-    }
-    .AuthorDate {
-        position: relative;
-        display: inline-grid;
-        grid-template-columns: 50% 50%;
-        width: 100%;
-        left: 0;
-    }
-    .BlogAuthor {
-        font-size: 1vw;
-        color: dimgray;
-        left: 0;
-        text-align: left;
-    }
-    .BlogTitle {
-        color: #100B00;
-        text-align: left;
-        transition: 1s;
-        font-family: 'Big Shoulders Text', cursive;
-        font-size: 3vw;
-
-    }
-    .BlogTitle:hover {
+    #ButtonBoi {
+        position: absolute;
+        left: -2%;
+        top: 5%;
+        margin: 0 1vw 1vw 5vw;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        width: 6vw;
         cursor: pointer;
-        text-underline: black dash-dot-dot-heavy;
-        text-shadow: 4px 4px #859e30;
+    }
+    #ExitCar {
+        width: 6vw;
+        transition: 1s;
+    }
+    #ButtonBoi:hover #ExitCar {
+        transform: translateX(-4vw) rotate(10deg);
+    }
+    #BackButton {
+        transform: translateY(-2.7vh);
+        width: 6vw;
+        text-align: center;
+    }
+    #Title {
+        font-size: 5vw;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+    }
+    #AboutUsTitle {
+
+        font-family: 'Cinzel', serif;
+        font-size: 2.5vw;
+        margin: 0% 15% 3% 1%;
+
     }
 
-    .BlogContent {
-        margin-top: 1vw;
-        width: 36vw;
-
-        line-height: 1.1;
-    }
-    .BlogBlurb {
-        font-family: 'Montserrat', sans-serif;
+    #GallerySolo {
+      color: #D7CDCC;
+        width: 100vw;
         text-align: left;
-        font-size: 1.3vw;
-        font-weight: 500;
-        max-height: 1vw;
+
     }
-    .blog {
-        background-color: #dadbe0;
+    #AboutUsContent {
+        font-size: 1.2vw;
+        font-weight: 300;
+        margin: 3% 10% 3% 1%;
+        font-family: 'Roboto', sans-serif;
     }
-    .BlogLoad-enter-active {
-        transition: all 1s ease;
+    .Thumbnail {
+        width: 50vw;
+        margin-left: 25vw;
     }
-    .BlogLoad-leave-active {
-        transition: all .8s;
+    .ImageGallery {
+        display: inline-block;
+        max-width: 20vw;
+        cursor: pointer;
     }
-    .BlogLoad-enter, .BlogLoad-leave-to
-        /* .slide-fade-leave-active below version 2.1.8 */ {
-        transform: scale(0.1);
-        -ms-transform: scale(0.1);
-        -webkit-transform: scale(0.1);
+    .ImageGallery:hover {
+    }
+    .GalleryImages {
+        display: inline-block;
+        max-width: 25vw;
+        margin: 4vw 14.5vw 4vw 14.5vw;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .active {
+        z-index: 3;
+        max-width: 70vw;
+        max-height: 90vh;
+        width: 200%;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow:  0vw  0vw 100vw 100vw rgba(0,0,0,0.7);
+    }
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        box-shadow:
+          -50px -50px 0 -40px tomato,
+          50px 50px 0 -40px tomato;
+    }
+
+    .non_active {
+        width: initial;
+        height: initial;
+    }
+    #BlackBackground {
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: -1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .close-container {
+        position: fixed;
+        right: 15%;
+        width: 50px;
+        height: 50px;
+        z-index: 6;
+        cursor: pointer;
+        top: 6%;
+    }
+    .leftright {
+        height: 4px;
+        width: 50px;
+        position: absolute;
+        margin-top: 24px;
+        background-color: #f4a259;
+        border-radius: 2px;
+        transform: rotate(45deg);
+        transition: all 0.3s ease-in;
+    }
+    .rightleft {
+        height: 4px;
+        width: 50px;
+        position: absolute;
+        margin-top: 24px;
+        background-color: #f4a259;
+        border-radius: 2px;
+        transform: rotate(-45deg);
+        transition: all 0.3s ease-in;
+    }
+    #Close {
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.6em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: all 0.3s ease-in;
         opacity: 0;
+    }
+    .close {
+        margin: 60px 0 0 5px;
+        position: absolute;
+    }
+    .close-container:hover .leftright {
+        transform: rotate(-45deg);
+        background-color: #f25c66;
+    }
+    .close-container:hover .rightleft {
+        transform: rotate(45deg);
+        background-color: #f25c66;
+    }
+    .close-container:hover label {
+        opacity: 1;
     }
 
 </style>

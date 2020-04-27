@@ -2,23 +2,28 @@
   <div class="wrapper" style="padding: 20px;">
     <div >
 
-      <button class="get-html" v-on:click="getHTML"> Save to Blogsite! </button>
+      <button style="padding: 1vw" class="get-html" v-on:click="getHTML"> Save to Gallery! </button>
 
           <br>
           <div style="position: relative; width: 75%; margin-left: auto; margin-right: auto">
-             <div id="Title" contenteditable="true" style="margin-top: 10px;"> Title </div>
+            <h1 style="margin-top: 5vw"> Icon And Title</h1>
+             <div id="Title" contenteditable="true" style="margin-top: 10px;"> TITLE (Click here) </div>
               <form id="uploadbanner" enctype="multipart/form-data" style="margin-top: 10px;">
-                <label>Thumbnail</label><input id="thumbnail" ref="Thumbnail" name="myfile" type="file" required @change="onFileChange" accept="image/*"/>
+                <label>Thumbnail </label><input id="thumbnail" ref="Thumbnail" name="myfile" type="file" required @change="onFileChange" accept="image/*"/>
               </form>
-            <h1> Adding images to the gallery</h1>
-            <div>
-              <form class="uploadbanner" enctype="multipart/form-data" style="margin-top: 10px;">
-                <label>Image</label><input class="image" ref="file" name="myfile" type="file" required @change="onFileChangeImages" accept="image/*"/>
-                <label>Image</label><input class="image" ref="file" name="myfile" type="file" required @change="onFileChangeImages" accept="image/*"/>
-                <label>Image</label><input class="image" ref="file" name="myfile" type="file" required @change="onFileChangeImages" accept="image/*"/>
-              </form>
-            </div>
 
+            <h1 style="margin-top: 5vw"> Adding images to the gallery</h1>
+            <div>
+              <form v-for="i in TotalPictures" :key="i" class="uploadbanner" enctype="multipart/form-data" style="margin-top: 10px;">
+                <label>Image: </label>
+
+                  <input class="image" ref="file" name="myfile" type="file" required @change="onFileChangeImages" accept="image/*"/>
+              </form>
+<!--                need to convert image to blob file fck
+                <img v-for="image in ImagesShowCase" :key="image" class="preview" v-bind:src="image" alt="no">
+                    <button id="MorePics" v-on:click="MorePictures">More Pictures!</button>  -->
+
+            </div>
           </div>
 
     </div>
@@ -42,6 +47,8 @@
           blogs: undefined,
           CurrentGalleryId: 0,
           dataImages: [],
+          TotalPictures: 1,
+          ImagesShowCase: [],
       }
 
     },
@@ -53,6 +60,9 @@
     },
     methods: {
 
+        MorePictures() {
+            this.TotalPictures += 1;
+        },
 
         async getBlogs() {
             try {
@@ -78,6 +88,7 @@
         outputSection.innerHTML = this.userInput;
       },
 
+
       async onFileChange(e){
 
         var blobData =  e.target.files[0];
@@ -92,12 +103,40 @@
           self.data = e.target.result;
 
         });
+
       },
 
-          async onFileChangeImages(e){
+        async onFileChangeImages(e){
 
-            var blobData =  e.target.files[0];
-            this.dataImages.push(blobData);
+
+
+              var blobData =  e.target.files[0];
+              var nameArray = this.dataImages.map(function(el) {return el.name;});
+
+              // Check if image exists already
+              if (nameArray.includes(blobData.name))
+              {
+                  // do nothing
+              } else
+              {
+                  this.dataImages.push(blobData);
+                  var reader = new FileReader();
+                  /*//console.log(blobData);
+                  await this.ImagesShowCase.push(reader.onload = function(e) {
+                      console.log(e.target.result);
+
+                      //document.getElementById("preview").src=e.target.result;
+                      document.getElementById("preview").height=150;
+                      document.getElementById("preview").width=150;
+                      return  e.target.result;
+                  });
+                  await console.log(this.ImagesShowCase);*/
+
+                  reader.readAsDataURL(blobData);
+              }
+            this.MorePictures();
+
+
 
         },
         async ReadImage(blobData) {
@@ -135,7 +174,7 @@
           for(i=0; i < this.dataImages.length; i++) {
               await this.ReadImage(this.dataImages[i]);
           }
-
+          alert("Gallery has been added!");
 
         } catch (err) {
           this.error = err;
@@ -261,5 +300,9 @@
       color: #000;
       text-decoration: none;
       cursor: pointer;
+  }
+  #MorePics {
+    margin-top: 5vw;
+    padding: 0.5vw;
   }
 </style>
