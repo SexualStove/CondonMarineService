@@ -73,13 +73,15 @@
     justify-content: center;
     display: inline-block;
     width: 100%;
+    overflow: hidden;
   }
   #MainTitle {
     position: absolute;
     justify-self: center;
     font-family: 'Amatic SC', cursive;
     width: 100vw;
-    top: 30%
+    top: 30%;
+    overflow: hidden;
   }
   #ShopTitle {
     font-size: 8vw;
@@ -94,6 +96,17 @@
     justify-self: center;
     align-self: center;
     margin-left: 37.5vw
+  }
+  @media (max-width:800px){
+    #ShopTitle {
+      font-size: 15vw;
+    }
+    #SubTitle {
+      font-size: 6vw;
+    }
+    #MainTitle {
+      top: 40%;
+    }
   }
 
 </style>

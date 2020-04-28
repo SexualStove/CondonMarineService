@@ -172,4 +172,33 @@
   box-shadow: 0 20px 55px rgba(0,0,0,0.14), 0 15px 35px rgba(0,0,0,0.14);
 }
 
+  @media (max-width:800px) {
+    #Title {
+      font-size: 11vw;
+    }
+    .SelectionTitle {
+      font-size: 8vw;
+    }
+    .SlectionItem {;
+      font-size: 4.5vw;
+    }
+    .OrderButtonsGreen span, .OrderButtonsRed span{
+      width: 3vw;
+      height: 3vw;
+    }
+    .ButtonHolder {
+      width: 3vw;
+      height: 3vw;
+    }
+    .OrderButtonsGreen:hover, .OrderButtonsRed:hover {
+      font-size:2vw;
+    }
+    .OrderArea {
+      font-size: 3vw;
+    }
+    .OrderedAmount {
+      margin-bottom: 1.5vw;
+    }
+  }
+
 </style>

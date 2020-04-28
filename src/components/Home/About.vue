@@ -151,4 +151,44 @@
     background-size: cover;
     background-position: 0 -20vh;
   }
+
+  @media (max-width:800px){
+    #MainWindow {
+      display: grid;
+      width: 100vw;
+      overflow: hidden;
+      height: 100vh;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+      grid-template-areas:
+        "review review review info info info"
+        "review review review info info info "
+        "about about about info info info "
+        "about about about info info info "
+        "about about about info info info "
+        "about about about info info info "
+        "about about about info info info "
+        "picture picture picture picture picture picture "
+        "picture picture picture picture picture picture "
+        "picture picture picture picture picture picture ";
+    }
+    #aboutDescription {
+      font-size: 3.5vw;
+    }
+    #aboutTitle {
+      font-size: 4.5vw;
+    }
+    #about {
+      padding: 3vw;
+    }
+    #info {
+      font-size: 2.5vw;
+      margin-right: 5.5vw;
+    }
+    #review {
+      font-size: 4vw;
+      padding-right: 5vw;
+    }
+  }
+
 </style>

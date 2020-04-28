@@ -20,7 +20,7 @@
 
 
       <div id="UserDetailsPage">
-        <div class="Title"> Your Details </div>
+        <div id="DetailsTitle" class="Title"> Your Details </div>
         <div id="Details">
           <label for="Name">Name</label>
           <input type="text" id="Name" name="Name" value="">
@@ -183,7 +183,7 @@
   grid-template-areas: "Receipt Receipt Receipt Receipt Receipt Receipt Receipt User User User"
   "explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation"
   "button button button button button button button button button button"
-  "Customer Customer Customer Customer Customer Bussiness Bussiness Bussiness Bussiness Bussiness";
+  "Customer Customer Customer Customer Customer  Bussiness Bussiness Bussiness Bussiness Bussiness";
   display: grid;
   font-family: 'Oswald', sans-serif;
   justify-content: center;
@@ -295,5 +295,49 @@ input[type=text]:focus {
     top: 0;
     vertical-align: top;
 
+  }
+  @media (max-width:800px) {
+    #Details {
+      margin-right: 10vw;
+    }
+    #DetailsTitle {
+      margin-right: 10vw;
+    }
+    #OrdersPage {
+      grid-template-areas: "Receipt Receipt Receipt Receipt Receipt Receipt User User User User" "explanation explanation explanation explanation explanation explanation explanation explanation explanation explanation" "button button button button button button button button button button"
+      "Customer Customer Customer Customer Customer Customer Customer Customer Customer Customer" " Bussiness Bussiness Bussiness Bussiness Bussiness  Bussiness Bussiness Bussiness Bussiness Bussiness";
+    }
+    input[type=text] {
+      padding: 0.2vw 0.2vw;
+      border: 1.5px solid #ccc;
+
+    }
+    .Explanation {
+       font-size: 2.5vw;
+     }
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 2vw 4vw;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 2vw;
+      margin: 2vw 0 0 0;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      width: 40vw;
+      border-radius: 25px;
+      justify-self: center;
+      align-self: center;
+    }
+    #CustomerEmail {
+      margin: 15vw;
+    }
+    #BussinessEmail {
+        margin: 15vw;
+
+    }
   }
 </style>

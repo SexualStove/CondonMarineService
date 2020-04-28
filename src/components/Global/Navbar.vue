@@ -36,6 +36,7 @@
   #Nav-content {
     grid-area: Nav;
     width: 100vw;
+    overflow: hidden;
     background-image: url("../../assets/images/dust_scratches.png");
   }
   #Nav-content {
@@ -147,5 +148,11 @@
   }
   .footer-social-links a:hover:before{
     background: #111;
+  }
+  @media (max-width:800px){
+    .Option {
+
+      font-size: 2.5vw;
+    }
   }
 </style>

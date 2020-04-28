@@ -20,6 +20,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
   #WholePage {
     width: 100vw;
+    overflow-x: hidden;
   }
   #MenuArea {
     background-image: url("../../assets/images/triangle-mosaic.png");

@@ -26,6 +26,10 @@
   }
   body {
     margin: 0;
+    overflow-x: hidden;
+  }
+  div {
+    overflow-x: hidden;
   }
   html {
     max-width: 100%;

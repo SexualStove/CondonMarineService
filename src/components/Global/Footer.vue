@@ -19,6 +19,7 @@
 
 <style scoped>
 #Footer {
+  overflow: hidden;
   background-image: url("../../assets/images/dust_scratches.png");
   width: 100vw;
   height: 30vh;
@@ -39,7 +40,8 @@
   margin-left: 7vw;
   margin-right: 12vw;
   cursor: pointer;
-  font-size: 2vw;
+  font-size: 1.4vw;
+  overflow-y: hidden;
   font-family: 'Oswald', sans-serif;
 }
 .Option:hover .Line {
@@ -53,6 +55,7 @@
   transition: 1.5s  ;
 }
   #Options {
+    overflow-y: hidden;
     grid-area: Options;
   }
   #Quote {
@@ -63,5 +66,22 @@
   }
   #Copyright {
     grid-area: Bottom;
+    font-size: 0.5vw;
   }
+@media (max-width:800px){
+  #Quote {
+    grid-area: Meat;
+    font-family: 'Amatic SC', cursive;
+    font-size: 6vw;
+    margin: 3vw;
+  }
+  #Copyright {
+    grid-area: Bottom;
+    font-size: 2vw;
+  }
+  .Option {
+    font-size: 5vw;
+  }
+}
+
 </style>

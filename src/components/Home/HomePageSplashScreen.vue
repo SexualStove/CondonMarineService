@@ -36,6 +36,7 @@
   }
   #CenterWindow {
     width: 100vw;
+    overflow: hidden;
     display: grid;
     grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-areas:
@@ -63,6 +64,7 @@
     background-position: 0 0vh;
     justify-content: center;
     display: inline-block;
+    overflow: hidden;
     width: 100%;
   }
   #MainTitle {
@@ -86,5 +88,15 @@
     align-self: center;
     margin-left: 37.5vw
   }
-
+  @media (max-width:800px){
+    #ShopTitle {
+      font-size: 15vw;
+    }
+    #SubTitle {
+      font-size: 6vw;
+    }
+    #MainTitle {
+      top: 40%;
+    }
+  }
 </style>

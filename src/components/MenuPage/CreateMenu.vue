@@ -152,4 +152,16 @@
     display: inline-block;
     margin: 3vw;
   }
+
+  @media (max-width:800px) {
+    #MenuInput {
+      transform: scale(0.8);
+    }
+    #RuleTitle {
+      font-size: 5vw;
+    }
+    #RuleHolder {
+      font-size: 2.5vw;
+    }
+  };
 </style>
