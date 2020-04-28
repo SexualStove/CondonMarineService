@@ -118,12 +118,12 @@
     display: inline-block;
   }
 .ButtonHolder {
-  width:2vw;
-  height: 2vw;
-  margin: 1vw;
+  width:4vw;
+  height: 4vw;
+  margin: 2vw 0 0 0;
   display: inline-block;
   vertical-align: central;
-
+  overflow: hidden;
 }
 .OrderButtonsGreen, .OrderButtonsRed{
   font-family: 'Oswald', sans-serif;
@@ -134,10 +134,14 @@
   box-sizing:border-box;
   transition: 0.5s;
   margin: initial;
+  width: 4vw;
+  height: 4vw;
+  overflow: hidden;
 }
 .OrderButtonsGreen:hover, .OrderButtonsRed:hover {
-  font-size:1.5vw;
+  font-size:1vw;
   cursor: pointer;
+  overflow: hidden;
 }
 .OrderButtonsGreen span, .OrderButtonsRed span{
   position:relative;
@@ -147,7 +151,8 @@
   justify-content:center;
   width: 2vw;
   height: 2vw;
-  margin: initial;
+  margin: 1vw 0 0 1vw;
+  overflow: hidden;
 }
 .OrderButtonsGreen span:before, .OrderButtonsRed span:before{
   content:'';
@@ -159,13 +164,16 @@
   border:0.3vw solid greenyellow;
   box-sizing:border-box;
   transition: all .85s cubic-bezier(0.25, 1, 0.33, 1);
-  box-shadow: 0 30px 85px rgba(0,0,0,0.14), 0 15px 35px rgba(0,0,0,0.14);
+  box-shadow: 0 3vw 4vw rgba(0,0,0,0.14), 0 3vw 4vw rgba(0,0,0,0.14);
+  overflow: hidden;
 }
 .OrderButtonsGreen span:before {
   border:0.1vw solid greenyellow;
+  overflow: hidden;
 }
 .OrderButtonsRed span:before {
   border:0.1vw solid orangered;
+  overflow: hidden;
 }
 .OrderButtonsGreen:hover span:before, .OrderButtonsRed:hover span:before{
   transform:scale(1.2);
@@ -182,7 +190,7 @@
     .SlectionItem {;
       font-size: 4.5vw;
     }
-    .OrderButtonsGreen span, .OrderButtonsRed span{
+    /*.OrderButtonsGreen span, .OrderButtonsRed span{
       width: 3vw;
       height: 3vw;
     }
@@ -192,7 +200,7 @@
     }
     .OrderButtonsGreen:hover, .OrderButtonsRed:hover {
       font-size:2vw;
-    }
+    }*/
     .OrderArea {
       font-size: 3vw;
     }
