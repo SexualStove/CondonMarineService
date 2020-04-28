@@ -60,10 +60,7 @@
       "Main";
     justify-content: center;
   }
-  #Nav-content {
-    grid-area: Nav;
 
-  }
 
   #SplashPage {
     grid-area: Main;

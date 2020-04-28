@@ -1,13 +1,10 @@
 import Vue from 'vue'
-import HomePage from '@/components/Home/HomePage'
-import MenuPage from '@/components/MenuPage/RealMenuPage'
-import CreateGallery from '@/components/Create/CreateGallery'
-import CreateEvent from '@/components/Create/CreateEvent'
-import ContactUs from "../components/ContactUs/ContactUsForm";
+//import HomePage from '@/components/Home/HomePage'
+//import MenuPage from '@/components/MenuPage/RealMenuPage'
 import Router from 'vue-router'
 import SendOrder from "../components/MenuPage/SendOrder";
-//const HomePage = () => import('@/components/Home/HomePage');
-//const MenuPage = () => import('@/components/MenuPage/RealMenuPage');
+const HomePage = () => import('@/components/Home/HomePage');
+const MenuPage = () => import('@/components/MenuPage/RealMenuPage');
 Vue.use(Router);
 export default new Router({
     mode: 'history',
@@ -30,21 +27,6 @@ export default new Router({
             path: '/Menu',
             name: 'MenuPage',
             component: MenuPage
-        },
-        {
-            path: '/CreateEvent',
-            name: 'CreateEvent',
-            component: CreateEvent
-        },
-        {
-            path: '/CreateGallery',
-            name: 'CreateGallery',
-            component: CreateGallery
-        },
-        {
-            path: '/ContactUs',
-            name: 'ContactUs',
-            component: ContactUs
         },
         {
             path: "/SendOrder",

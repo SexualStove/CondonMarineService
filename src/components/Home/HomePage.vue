@@ -22,10 +22,6 @@
     width: 100vw;
     overflow-x: hidden;
   }
-  #MenuArea {
-    background-image: url("../../assets/images/triangle-mosaic.webp");
-    padding-bottom: 3vw;
-  }
   .section-break {
     background-color: #4d4d4d;
     border: 0;
