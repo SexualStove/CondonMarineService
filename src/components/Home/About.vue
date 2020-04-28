@@ -147,7 +147,7 @@
   #picture {
     grid-area: picture;
     background-color: slategray;
-    background-image: url("../../assets/images/Storefront.jpg");
+    background-image: url("../../assets/images/Storefront.webp");
     background-size: cover;
     background-position: 0 -20vh;
   }

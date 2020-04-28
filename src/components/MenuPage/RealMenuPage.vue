@@ -29,7 +29,7 @@
     width: 100vw;
   }
   #MenuArea {
-    background-image: url("../../assets/images/triangle-mosaic.png");
+    background-image: url("../../assets/images/triangle-mosaic.webp");
     padding-bottom: 3vw;
   }
   .section-break {

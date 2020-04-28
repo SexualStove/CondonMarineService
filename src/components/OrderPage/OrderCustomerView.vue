@@ -225,7 +225,7 @@
     grid-area: User;
     vertical-align: top;
     top: 0;
-    background-image: url("../../assets/images/email-pattern.png");
+    background-image: url("../../assets/images/email-pattern.webp");
    }
 
 input[type=text] {

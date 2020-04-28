@@ -59,7 +59,7 @@
 
   #SplashPage {
     grid-area: Main;
-    background-image: url("../../assets/images/FishnChipMain.jpg");
+    background-image: url("../../assets/images/FishnChipMain.webp");
     background-size: cover ;
     background-position: 0 0vh;
     justify-content: center;
