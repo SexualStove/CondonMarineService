@@ -27,9 +27,8 @@
       <div class="RSA" id="Address">
         <img class="Image" id="AddressImage" src="../../assets/images/Icons/AddressIcon.png" alt="None">
         <div class="Text">
-        P O Box 7004,<br>
-        Mornington
-        Dunedin
+          P O Box 447, <br>
+          Rangiora, 7440
         </div>
 
       </div>

@@ -1,7 +1,7 @@
 <template>
   <div id="NavArea">
     <div id="Logo">
-      <img id="LogoImage" src="../../assets/images/BePaidOrginal/BePaidLogo.png" alt="None">
+      <img id="LogoImage" style="" src="../../assets/images/BePaidOrginal/BePaidLogo.png" alt="None">
     </div>
     <div class="NavItem" id="Services">
       Services
@@ -27,7 +27,7 @@
         },
         mounted() {
             var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#NavArea', 4, {opacity: 0}, '+=2'
+            LogoStringTimeline.from('#NavArea', 4, {opacity: 0}, '+=3.5'
             );
            /* var LogoStringTimeline = new TimelineMax({});
             LogoStringTimeline.from('#Logo', 4, {opacity: 0}, '+=2').from('#Services', 4, {opacity: 0}, '-=4').from(
@@ -41,7 +41,7 @@
  #NavArea {
    grid-template-areas: "Logo LogoPad Services About Contact";
    grid-template-columns: 15% 49% 12% 12% 12% ;
-   color: whitesmoke;
+   color: white;
    font-family: 'Play', sans-serif;
    align-items: center;
    justify-items: center;

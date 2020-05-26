@@ -4,8 +4,8 @@
     <div id="Line"></div>
     <div id="SubTitle">Our expert team of debt collectors are renowned for getting back what is owed to you, big or small!</div>
     <div id="ButtonArea">
-      <div id="Button1" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Domestic</a> </div>
-      <div id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Corporate</a> </div>
+      <div id="Button1" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Ledger management</a> </div>
+      <div id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Collections</a> </div>
     </div>
   </div>
 </template>
@@ -20,7 +20,7 @@
         mounted() {
 
             var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#Line', 2, {width: 0}).from(
+            LogoStringTimeline.from('#Line', 2, {width: 0}, '+=2').from(
                 '#Title', 2, {translateY: '2vw', opacity: 0}).from('#SubTitle', 2, {opacity: 0, translateY: '-2vw'}, '-=1').from(
                 '#Button1', 2, {opacity: 0}, '-=2').from('#Button2', 2, {opacity: 0}, '-=2'
             );
@@ -54,6 +54,30 @@
     z-index: 99;
     position: absolute;
     text-align: center;
+    text-shadow: 1px 1px 0 #e71d36,
+    -1px 1px 0 #e71d36,
+    1px -1px 0 #e71d36,
+    -1px -1px 0 #e71d36,
+    0px 1px 0 #e71d36,
+    0px -1px 0 #e71d36,
+    -1px 0px 0 #e71d36,
+    1px 0px 0 #e71d36,
+    2px 2px 0 #e71d36,
+    -2px 2px 0 #e71d36,
+    2px -2px 0 #e71d36,
+    -2px -2px 0 #e71d36,
+    0px 2px 0 #e71d36,
+    0px -2px 0 #e71d36,
+    -2px 0px 0 #e71d36,
+    2px 0px 0 #e71d36,
+    1px 2px 0 #e71d36,
+    -1px 2px 0 #e71d36,
+    1px -2px 0 #e71d36,
+    -1px -2px 0 #e71d36,
+    2px 1px 0 #e71d36,
+    -2px 1px 0 #e71d36,
+    2px -1px 0 #e71d36,
+    -2px -1px 0 #e71d36;
   }
   #Line {
     background-color: #e71d36;
@@ -119,7 +143,7 @@
     position: relative;
     margin-top: 25vw;
     margin-left: 3vw;
-    transform: translateX(8vw);
+    transform: translateX(6vw);
     display: inline-block;
     color: #fff;
     font-size:1vw;
@@ -141,6 +165,8 @@
     position: relative;
     border: 2px solid #e71d36;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: rgba(231,29,54,0.4);
+    width: 15vw;
   }
   a.animated-button.thar-two:hover {
     color: #000 !important;
