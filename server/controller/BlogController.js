@@ -1,38 +1,40 @@
 const {Blog} = require('../models');
 const nodemailer = require('nodemailer');
+// async..await is not allowed in global scope, must use a wrapper
 
 
 module.exports = {
-    async createBlog (req, res) {
-        try {
-            const blogData = await Blog.create(req.body);
-            console.log(req.body);
-            res.send(blogData)
-        } catch (err) {
-            res.status(400).send({
-
-            })
+    data() {
+        return{
+            Title: "None atm",
+            Blur: "None atm again",
         }
     },
+    methods: {
 
-    async SendEmail(req, res) {
-        try{
-            console.log("I send the ting");
-            // extract object from req
-            let data = req.body;
-            // console.log(data);
 
-            await SendMail(data);
+    },
+    // Create a new Blog
+    async createBlog(req, res) {
+        try {
+            const blogData = await Blog.create(req.body);
+            //console.log(req.body.Title, req.body.Blurb);
+            this.Title = req.body.Title;
+            this.Blurb = req.body.Blurb;
+            //this.SendMail.catch(console.error);
+            //await this.SendMail();
 
+            res.send(blogData);
+            //his.SendMail().catch(console.error);
         } catch (err) {
-            console.log(err);
             res.status(400).send({})
         }
-        async function SendMail(data) {
+
+        async function SendMail() {
             // Generate test SMTP service account from ethereal.email
             // Only needed if you don't have a real mail account for testing
-
-            //let testAccount = await nodemailer.createTestAccount();
+            console.log('SendMail Runnin');
+            let testAccount = await nodemailer.createTestAccount();
 
             // create reusable transporter object using the default SMTP transport
             let transporter = nodemailer.createTransport({
@@ -49,29 +51,13 @@ module.exports = {
                 }
             });
 
-            // Process order data
-
-            let OrderString = "";
-
-            OrderString += "Name:&emsp;&emsp;&emsp;" + data.Name + "<br>";
-            OrderString += "Phone:&nbsp;&ensp;&emsp;&emsp;" + data.Phone + "<br>";
-            OrderString += "Email:&ensp;&emsp;&emsp;&ensp;&nbsp;"+data.Email + "<br>";
-            OrderString += "PlateNo:&emsp;&ensp;&ensp;"+data.Plate + "<br>";
-            OrderString += "Order Time:&ensp;"+data.TimeOf + "<br><br>";
-
-            for (var i = 0; i < data.Order.length; i++) {
-                OrderString += data.Order[i][0] + ": x" + data.Order[i][1] + "<br>";
-            }
-
-            OrderString += "Total Price: &emsp;$"+ data.Total.toFixed(2);
-
             // send mail with defined transport object
             let info = await transporter.sendMail({
-                from: '"Not Fred Foo 👻" <contact@inhouseweb.nz>', // sender address
+                from: '"Fred Foo 👻" <contact@inhouseweb.nz>', // sender address
                 to: "rt_condon@hotmail.com, inhouseweb@hotmail.com", // list of receivers
-                subject: "New Order: " + data.Name, // Subject line
-                text: "this be the ordders", // plain text body
-                html: OrderString // html body
+                subject: this.Title, // Subject line
+                text: this.Blurb, // plain text body
+                html: "<h1>"+this.Blurb+"</h1>" // html body
             });
 
             console.log("Message sent: %s", info.messageId);
@@ -81,60 +67,65 @@ module.exports = {
             console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
             // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
         }
+        SendMail().catch(console.error);
     },
-    async getBlog (req,res) {
-        try{
+    // Get Single blog with ID
+    async getBlog(req, res) {
+        try {
             const blogId = req.params.blogId;
-
             const blog = await Blog.findOne({
                 where: {
                     id: blogId
                 }
             });
-            console.log('HERE IS THE ERROR', blog.dataValues);
-            if(!blog) {
-                console.log("DO I GET HERE");
+
+            // Blog does not exist
+            if (!blog) {
                 res.status(403).send({
                     error: ' Blog Post does not exist'
                 })
             }
+            // Convert blog to JSON data
             const blogJson = blog.toJSON();
 
+            //Send Single blog to Front-End to display
             res.send({
                 blog: blogJson
             })
-
-
         } catch (e) {
             res.status(400).send({
                 error: e
             })
         }
     },
-    async getAll (req,res) {
-        try{
+    // Get all existing blogs
+    async getAll(req, res) {
+        try {
             const allBlogs = await Blog.findAll();
+            //Send all existing Blogs to Front-End to display
             res.send({
                 Blogs: allBlogs
             })
         } catch (e) {
-            console.log(e)
-        }
-    },
-    async uploadThumbnail (req,res) {
-        try {
-            const upload = await Blog.upsert(req.body, {
-                where: {
-                    Title: req.body.Title
-                }
-            });
-            console.log(upload);
-            res.send({
-                message: upload
+            res.status(400).send({
+                error: e
             })
-        } catch (e) {
-            console.log(e)
         }
     },
+    async deleteBlog(req,res) {
+        try{
+            const blogId = req.params.blogId;
+            const del = await Blog.destroy({
+                where: {
+                    id: blogId
+                }
+            })
+            console.log(del)
 
+        }catch (e) {
+            res.status(400).send({
+                error: e
+            })
+        }
+    }
 };

@@ -1,11 +1,13 @@
 module.exports ={
-    port: process.env.PORT || 8082,
+
+    port: process.env.PORT || 8081,
     db: {
-        user: process.env.DB_USER || 'ACC',
+        user: process.env.DB_USER || 'MITBlogger',
         password: process.env.DB_PASS || 'password',
-        database: process.env.DB_NAME || 'ShopTemplate',
-        host:  '127.0.0.1' || 'http://138.68.5.128',
+        database: process.env.DB_NAME || 'MITBlog',
+        host: process.env.HOST || 'localhost',
         dialect: 'sqlite',
-        storage: './ShopMenu.sqlite'
+        storage: './MITBlog.sqlite'
     }
+
 };

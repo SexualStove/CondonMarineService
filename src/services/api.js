@@ -1,9 +1,7 @@
 import axios from 'axios'
 
 export default () => {
-    //change to real URL
     return axios.create({
-        baseURL: 'http://localhost:8082'
-    });
-
+        baseURL: `http://localhost:8081/`
+    })
 }

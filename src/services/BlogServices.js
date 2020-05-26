@@ -1,4 +1,4 @@
-import Api from '@/services/api'
+import Api from '@/services/Api'
 
 export default {
     createBlog (data) {
@@ -10,22 +10,8 @@ export default {
     getAll (){
         return Api().get('/blog')
     },
-
-    createGallery (data) {
-        console.log("what");
-        return Api().post('/createGallery', data)
-    },
-    createImageTable (data) {
-      return Api().post('/createImage', data)
-    },
-    getAllGallery (){
-        return Api().get('/Gallery')
-    },
-    getImageTables (){
-        return Api().get('/ImageTable')
-    },
-    SendOrder(data){
-        return Api().post('/SendOrder', data)
+    deleteBlog (blogId) {
+        return Api().delete('/blog/'+blogId)
     }
     // uploadThumbnail (file){
     //     return Api().post('/create', file)

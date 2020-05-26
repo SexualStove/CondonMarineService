@@ -1,3 +1,24 @@
-# ShopTemplate
-Trello
-https://trello.com/invite/b/zLmbYZGI/982be37ee0e388d37b73ea20a6059f87/food-website-template
+# my-project
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
