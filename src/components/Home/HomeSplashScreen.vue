@@ -9,26 +9,41 @@
 
       <div id="FadeZone"></div>
 
-      <iframe id="iFrameId" src="https://player.vimeo.com/video/210743868?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
+      <iframe id="iFrameId" src="https://player.vimeo.com/video/422637484?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
               frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <div id="Test"></div>
     </div>
 
   </div>
 </template>
 
 <script>
+    import Vimeo from '@vimeo/player'
+    //import Vue from 'vue';
+    //Vue.use(Vimeo);
+    //import { vueVimeoPlayer } from 'vue-vimeo-player'
     import {  TimelineMax } from "gsap"
     import JQuery from 'jquery';
     let $ = JQuery;
     export default {
         name: "HomeSplashScreen",
+
         data() {
 
         },
         mounted() {
-            $("#iFrameId").on("load", function () {
-                $("#FadeZone").addClass("fadeIn");
 
+            var options = {
+                id: 422637484,
+                allowFullscreen: true,
+                loop: true,
+                autoplay: true,
+                controls: false
+            };
+
+            var player = new Vimeo('Test', options);
+            player.loadVideo(422637484).then(function() {
+                $("#FadeZone").addClass("fadeIn");
             });
 
             var LogoStringTimeline = new TimelineMax({});
