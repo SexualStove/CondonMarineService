@@ -1,11 +1,15 @@
 <template>
   <div id="TextArea" style="position: absolute; top: 15%; left: 20%; z-index: 0">
-    <div id="Title"> Your local debt collector agency!</div>
-    <div id="Line"></div>
-    <div id="SubTitle">Our expert team of debt collectors are renowned for getting back what is owed to you, big or small!</div>
+    <div style="transform: translateY(-7vw)">
+      <div id="Title"> Your local debt collector agency!</div>
+      <div id="Line"></div>
+    </div>
+    <div style="transform: translateY(3vw);">
+
     <div id="ButtonArea">
       <div id="Button1" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Ledger management</a> </div>
       <div id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Collections</a> </div>
+    </div>
     </div>
   </div>
 </template>

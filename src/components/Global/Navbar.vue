@@ -1,7 +1,7 @@
 <template>
   <div id="NavArea">
     <div id="Logo">
-      <img id="LogoImage" style="" src="../../assets/images/BePaidOrginal/BePaidLogo.png" alt="None">
+      <img id="LogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
     </div>
     <div class="NavItem" id="Services">
       Services
