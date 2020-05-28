@@ -8,7 +8,7 @@
     <div id="vimeo-wrapper">
 
       <div id="FadeZone">
-        <img id="LogoImage" style="position: absolute; top: 23%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+        <img id="LogoImage" style="position: absolute; top: 31%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </div>
 
       <iframe id="iFrameId" src="https://player.vimeo.com/video/422637484?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
@@ -50,9 +50,7 @@
             });
 
             var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#Scalpel', 2, {translateX: '-25vw'}, '+=2').from(
-                '#Hammer', 2, {translateX: '25vw'}, '-=2').from('#InvestigationsText', 2, {opacity: 0}).from(
-                    '#CollectionsText', 2, {opacity: 0}, '-=2'
+            LogoStringTimeline.from('#LogoImage', 2, {top: '12%', scale: 1.4}, "+=0.6"
             );
         }
     }

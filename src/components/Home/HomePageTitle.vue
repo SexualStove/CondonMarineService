@@ -1,10 +1,11 @@
 <template>
   <div id="TextArea" style="position: absolute; top: 15%; left: 20%; z-index: 0">
     <div style="transform: translateY(-7vw)">
-      <div id="Title"> Your local debt collector agency!</div>
+      <div id="Title"> From commercial to mum and dad, we've got your back at Be Paid!</div>
       <div id="Line"></div>
+      <div id="Line2"></div>
     </div>
-    <div style="transform: translateY(3vw);">
+    <div style="transform: translateY(7vw);">
 
     <div id="ButtonArea">
       <div id="Button1" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Ledger management</a> </div>
@@ -24,7 +25,7 @@
         mounted() {
 
             var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#Line', 2, {width: 0}, '+=2').from(
+            LogoStringTimeline.from('#Line', 2, {width: 0}, '+=2').from('#Line2', 2, {width: 0}, '-=1.5').from(
                 '#Title', 2, {translateY: '2vw', opacity: 0}).from('#SubTitle', 2, {opacity: 0, translateY: '-2vw'}, '-=1').from(
                 '#Button1', 2, {opacity: 0}, '-=2').from('#Button2', 2, {opacity: 0}, '-=2'
             );
@@ -86,8 +87,16 @@
   #Line {
     background-color: #e71d36;
     height: 3px;
-    margin-top: 13.8vw;
+    margin-top: 13.2vw;
     width: 60vw;
+    position: absolute;
+  }
+  #Line2 {
+    background-color: #e71d36;
+    height: 3px;
+    margin-top: 18.3vw;
+    transform: translateX(3vw);
+    width: 54vw;
     position: absolute;
   }
   #SubTitle {
