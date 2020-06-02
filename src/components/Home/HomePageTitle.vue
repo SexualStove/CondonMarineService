@@ -1,7 +1,7 @@
 <template>
   <div id="TextArea" style="position: absolute; top: 15%; left: 20%; z-index: 0">
     <div style="transform: translateY(-7vw)">
-      <div id="Title"> From commercial to mum and dad, we've got your back at Be Paid!</div>
+      <div id="Title"> From commercial to personal, we've got your back at Be Paid!</div>
       <div id="Line"></div>
       <div id="Line2"></div>
     </div>
