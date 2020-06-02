@@ -8,8 +8,8 @@
     <div style="transform: translateY(7vw);">
 
     <div id="ButtonArea">
-      <div id="Button1" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Ledger management</a> </div>
-      <div id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Collections</a> </div>
+      <div id="Button1" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6 button"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Ledger management</a> </div>
+      <div id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6 button"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Collections</a> </div>
     </div>
     </div>
   </div>
@@ -109,7 +109,10 @@
     padding-top: 15vw;
   }
   #ButtonArea {
-
+    margin-top: 2vw;
+  }
+  .button, .btn {
+    padding: 0.5vw 0.3vw;
   }
 
 
@@ -178,7 +181,7 @@
     position: relative;
     border: 2px solid #e71d36;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-    background-color: rgba(231,29,54,0.4);
+    background-color: rgba(231,29,54,1);
     width: 15vw;
   }
   a.animated-button.thar-two:hover {

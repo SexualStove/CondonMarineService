@@ -10,7 +10,7 @@
       <div id="line"></div>
     </div>
     <div id="Splash">
-      <Navbar id="NavArea"></Navbar>
+      <Navbar id="NavArea" style="z-index: 4"></Navbar>
      <HomeSplashScreen style="z-index: -1"></HomeSplashScreen>
       <div class="Divider">
         <div class="LineDivider"></div>

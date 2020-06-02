@@ -8,7 +8,7 @@
     <div id="vimeo-wrapper">
 
       <div id="FadeZone">
-        <img id="LogoImage" style="position: absolute; top: 31%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+        <img id="LogoImage" style="position: absolute; top: 33.5%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </div>
 
       <iframe id="iFrameId" src="https://player.vimeo.com/video/422637484?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
@@ -71,7 +71,7 @@
   #Wrapper {
     display: block;
     position: relative;
-    height: 85vh;
+    height: 87vh;
   }
   #vimeo-wrapper {
     position: fixed;
