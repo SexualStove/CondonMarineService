@@ -1,7 +1,7 @@
 <template>
   <div id="TextArea" style="position: absolute; top: 15%; left: 20%; z-index: 0">
     <div style="transform: translateY(-7vw)">
-      <div id="Title"> From commercial to personal, we've got your back at Be Paid!</div>
+      <div id="Title"> Across the nation big or small, Be Paid brings professionalism to your door </div>
       <div id="Line"></div>
       <div id="Line2"></div>
     </div>
@@ -50,10 +50,10 @@
     text-align: center;
   }
   #Title {
-    padding-top: 9vw;
+    padding-top: 9.4vw;
     color: white;
     font-family: 'Play', sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     font-weight: 700;
     width: 100%;
     z-index: 99;
@@ -94,7 +94,7 @@
   #Line2 {
     background-color: #e71d36;
     height: 3px;
-    margin-top: 18.3vw;
+    margin-top: 18vw;
     transform: translateX(3vw);
     width: 54vw;
     position: absolute;
@@ -204,7 +204,7 @@
     z-index: -1;
     content: '';
     color: #000 !important;
-    background: #e71d36;
+    background: #eF1F3F;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
 </style>

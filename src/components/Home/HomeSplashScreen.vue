@@ -11,9 +11,8 @@
         <img id="LogoImage" style="position: absolute; top: 33.5%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </div>
 
-      <iframe id="iFrameId" src="https://player.vimeo.com/video/422637484?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
-              frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      <div id="Test"></div>
+
+      <div id="iFrameId"></div>
     </div>
 
   </div>
@@ -34,19 +33,25 @@
 
         },
         mounted() {
-
-            var options = {
+            //src="https://player.vimeo.com/video/422637484?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
+            let options = {
                 id: 422637484,
                 allowFullscreen: true,
                 loop: true,
                 autoplay: true,
-                controls: false
+                controls: false,
+                width: 1980,
             };
 
-            var player = new Vimeo('Test', options);
+            var player = new Vimeo('iFrameId', options);
             player.loadVideo(422637484).then(function() {
                 $("#FadeZone").addClass("fadeIn");
-                $('#LogoImage').addClass("fadeInPic")
+                $('#LogoImage').addClass("fadeInPic");
+                player.autoplay = 1;
+                player.fullscreen = 1;
+                player.controls = 0;
+                player.width = 1080;
+                player.fullscreenEnabled = 1;
             });
 
             var LogoStringTimeline = new TimelineMax({});
