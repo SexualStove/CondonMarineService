@@ -50,7 +50,7 @@
     text-align: center;
   }
   #Title {
-    padding-top: 9.4vw;
+    padding-top: 9.6vw;
     color: white;
     font-family: 'Play', sans-serif;
     font-size: 3.2vw;
