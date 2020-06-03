@@ -47,7 +47,7 @@
             player.loadVideo(422637484).then(function() {
                 $("#FadeZone").addClass("fadeIn");
                 $('#LogoImage').addClass("fadeInPic");
-                player.autoplay = 1;
+
                 player.fullscreen = 1;
                 player.controls = 0;
                 player.width = 1080;

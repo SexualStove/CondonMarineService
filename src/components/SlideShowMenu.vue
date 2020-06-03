@@ -55,7 +55,7 @@
   };
 </script>
 
-<style>
+<style scoped>
   .flickity-page-dots {
     transform: translateY(-40px);
     -webkit-transform: translateY(-40px);

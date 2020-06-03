@@ -46,13 +46,6 @@ export default {
   @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,400,600|Montserrat&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap');
   @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500i&display=swap');
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-  }
   body, html {
     overflow-x: hidden;
     max-width: 100%;
