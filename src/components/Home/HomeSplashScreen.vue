@@ -11,8 +11,8 @@
         <img id="LogoImage" style="position: absolute; top: 33.5%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </div>
 
-
-      <div id="iFrameId"></div>
+      <iframe src="https://player.vimeo.com/video/422637484?&muted=1&autoplay=1&loop=1&background=1" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow="autoplay; encrypted-media" id="iFrameId"></iframe>
+      <div id="s"></div>
     </div>
 
   </div>
@@ -30,28 +30,38 @@
         name: "HomeSplashScreen",
 
         data() {
-
+          return{
+              StartVid: false,
+          }
         },
         mounted() {
             //src="https://player.vimeo.com/video/422637484?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
+            let self = this;
+            var iframe = document.querySelector('#iFrameId');
             let options = {
                 id: 422637484,
-                allowFullscreen: true,
-                loop: true,
-                controls: false,
+                allowFullscreen: 1,
+                loop: 1,
+                controls: 0,
                 width: 1980,
+                autoplay: 1,
+                background: 1,
             };
 
-            var player = new Vimeo('iFrameId', options);
+            var player = new Vimeo(iframe, options);
             player.loadVideo(422637484).then(function() {
                 $("#FadeZone").addClass("fadeIn");
                 $('#LogoImage').addClass("fadeInPic");
-                player.play();
-                player.fullscreen = 1;
-                player.controls = 0;
-                player.width = 1080;
-                player.fullscreenEnabled = 1;
+
             });
+            if(self.StartVid) {
+                player.on('loaded', function() {
+                    player.play();
+                    self.StartVid = false;
+                });
+            }
+
+
 
             var LogoStringTimeline = new TimelineMax({});
             LogoStringTimeline.from('#LogoImage', 2, {top: '12%', scale: 1.4}, "+=0.6"
@@ -89,7 +99,7 @@
   #vimeo-wrapper iframe {
     width: 100vw;
     height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-    min-height: 90vh;
+    min-height: 100vh;
     min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
     position: absolute;
     top: 45vh;
