@@ -36,7 +36,7 @@
         },
         mounted() {
             //src="https://player.vimeo.com/video/422637484?autoplay=1&loop=1&autopause=0&controls=0&muted=1"
-            let self = this;
+            //let self = this;
             var iframe = document.querySelector('#iFrameId');
             let options = {
                 id: 422637484,
@@ -54,12 +54,7 @@
                 $('#LogoImage').addClass("fadeInPic");
 
             });
-            if(self.StartVid) {
-                player.on('loaded', function() {
-                    player.play();
-                    self.StartVid = false;
-                });
-            }
+
 
 
 
