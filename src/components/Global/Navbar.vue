@@ -1,12 +1,18 @@
 <template>
   <div id="NavArea">
     <div id="Logo">
-      <img id="LogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+      <router-link to="/">
+        <img id="LogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+      </router-link>
     </div>
-    <div class="NavItem" id="Services">
-      Services
-      <div  class="Line"></div>
-    </div>
+
+      <div class="NavItem" id="Services">
+        <router-link style="text-decoration:none; color: white" to="/Services">
+        Services
+        <div  class="Line"></div>
+        </router-link>
+      </div>
+
     <div class="NavItem" id="About">
       About Us
       <div class="Line"></div>
@@ -22,13 +28,31 @@
     import {  TimelineMax } from "gsap"
     export default {
         name: "Navbar",
-        data() {
+        props: {
+            title: String,
+            likes: Number,
+            Animation: Boolean,
+            commentIds: Array,
+            author: Object,
+            callback: Function,
+            contactsPromise: Promise // or any other constructor
+        },
 
+        data() {
+          return {
+
+          }
         },
         mounted() {
-            var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#NavArea', 4, {opacity: 0}, '+=3.5'
-            );
+            if(this.Animation === true) {
+                var LogoStringTimeline = new TimelineMax({});
+                LogoStringTimeline.from('#NavArea', 4, {opacity: 0}, '+=3.5'
+                );
+            } else {
+                console.log('Did not trigger');
+                console.log(Animation);
+            }
+
            /* var LogoStringTimeline = new TimelineMax({});
             LogoStringTimeline.from('#Logo', 4, {opacity: 0}, '+=2').from('#Services', 4, {opacity: 0}, '-=4').from(
                 '#About', 4, {opacity: 0}, '-=4').from('#Contact', 4, {opacity: 0}, '-=4'

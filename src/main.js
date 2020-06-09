@@ -9,7 +9,7 @@ import VueLazyload from 'vue-lazyload'
 import VueCookies from 'vue-cookies'
 import { gsap } from 'gsap'
 import { CSSPlugin } from 'gsap/CSSPlugin'
-
+import axios from 'axios'
 gsap.registerPlugin(CSSPlugin);
 
 Vue.config.productionTip = false;
@@ -18,6 +18,10 @@ Vue.use(VueLazyload);
 Vue.use(bootstrapVue);
 Vue.use(PortalVue);
 Vue.use(VueCookies);
+Vue.use(axios);
+let VueCookie = require('vue-cookie');
+// Tell Vue to use the plugin
+Vue.use(VueCookie);
 
 Vue.directive('click-outside', {
   bind () {

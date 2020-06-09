@@ -1,0 +1,135 @@
+<template>
+  <div id="IconsArea">
+    <div id="DebtCollection" class="Service" v-on:click="ChangeService(1)">
+      <img class="Icon" src="../../assets/images/Icons/Litigation.png" alt="None">
+      <div class="Title"> Debt Collection</div>
+    </div>
+    <div id="LedgerManagement" class="Service" v-on:click="ChangeService(0)">
+      <img class="Icon" src="../../assets/images/Icons/DebtCollection.png" alt="None">
+      <div class="Title"> Ledger Management </div>
+    </div>
+    <div id="CreditChecking" class="Service" v-on:click="ChangeService(2)">
+      <img class="Icon" src="../../assets/images/Icons/BussinessInvestigation.png" alt="None">
+      <div class="Title"> Credit Checking </div>
+    </div>
+    <div id="Invoice" class="Service" v-on:click="ChangeService(3)">
+      <img class="Icon" src="../../assets/images/Icons/Invoice.png" alt="None">
+      <div class="Title"> Invoice | Billing</div>
+    </div>
+    <div id="CreditControl" class="Service" v-on:click="ChangeService(4)">
+      <img class="Icon" src="../../assets/images/Icons/CreditIcon.png" alt="None">
+      <div class="Title">Credit Control</div>
+    </div>
+    <div id="CreditApplication" class="Service" v-on:click="ChangeService(5)">
+      <img class="Icon" src="../../assets/images/Icons/ApplactionIcon.png" alt="None">
+      <div class="Title"> Forms and <br>Terms of Trade </div>
+    </div>
+    <div id="PPSR" class="Service" v-on:click="ChangeService(6)">
+      <img class="Icon" src="../../assets/images/Icons/PropSecurityIcon.png" alt="None">
+      <div class="Title"> P P S R </div>
+    </div>
+    <div id="Management" class="Service" v-on:click="ChangeService(7)">
+      <img class="Icon" src="../../assets/images/Icons/ManagmentIcon.png" alt="None">
+      <div class="Title">Customer/Debtor <br>Management</div>
+    </div>
+  </div>
+</template>
+
+<script>
+
+    import {EventBus} from "../../App";
+    export default {
+        name: "ServiceIcons",
+        methods: {
+          async ChangeService(Int) {
+              if (this.$cookie.get('Service') < 0) {
+                  this.$cookie.set('Service', Int, {expires: '10m'});
+              }
+              EventBus.$emit('Service', Int);
+
+          }
+        }
+    }
+</script>
+
+<style scoped>
+#IconsArea {
+  height: 35vh;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  background-image: url("../../assets/images/Patterns/dot-grid-white.png");
+  background-size: 15%;
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  z-index: 10;
+  padding: 2vw;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+.Service {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+}
+  .Icon {
+    width: 80%;
+    position: absolute;
+    //transform: translate(-50%, -50%);
+    transition: 0.5s;
+  }
+  .Service:hover .Icon {
+    width: 90%;
+  }
+  .Service:hover .Title {
+    width: 110%;
+    font-size: 1.4vw;
+    transform: translate(-10%, 15vh);
+  }
+  .Service:hover {
+    cursor: pointer;
+  }
+.Title {
+
+  color: black;
+  text-shadow: 1px 1px 0 whitesmoke,
+  -1px 1px 0 whitesmoke,
+  1px -1px 0 whitesmoke,
+  -1px -1px 0 whitesmoke,
+  0px 1px 0 whitesmoke,
+  0px -1px 0 whitesmoke,
+  -1px 0px 0 whitesmoke,
+  1px 0px 0 whitesmoke,
+  2px 2px 0 whitesmoke,
+  -2px 2px 0 whitesmoke,
+  2px -2px 0 whitesmoke,
+  -2px -2px 0 whitesmoke,
+  0px 2px 0 whitesmoke,
+  0px -2px 0 whitesmoke,
+  -2px 0px 0 whitesmoke,
+  2px 0px 0 whitesmoke,
+  1px 2px 0 whitesmoke,
+  -1px 2px 0 whitesmoke,
+  1px -2px 0 whitesmoke,
+  -1px -2px 0 whitesmoke,
+  2px 1px 0 whitesmoke,
+  -2px 1px 0 whitesmoke,
+  2px -1px 0 whitesmoke,
+  -2px -1px 0 whitesmoke;
+
+  border-radius: 60%;
+  transform: translate(-5%, 15vh);
+  line-height: 80%;
+//max-width: 1vw;
+  width: 100%;
+  padding: 10%;
+  font-size: 1.2vw;
+  font-family: 'Play', sans-serif;
+  transition: 0.7s;
+  position: absolute;
+  text-align: center;
+}
+</style>

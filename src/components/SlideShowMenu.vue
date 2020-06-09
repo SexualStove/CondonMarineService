@@ -9,7 +9,7 @@
           <b-button  squared variant="outline-primary" style=" padding: 0.4vw 0 0.4vw 0; left: 0;  margin-top: 35vh; margin-left: 5.5vw;"> <span class="Menu-Button"> Packages </span> </b-button>
         </router-link>
       </div>
-      <div class="carousel-cell" v-bind:style="{'background-image': 'url('+SlideShow[1]+')'}" style="background-repeat: no-repeat; background-size: cover;">
+      <div class="carousel-cell"  v-bind:style="{'background-image': 'url('+SlideShow[1]+')'}" style="background-repeat: no-repeat; background-size: cover;">
         <router-link to="/ContactUs">
           <b-button  squared variant="success" style="padding: 0.4vw 0 0.4vw 0; left: 0; margin-top: 30vh; margin-left: 4vw"> <span class="Menu-Button"> Support </span> </b-button>
         </router-link>

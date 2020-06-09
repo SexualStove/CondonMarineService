@@ -112,6 +112,7 @@
       },
       methods: {
         ServiceClick(Int) {
+
             $('html, body').animate({
               scrollTop: $(this.ReadMoreArray[Int].DaddyNode).offset().top + this.ReadMoreArray[Int].Top
             }, 2000);

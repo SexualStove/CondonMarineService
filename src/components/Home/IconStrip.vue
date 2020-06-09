@@ -2,51 +2,59 @@
   <div>
     <div id="IconStrip">
       <div class="Break"></div>
-      <div id="DebtArea" class="IconArea">
-        <div class="IconBottomRight"></div>
-        <div class="IconBottomLeft"></div>
-        <div class="IconTopRight"></div>
-        <div class="IconTopLeft"></div>
-        <img class="Icon" src="../../assets/images/Icons/DebtCollection.png" alt="None">
-        <div class="Title"> Debt Collection</div>
-        <div class="SubTitle">
-          You want to use a service you can trust that uses ethical and effective practices to ensure your customers pay their debts.
+      <router-link style="text-decoration:none" to="/Services">
+        <div id="DebtArea" class="IconArea" v-on:click="ServiceClick(1)">
+          <div class="IconBottomRight"></div>
+          <div class="IconBottomLeft"></div>
+          <div class="IconTopRight"></div>
+          <div class="IconTopLeft"></div>
+          <img class="Icon" src="../../assets/images/Icons/DebtCollection.png" alt="None">
+          <div class="Title"> Ledger Management </div>
+          <div class="SubTitle">
+            You want to use a service you can trust that uses ethical and effective practices to ensure your customers pay their debts.
+          </div>
         </div>
-      </div>
-      <div id="LitigationArea" class="IconArea">
-        <div class="IconBottomRight"></div>
-        <div class="IconBottomLeft"></div>
-        <div class="IconTopRight"></div>
-        <div class="IconTopLeft"></div>
-        <img class="Icon" src="../../assets/images/Icons/Litigation.png" alt="None">
-        <div class="Title"> Litigation </div>
-        <div class="SubTitle">
-          We have a fully qualified legal team ready to support your company covering all aspects of work, and can reproduce and store legal documents and case files.
+      </router-link>
+      <router-link style="text-decoration:none"  to="/Services">
+        <div id="LitigationArea" class="IconArea" v-on:click="ServiceClick(0)">
+          <div class="IconBottomRight"></div>
+          <div class="IconBottomLeft"></div>
+          <div class="IconTopRight"></div>
+          <div class="IconTopLeft"></div>
+          <img class="Icon" src="../../assets/images/Icons/Litigation.png" alt="None">
+          <div class="Title"> Debt Collection </div>
+          <div class="SubTitle">
+            We have a fully qualified legal team ready to support your company covering all aspects of work, and can reproduce and store legal documents and case files.
+          </div>
         </div>
-      </div>
-      <div id="BussinesstArea" class="IconArea">
-        <div class="IconBottomRight"></div>
-        <div class="IconBottomLeft"></div>
-        <div class="IconTopRight"></div>
-        <div class="IconTopLeft"></div>
-        <img class="Icon" src="../../assets/images/Icons/BussinessInvestigation.png" alt="None">
-        <div class="Title"> Credit Checking </div>
-        <div class="SubTitle">
-          We can do a comprehensive credit check on your prospective customers to reduce your risk. Its simple, quick and inexpensive.
+      </router-link>
+      <router-link style="text-decoration:none"  to="/Services">
+        <div id="BussinesstArea" class="IconArea" v-on:click="ServiceClick(2)">
+          <div class="IconBottomRight"></div>
+          <div class="IconBottomLeft"></div>
+          <div class="IconTopRight"></div>
+          <div class="IconTopLeft"></div>
+          <img class="Icon" src="../../assets/images/Icons/BussinessInvestigation.png" alt="None">
+          <div class="Title"> Credit Checking </div>
+          <div class="SubTitle">
+            We can do a comprehensive credit check on your prospective customers to reduce your risk. Its simple, quick and inexpensive.
+          </div>
         </div>
-      </div>
-      <div id="privateDomesticArea" class="IconArea">
-        <div class="IconBottomRight"></div>
-        <div class="IconBottomLeft"></div>
-        <div class="IconTopRight"></div>
-        <div class="IconTopLeft"></div>
-        <img class="Icon" src="../../assets/images/Icons/Invoice.png" alt="None">
-        <div class="Title"> Invoice | Billing</div>
-        <div class="SubTitle">
-          If you are always behind in sending out your invoices or you find it difficult to find the time to do them,
-          we can professionally process invoices on a daily, weekly, fortnightly or monthly basis
+      </router-link>
+      <router-link style="text-decoration:none" to="/Services">
+        <div id="privateDomesticArea" class="IconArea" v-on:click="ServiceClick(3)">
+          <div class="IconBottomRight"></div>
+          <div class="IconBottomLeft"></div>
+          <div class="IconTopRight"></div>
+          <div class="IconTopLeft"></div>
+          <img class="Icon" src="../../assets/images/Icons/Invoice.png" alt="None">
+          <div class="Title"> Invoice | Billing</div>
+          <div class="SubTitle">
+            If you are always behind in sending out your invoices or you find it difficult to find the time to do them,
+            we can professionally process invoices on a daily, weekly, fortnightly or monthly basis
+          </div>
         </div>
-      </div>
+      </router-link>
       <div class="Break"></div>
     </div>
 
@@ -55,7 +63,18 @@
 
 <script>
     export default {
-        name: "IconStrip"
+        name: "IconStrip",
+        data() {
+          return {
+
+          }
+        },
+        methods: {
+            ServiceClick(Int) {
+                this.$cookie.set('Service', Int, { expires: '10m' });
+            },
+
+        },
     }
 </script>
 
@@ -68,6 +87,7 @@
   grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
   display: grid;
   justify-items: center;
+  text-align: center;
 
 }
   .Icon {
@@ -104,8 +124,9 @@
     -2px -1px 0 whitesmoke;
 
     border-radius: 60%;
-    transform: translate(0, -3vh);
-    max-width: 15vw;
+    transform: translate(-2vw, -3vh);
+    //max-width: 1vw;
+    width: 17vw;
     font-size: 1.4vw;
     font-family: 'Play', sans-serif;
     transition: 0.7s;
@@ -121,9 +142,13 @@
   .SubTitle {
     font-size: 0.8vw;
     transform: translate(0, -2vh);
-
+    color: black;
     font-family: 'Roboto', sans-serif;
   }
+  .SubTitle:hover {
+    text-decoration: none;
+  }
+
 
 
 .IconTopLeft, .IconTopRight, .IconBottomLeft, .IconBottomRight {

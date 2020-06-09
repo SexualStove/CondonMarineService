@@ -20,7 +20,9 @@
     export default {
         name: "HomeSplashScreen",
         data() {
+          return {
 
+          }
         },
         mounted() {
 

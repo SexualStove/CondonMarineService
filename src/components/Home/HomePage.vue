@@ -10,7 +10,7 @@
       <div id="line"></div>
     </div>
     <div id="Splash">
-      <Navbar id="NavArea" style="z-index: 4"></Navbar>
+      <Navbar id="NavArea" style="z-index: 4" v-bind:Animation="true"></Navbar>
      <HomeSplashScreen style="z-index: -1"></HomeSplashScreen>
       <div class="Divider">
         <div class="LineDivider"></div>
@@ -66,7 +66,9 @@
             HomeContact,
             HomeRecomendations, HomeAbout, HomePageTitle, IconStrip, Navbar, HomeSplashScreen},
         data() {
-
+          return {
+            AnimateNav: true,
+          }
         },
         mounted() {
             var LogoStringTimeline = new TimelineMax({});

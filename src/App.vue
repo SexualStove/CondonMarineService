@@ -19,9 +19,11 @@ export default {
   methods: {
     onResize () {
       this.isMobile = window.innerWidth < 800;
-
       EventBus.$emit('MobileSize', this.isMobile);
     }
+  },
+  beforeMount() {
+      this.$cookie.set('Service', -1, { expires: '10m' });
   },
   mounted() {
     let self = this;
