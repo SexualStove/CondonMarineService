@@ -3,7 +3,7 @@
     <div id="IconStrip">
       <div class="Break"></div>
       <router-link style="text-decoration:none" to="/Services">
-        <div id="DebtArea" class="IconArea" v-on:click="ServiceClick(1)">
+        <div id="DebtArea" class="IconArea" v-on:click="ServiceClick(0)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>
@@ -16,7 +16,7 @@
         </div>
       </router-link>
       <router-link style="text-decoration:none"  to="/Services">
-        <div id="LitigationArea" class="IconArea" v-on:click="ServiceClick(0)">
+        <div id="LitigationArea" class="IconArea" v-on:click="ServiceClick(1)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>
