@@ -60,9 +60,7 @@
         name: "ServiceIcons",
         methods: {
           async ChangeService(Int) {
-
               this.$cookie.set('Service', Int, {expires: '10m'});
-
               EventBus.$emit('Service', Int);
 
           }

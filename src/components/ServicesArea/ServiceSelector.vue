@@ -1,30 +1,36 @@
 <template>
   <div id="Selector">
     <div id="Title"> <router-link to="/Services"> Services </router-link> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(1)"> <a href="/Services/ServiceArea">  Debt Collection </a> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(0)"> <a href="/Services/ServiceArea">  Ledger Management </a> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(2)"> <a href="/Services/ServiceArea">  Credit Checking </a> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(3)"> <a href="/Services/ServiceArea">   Invoice | Billing </a>> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(4)"> <a href="/Services/ServiceArea">   Credit Controls </a> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(5)"> <a href="/Services/ServiceArea">   Credit application forms and Terms of Trade </a> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(6)"> <a href="/Services/ServiceArea">   P P S R </a> </div>
-    <div class="SubTitle" v-on:mousedown="ChangeService(7)"> <a href="/Services/ServiceArea">   Full Customer/Debtor Management </a></div>
+    <div class="SubTitle" v-on:click="ChangeService(1)">   Debt Collection  </div>
+    <div class="SubTitle" v-on:click="ChangeService(0)"> Ledger Management  </div>
+    <div class="SubTitle" v-on:click="ChangeService(2)">Credit Checking  </div>
+    <div class="SubTitle" v-on:click="ChangeService(3)">Invoice | Billing  </div>
+    <div class="SubTitle" v-on:click="ChangeService(4)"> Credit Controls  </div>
+    <div class="SubTitle" v-on:click="ChangeService(5)">  Credit application forms and Terms of Trade  </div>
+    <div class="SubTitle" v-on:click="ChangeService(6)"> P P S R  </div>
+    <div class="SubTitle" v-on:click="ChangeService(7)"> Full Customer/Debtor Management</div>
   </div>
 </template>
 
 <script>
+    import {EventBus} from "../../App";
     export default {
         name: "ServiceSelector",
         data() {
             return {
-
+              Int: 0,
             }
         },
         methods: {
             async ChangeService(Int)
             {
                 this.$cookie.set('Service', Int, {expires: '10m'});
+                this.Int = Int;
+                EventBus.$emit('Service', Int);
             }
+        },
+        mounted() {
+
         }
     }
 </script>
@@ -41,5 +47,7 @@
     margin-top: 2vh;
     margin-bottom: 2vh;
     font-size: 1.4vw;
+    color: black;
+    cursor: pointer;
   }
 </style>

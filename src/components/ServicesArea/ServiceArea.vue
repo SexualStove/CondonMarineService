@@ -70,7 +70,7 @@
                     'Invoice | Billing',
                     'Credit Control',
                     'Forms and Terms of Trade',
-                    'Personal Property Security Registration and Searches',
+                    'Personal Property Security Registration & Searches',
                     'Full Customer/Debtor Management'
                 ],
                 Desc: [
@@ -182,11 +182,10 @@
         },
 
         mounted() {
-
-
+            let self = this;
             EventBus.$on('Service', changed => {
+                console.log("Did this even ping!?");
                 self.CurrentService = changed;
-
             });
         }
     }

@@ -16,8 +16,6 @@
 </template>
 
 <script>
-    import JQuery from 'jquery';
-    let $ = JQuery;
     import {EventBus} from "../../App";
     import ServiceSplashPage from "./ServiceSplashPage";
 
@@ -39,9 +37,6 @@
             let self = this;
             EventBus.$on('Service', changed => {
                 self.ServiceAreaOn = changed;
-                $('html, body').animate({
-                    scrollTop: $('#PageArea').offset().top
-                }, 2000);
             });
         }
     }
