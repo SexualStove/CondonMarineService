@@ -23,7 +23,7 @@ export default {
     }
   },
   beforeMount() {
-      this.$cookie.set('Service', -1, { expires: '10m' });
+
   },
   mounted() {
     let self = this;

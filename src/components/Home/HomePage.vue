@@ -2,7 +2,7 @@
   <div>
     <div id="Top-Info" class="Contact-Top-Box" style="background-color: black; position: relative; ">
 
-      <h2 class="Contact-Top Top-Text" style="color: white">  0800 2 BE PAID (0800 223 724) </h2>
+      <h2 class="Contact-Top Top-Text" style="color: white">  0800 223 724 </h2>
       <h2 class="Contact-Top Top-Text" style="color: white"> PO Box 447, Rangiora, 7440 </h2>
 
       <b-button class="Contact-Top" id="PortalButton" style="color: white" variant="outline-danger">Pay Now</b-button>

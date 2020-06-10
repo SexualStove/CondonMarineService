@@ -1,21 +1,52 @@
 <template>
-  <div id="WholeArea">
-    <div style="height: 15vh"></div>
-    <div id="PageArea" v-bind:style="{'min-height': this.Style[this.CurrentService]}">
-      <img class="Image" v-bind:src="this.images[this.CurrentService]" alt="None">
-      <div v-if="this.CurrentService < 6" class="Title">{{this.Title[this.CurrentService]}}</div>
-      <div v-if="this.CurrentService >= 6" class="Title2">{{this.Title[this.CurrentService]}}</div>
-      <div  ><pre class="Desc">{{this.Desc[this.CurrentService]}}</pre></div>
+  <div>
+    <div id="WholeArea">
+      <div id="Top-Info" class="Contact-Top-Box" style="background-color: black; position: relative; ">
+
+        <h2 class="Contact-Top Top-Text" style="color: white">  0800 2 BE PAID (0800 223 724) </h2>
+        <h2 class="Contact-Top Top-Text" style="color: white"> PO Box 447, Rangiora, 7440 </h2>
+
+        <b-button class="Contact-Top" id="PortalButton" style="color: white" variant="outline-danger">Pay Now</b-button>
+
+        <div id="line"></div>
+      </div>
+      <navbar style="width: 100vw" :Animation="NoAnimation"></navbar>
+      <div style="height: 15vh"></div>
+      <div id="PageArea" v-bind:style="{'min-height': this.Style[this.CurrentService]}">
+        <div id="RightSide">
+          <img class="Image" v-bind:src="this.images[this.CurrentService]" alt="None">
+          <div v-if="this.CurrentService < 6" class="Title">{{this.Title[this.CurrentService]}}</div>
+          <div v-if="this.CurrentService >= 6" class="Title2">{{this.Title[this.CurrentService]}}</div>
+          <div  ><pre class="Desc">{{this.Desc[this.CurrentService]}}</pre></div>
+        </div>
+        <ServiceSelector id="LeftSide"></ServiceSelector>
+      </div>
     </div>
+    <div style="position: relative">
+      <div class="Divider">
+        <div class="LineDivider"></div>
+        <div id="Diamonds" style="transform: translateY(0.2vw) scaleY(-1)">
+          <div class="DiamondHolder">
+            <div class="diamond-shield"></div>
+          </div>
+          <div class="DiamondHolderW">
+            <div class="diamond-shieldW"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <home-footer></home-footer>
   </div>
 </template>
 
 <script>
-    import JQuery from 'jquery';
-    let $ = JQuery;
     import {EventBus} from "../../App";
+    import HomeFooter from "../Home/HomeFooter";
+    import Navbar from "../Global/Navbar";
+    import ServiceSelector from "./ServiceSelector";
     export default {
         name: "ServiceArea",
+        components: {ServiceSelector, Navbar, HomeFooter},
         data() {
             return {
                 Load: false,
@@ -139,24 +170,19 @@
             }
         },
         beforeMount() {
-            if(this.$cookie.get('Service') === null) {
-                this.CurrentService = 0;
-            } else {
-                this.CurrentService = this.$cookie.get('Service');
-            }
-            this.Load = false;
+          if(this.$cookie.get('Service') === null) {
+              this.CurrentService = 1;
+          } else {
+              this.CurrentService = this.$cookie.get('Service');
+          }
+
+          this.Load = false;
 
 
         },
 
         mounted() {
-            if(this.Load === false) {
-                $('html, body').animate({
-                    scrollTop: $('#PageArea').offset().top
-                }, 2000);
-                this.Load = true;
-            }
-            var self = this;
+
 
             EventBus.$on('Service', changed => {
                 self.CurrentService = changed;
@@ -167,22 +193,196 @@
 </script>
 
 <style scoped>
+  .Divider {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 100;
+    transform: translateY(-0.4vh);
+  }
+  .LineDivider {
+    position: absolute;
+    background-color: #1d2f6f;
+    width: 100%;
+    height: 1vh;
+    transform: translateY(-0.5vh);
+  }
+
+  .DiamondHolderW, .DiamondHolder {
+    left: 47.4%;
+  }
+
+  .DiamondHolder {
+    position: absolute;
+
+    transform: translateY(-2vh);
+  }
+
+
+  .diamond-shield {
+    width: 0;
+    height: 0;
+    border: 2vw solid transparent;
+    border-bottom: 0.9vw solid #1d2f6f;
+    position: relative;
+    top: -2vw;
+  }
+  .diamond-shield:after {
+    content: '';
+    position: absolute;
+    left: -2vw;
+    top: 0.85vw;
+    width: 0;
+    height: 0;
+    border: 2vw solid transparent;
+    border-top: 2.9vw solid #1d2f6f;
+  }
+
+  .diamond-shieldW {
+    width: 0;
+    height: 0;
+    border: 1.5vw solid transparent;
+    border-bottom: 0.5vw solid whitesmoke;
+    position: relative;
+    top: -1.5vw;
+  }
+  .diamond-shieldW:after {
+    content: '';
+    position: absolute;
+    left: -1.5vw;
+    top: 0.48vw;
+    width: 0;
+    height: 0;
+    border: 1.5vw solid transparent;
+    border-top: 2.4vw solid whitesmoke;
+  }
+
+  .Diamond {
+    border-style: solid;
+    border-color: transparent transparent #1d2f6f transparent;
+    border-width: 0 1vw 1vw 1vw;
+    height: 0;
+    width: 2vw;
+    box-sizing: content-box;
+    position: relative;
+    margin: 0.8vw 0 2vw 0;
+  }
+  #Diamond:after {
+    content: "";
+    position: absolute;
+    top: 1vw;
+    left: -1vw;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #1d2f6f transparent transparent transparent;
+    border-width: 2.8vw 2vw 0 2vw;
+  }
+
+  .DiamondHolderW {
+    position: absolute;
+    transform: translate(0.5vw, -1vh) scale(0.9);
+  }
+  #DiamondW {
+    border-style: solid;
+    border-color: transparent transparent whitesmoke transparent;
+    border-width: 0 1vw 1vw 1vw;
+    height: 0;
+    width: 2vw;
+    box-sizing: content-box;
+    position: relative;
+    margin: 0.8vw 0 2vw 0;
+  }
+  #DiamondW:after {
+    content: "";
+    position: absolute;
+    top: 1vw;
+    left: -1vw;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: whitesmoke transparent transparent transparent;
+    border-width: 2.8vw 2vw 0 2vw;
+  }
+  .Contact-Top {
+    display: inline-block;
+    font-size: 1vw;
+    color: whitesmoke;
+    padding-right: 3vw;
+
+    font-family: 'Play', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+  }
+
+  #line {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40vw;
+    height: 1px;
+    background-color: #e71d36;
+  }
+  #Top-Info {
+    padding: 0.5vw;
+    text-align: right;
+    justify-items: right;
+    background-color: black;
+    position: relative;
+    font-family: 'Play', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+  }
+  .Top-Text {
+    transform: translateY(0.5vw);
+  }
+
+
+
+
+
+
+
+
+
+
+
   #WholeArea {
     background-image: url("../../assets/images/Patterns/dot-grid-white.png");
     background-size: 15%;
     overflow: hidden;
   }
 #PageArea {
-
   width: 100vw;
   position: relative;
-  margin-bottom: 10vh;
+  //margin-bottom: 10vh;
+  display: grid;
+  grid-template-columns: 20% 70%;
+  grid-template-areas: "Left Right";
+}
+#RightSide {
+  position: relative;
+  grid-area: Right;
+}
+#LeftSide {
+  grid-area: Left;
+  justify-content: center;
+  justify-items: center;
+  text-align: left;
+  color: white;
+  padding-left: 1vw;
+///background-image: url("../../assets/images/Patterns/dot-grid-blue.png");
+  background-image: url("../../assets/images/Patterns/dot-grid-blue.png");
+  background-size: 15%;
+  width: 20vw;
+  height: 80vh;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
 }
 .Title {
-  top: 30%;
+  top: 13%;
 }
 .Title2 {
-  top: 12%;
+  line-height: 80%;
+  top: 3%;
 }
 .Title, .Title2 {
   color: black;
@@ -219,9 +419,9 @@
   .Image {
     position: absolute;
     opacity: 0.4;
-    top: 2%;
-    left: 2%;
-    width: 30%;
+    top: -10%;
+    left: 0%;
+    width: 40%;
   }
 
   .Desc {
@@ -229,8 +429,8 @@
     font-size: 1.2vw;
     text-align: left;
     position: absolute;
-    width: 67%;
-    top: 55vh;
+    width: 85%;
+    top: 29vh;
     left: 20%;
     padding: 1%;
     background-image: url("../../assets/images/Patterns/dot-grid-white.png");

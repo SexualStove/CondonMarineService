@@ -1,7 +1,7 @@
 <template>
   <div>
     <ServiceSplashPage></ServiceSplashPage>
-    <div v-if="ServiceAreaOn >= 0" class="Divider">
+    <div v-if="ServiceAreaOn < -99" class="Divider">
       <div class="LineDivider"></div>
       <div class="DiamondHolder">
         <div class="diamond-shield"></div>
@@ -10,21 +10,8 @@
         <div class="diamond-shieldW"></div>
       </div>
     </div>
-    <ServiceArea v-if="ServiceAreaOn >= 0"></ServiceArea>
-    <div v-if="ServiceAreaOn >= 0" style="position: relative">
-      <div class="Divider">
-        <div class="LineDivider"></div>
-        <div id="Diamonds" style="transform: translateY(0.2vw) scaleY(-1)">
-          <div class="DiamondHolder">
-            <div class="diamond-shield"></div>
-          </div>
-          <div class="DiamondHolderW">
-            <div class="diamond-shieldW"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <HomeFooter v-if="ServiceAreaOn >= 0"></HomeFooter>
+
+
   </div>
 </template>
 
@@ -33,11 +20,10 @@
     let $ = JQuery;
     import {EventBus} from "../../App";
     import ServiceSplashPage from "./ServiceSplashPage";
-    import ServiceArea from "./ServiceArea";
-    import HomeFooter from "../Home/HomeFooter";
+
     export default {
         name: "ServicePage",
-        components: {HomeFooter, ServiceArea, ServiceSplashPage},
+        components: {ServiceSplashPage},
         data() {
             return {
                 ServiceAreaOn: -1,

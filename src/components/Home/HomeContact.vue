@@ -19,7 +19,7 @@
       <div class="RSA" id="Office">
         <img class="Image" id="HoursImages" src="../../assets/images/Icons/TimeIcon.png" alt="None">
         <div class="Text">
-          Bussiness Hours: <br>
+          Business Hours: <br>
           Mon-Fri 	09:00-05:00
         </div>
 
@@ -33,7 +33,7 @@
 
       </div>
       <div class="RSA" id="Phone">
-        <img style="transform: translate(1vw, -1vw);" class="Image" id="PhoneHours" src="../../assets/images/Icons/PhoneIcon.png" alt="None">
+        <img style="transform: translate(1vw, -1vw);" class="Image" id="PhoneHours" src="../../assets/images/Icons/PhoneIconNorm.png" alt="None">
         <div class="Text">
         0800 223 724
         </div>

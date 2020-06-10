@@ -3,6 +3,7 @@ import Router from 'vue-router'
 //import CreateBlog from '@/components/CreateBlog'
 import HomePage from '@/components/Home/HomePage'
 import Services from '@/components/ServicesArea/ServicePage'
+import ServicesArea from '@/components/ServicesArea/ServiceArea'
 //import OurServices from '@/components/OurServicesGroup/OurServices'
 //import ContactUSPage from '@/components/ContactUsGroup/ContactUsPage'
 //import Blog from '@/components/Blog'
@@ -27,16 +28,19 @@ export default new Router({
   },
   routes: [
     {
-
       path: '',
       name: 'HomePage',
       component: HomePage
     },
     {
-
       path: '/Services',
       name: 'Services',
       component: Services
+    },
+    {
+      path: '/Services/ServiceArea',
+      name: 'ServiceArea',
+      component: ServicesArea
     },
   ]
 })

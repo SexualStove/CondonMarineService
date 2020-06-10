@@ -1,36 +1,54 @@
 <template>
   <div id="IconsArea">
-    <div id="DebtCollection" class="Service" v-on:click="ChangeService(1)">
-      <img class="Icon" src="../../assets/images/Icons/Litigation.png" alt="None">
-      <div class="Title"> Debt Collection</div>
+
+    <div id="DebtCollection" class="Service" v-on:mousedown="ChangeService(1)">
+      <router-link to="/Services/ServiceArea">
+        <img class="Icon" src="../../assets/images/Icons/Litigation.png" alt="None">
+        <div class="Title"> Debt Collection</div>
+      </router-link>
     </div>
-    <div id="LedgerManagement" class="Service" v-on:click="ChangeService(0)">
-      <img class="Icon" src="../../assets/images/Icons/DebtCollection.png" alt="None">
-      <div class="Title"> Ledger Management </div>
+
+    <div id="LedgerManagement" class="Service" v-on:mousedown="ChangeService(0)">
+      <router-link to="/Services/ServiceArea">
+        <img class="Icon" src="../../assets/images/Icons/DebtCollection.png" alt="None">
+        <div class="Title"> Ledger Management </div>
+      </router-link>
     </div>
-    <div id="CreditChecking" class="Service" v-on:click="ChangeService(2)">
+    <div id="CreditChecking" class="Service" v-on:mousedown="ChangeService(2)">
+      <router-link to="/Services/ServiceArea">
       <img class="Icon" src="../../assets/images/Icons/BussinessInvestigation.png" alt="None">
       <div class="Title"> Credit Checking </div>
+      </router-link>
     </div>
-    <div id="Invoice" class="Service" v-on:click="ChangeService(3)">
+    <div id="Invoice" class="Service" v-on:mousedown="ChangeService(3)">
+      <router-link to="/Services/ServiceArea">
       <img class="Icon" src="../../assets/images/Icons/Invoice.png" alt="None">
       <div class="Title"> Invoice | Billing</div>
+      </router-link>
     </div>
-    <div id="CreditControl" class="Service" v-on:click="ChangeService(4)">
+    <div id="CreditControl" class="Service" v-on:mousedown="ChangeService(4)">
+      <router-link to="/Services/ServiceArea">
       <img class="Icon" src="../../assets/images/Icons/CreditIcon.png" alt="None">
       <div class="Title">Credit Control</div>
+      </router-link>
     </div>
-    <div id="CreditApplication" class="Service" v-on:click="ChangeService(5)">
+    <div id="CreditApplication" class="Service" v-on:mousedown="ChangeService(5)">
+      <router-link to="/Services/ServiceArea">
       <img class="Icon" src="../../assets/images/Icons/ApplactionIcon.png" alt="None">
       <div class="Title"> Forms and <br>Terms of Trade </div>
+      </router-link>
     </div>
-    <div id="PPSR" class="Service" v-on:click="ChangeService(6)">
+    <div id="PPSR" class="Service" v-on:mousedown="ChangeService(6)">
+      <router-link to="/Services/ServiceArea">
       <img class="Icon" src="../../assets/images/Icons/PropSecurityIcon.png" alt="None">
       <div class="Title"> P P S R </div>
+      </router-link>
     </div>
-    <div id="Management" class="Service" v-on:click="ChangeService(7)">
+    <div id="Management" class="Service" v-on:mousedown="ChangeService(7)">
+      <router-link to="/Services/ServiceArea">
       <img class="Icon" src="../../assets/images/Icons/ManagmentIcon.png" alt="None">
       <div class="Title">Customer/Debtor <br>Management</div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -42,9 +60,9 @@
         name: "ServiceIcons",
         methods: {
           async ChangeService(Int) {
-              if (this.$cookie.get('Service') < 0) {
-                  this.$cookie.set('Service', Int, {expires: '10m'});
-              }
+
+              this.$cookie.set('Service', Int, {expires: '10m'});
+
               EventBus.$emit('Service', Int);
 
           }

@@ -5,6 +5,10 @@
         <img id="LogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </router-link>
     </div>
+    <div id="LogoPad">
+      With Offices now in Invercargill, Dunedin and Christchurch. <br>
+      And agents from every island in NZ to every territory in Australia
+    </div>
 
       <div class="NavItem" id="Services">
         <router-link style="text-decoration:none; color: white" to="/Services">
@@ -73,6 +77,13 @@
    display: grid;
    background: linear-gradient(to top, transparent 0%, black 100%);
    font-size: 1.5vw;
+ }
+ #LogoPad {
+   justify-items: center;
+   grid-area: LogoPad;
+   font-size: 1vw;
+   text-align: center;
+   transform: translateY(-5vh);
  }
   #Logo {
     justify-items: center;
