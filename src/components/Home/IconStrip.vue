@@ -41,8 +41,8 @@
           </div>
         </div>
       </router-link>
-      <router-link style="text-decoration:none" to="/Services">
-        <div id="privateDomesticArea" class="IconArea" v-on:click="ServiceClick(3)">
+      <router-link style="text-decoration:none" to="/Services/ServiceArea">
+        <div id="privateDomesticArea" class="IconArea" v-on:mousedown="ServiceClick(3)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>

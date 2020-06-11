@@ -8,8 +8,21 @@
     <div style="transform: translateY(7vw);">
 
     <div id="ButtonArea">
-      <div id="Button1" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6 button"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Ledger management</a> </div>
-      <div id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6 button"> <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Collections</a> </div>
+
+      <div id="Button1" v-on:mousedown="ServiceClick2(0)" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6 button">
+        <router-link style="text-decoration: none; color: white" to="/Services/ServiceArea">
+        <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">
+        Ledger management
+      </a> </router-link> </div>
+
+
+
+      <div v-on:mousedown="ServiceClick2(1)" id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6 button">
+        <router-link  style="text-decoration: none; color: white" to="/Services/ServiceArea">
+        <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">
+        Collections
+      </a> </router-link> </div>
+
     </div>
     </div>
   </div>
@@ -18,11 +31,11 @@
 <script>
     import {  TimelineMax } from "gsap"
     export default {
-        name: "HomeSplashScreen",
+        name: "HomePageTitle",
         data() {
-          return {
+            return {
 
-          }
+            }
         },
         mounted() {
 
@@ -31,7 +44,14 @@
                 '#Title', 2, {translateY: '2vw', opacity: 0}).from('#SubTitle', 2, {opacity: 0, translateY: '-2vw'}, '-=1').from(
                 '#Button1', 2, {opacity: 0}, '-=2').from('#Button2', 2, {opacity: 0}, '-=2'
             );
-        }
+        },
+        methods: {
+            ServiceClick2(Int) {
+                console.log("Ahhhhhh")
+                this.$cookie.set('Service', Int, { expires: '10m' });
+            },
+
+        },
     }
 
 </script>

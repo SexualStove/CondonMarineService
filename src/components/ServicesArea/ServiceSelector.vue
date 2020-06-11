@@ -22,7 +22,8 @@
             }
         },
         methods: {
-            async ChangeService(Int)
+
+            ChangeService(Int)
             {
                 this.$cookie.set('Service', Int, {expires: '10m'});
                 this.Int = Int;
@@ -40,9 +41,13 @@
 
 }
   #Title {
+    padding-top: 5vh;
     font-size: 2vw;
+    color: black;
+    font-family: 'Play', sans-serif;
   }
   .SubTitle {
+    font-family: 'Play', sans-serif;
     margin-left: 2vw;
     margin-top: 2vh;
     margin-bottom: 2vh;

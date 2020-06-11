@@ -33,6 +33,10 @@ export default new Router({
       component: HomePage
     },
     {
+      path: '/*',
+      redirect: { name: 'route-name' }
+    },
+    {
       path: '/Services',
       name: 'Services',
       component: Services
