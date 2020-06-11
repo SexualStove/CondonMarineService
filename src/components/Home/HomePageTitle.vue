@@ -18,10 +18,9 @@
 
 
       <div v-on:mousedown="ServiceClick2(1)" id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6 button">
-        <router-link  style="text-decoration: none; color: white" to="/Services/ServiceArea">
-        <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">
+        <router-link to="/Services/ServiceArea" style="border-radius: 30px; text-decoration: none; color: white" class="btn btn-sm animated-button thar-two">
         Collections
-      </a> </router-link> </div>
+       </router-link> </div>
 
     </div>
     </div>

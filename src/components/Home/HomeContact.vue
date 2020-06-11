@@ -1,8 +1,21 @@
 <template>
   <div id="Wrapper">
+    <div id="MoreAreas">
+      <img src="../../assets/images/Icons/LocationIcon.png" id="AreaIcon">
+      <div id="Text">
+        <div class="STitle"> Offices: </div>
+        Invercargill<br>
+        Dunedin<br>
+        Christchurch<br>
+        <br>
+        <br>
+        <div class="STitle"> Agents in: </div>
+        New Zealand<br>
+        Australia<br>
+      </div>
+    </div>
     <div id="Header"> Let's Talk </div>
     <div id="LeftSide">
-
       <div id="ContactCard">
         <div id="ContactTitle"> Quick Enquiries </div>
         <form id="form" class="topBefore" >
@@ -57,7 +70,51 @@
 </script>
 
 <style scoped>
-
+  #MoreAreas {
+    position: absolute;
+    transform: translate(144%, 17%);
+  }
+  #AreaIcon {
+    width: 75%;
+    opacity: 0.5;
+  }
+  .STitle {
+    transform: translateX(15%);
+    font-size: 3.4vw;
+  }
+  #Text {
+    transform: translate(0,-110%);
+    position: absolute;
+    font-family: 'Play', sans-serif;
+    font-size: 2.4vw;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 whitesmoke,
+    -1px 1px 0 whitesmoke,
+    1px -1px 0 whitesmoke,
+    -1px -1px 0 whitesmoke,
+    0px 1px 0 whitesmoke,
+    0px -1px 0 whitesmoke,
+    -1px 0px 0 whitesmoke,
+    1px 0px 0 whitesmoke,
+    2px 2px 0 whitesmoke,
+    -2px 2px 0 whitesmoke,
+    2px -2px 0 whitesmoke,
+    -2px -2px 0 whitesmoke,
+    0px 2px 0 whitesmoke,
+    0px -2px 0 whitesmoke,
+    -2px 0px 0 whitesmoke,
+    2px 0px 0 whitesmoke,
+    1px 2px 0 whitesmoke,
+    -1px 2px 0 whitesmoke,
+    1px -2px 0 whitesmoke,
+    -1px -2px 0 whitesmoke,
+    2px 1px 0 whitesmoke,
+    -2px 1px 0 whitesmoke,
+    2px -1px 0 whitesmoke,
+    -2px -1px 0 whitesmoke;
+    z-index: 1;
+    text-align: right;
+  }
   #Wrapper {
     background-image: url("../../assets/images/Patterns/dot-grid-blue.png");
     background-size: 15%;
@@ -68,8 +125,9 @@
     padding: 2.5vw 2.5vw 1vw 2.5vw;
   }
   #RightSide {
+    transform: translateX(-15%);
     display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 40%;
     height: 100%;
     justify-items: right;
     align-items: center;
@@ -89,8 +147,6 @@
     padding: 2vw 15vw 2vw 4vw;
     position: relative;
     text-align: left;
-
-
   }
   .Text {
     font-size: 1.9vw;

@@ -32,10 +32,7 @@ export default new Router({
       name: 'HomePage',
       component: HomePage
     },
-    {
-      path: '/*',
-      redirect: { name: 'route-name' }
-    },
+
     {
       path: '/Services',
       name: 'Services',
