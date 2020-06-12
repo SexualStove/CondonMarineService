@@ -15,8 +15,9 @@
       <div id="PageArea" v-bind:style="{'min-height': this.Style[this.CurrentService]}">
         <div id="RightSide">
           <img class="Image" v-bind:src="this.images[this.CurrentService]" alt="None">
-          <div v-if="this.CurrentService < 6 | this.CurrentService > 7" class="Title">{{this.Title[this.CurrentService]}}</div>
-          <div v-if="this.CurrentService === 6 | this.CurrentService === 7" class="Title2">{{this.Title[this.CurrentService]}}</div>
+          <div v-if="this.CurrentService < 5 | this.CurrentService > 7" class="Title">{{this.Title[this.CurrentService]}}</div>
+          <div v-if="this.CurrentService === 5 | this.CurrentService === 7" class="Title2">{{this.Title[this.CurrentService]}}</div>
+          <div v-if="this.CurrentService === 6" class="Title3">{{this.Title[this.CurrentService]}}</div>
           <div  ><pre class="Desc">{{this.Desc[this.CurrentService]}}</pre></div>
         </div>
         <ServiceSelector id="LeftSide"></ServiceSelector>
@@ -393,10 +394,14 @@
   top: 13%;
 }
 .Title2 {
-  line-height: 80%;
-  top: 3%;
+  line-height: 85%;
+  top: 5%
 }
-.Title, .Title2 {
+.Title3 {
+  line-height: 85%;
+  top: 0;
+}
+.Title, .Title2, .Title3 {
   color: black;
   font-family: 'Play', sans-serif;
   font-size: 5vw;

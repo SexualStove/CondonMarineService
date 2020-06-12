@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Costings" beforeDir="false" afterPath="$PROJECT_DIR$/Costings" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -60,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="448" column="21" selection-start-line="448" selection-start-column="21" selection-end-line="448" selection-end-column="21" />
+              <caret line="397" column="8" selection-start-line="397" selection-start-column="8" selection-end-line="397" selection-end-column="8" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -381,12 +379,12 @@
       <workItem from="1591439054573" duration="43807000" />
       <workItem from="1591757859344" duration="121000" />
       <workItem from="1591762019061" duration="9385000" />
-      <workItem from="1591865839633" duration="14089000" />
+      <workItem from="1591865839633" duration="14659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="230813000" />
+    <option name="totallyTimeSpent" value="231383000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,7 +399,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32249466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32249466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -420,7 +418,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -812,7 +810,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="448" column="21" selection-start-line="448" selection-start-column="21" selection-end-line="448" selection-end-column="21" />
+          <caret line="397" column="8" selection-start-line="397" selection-start-column="8" selection-end-line="397" selection-end-column="8" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
