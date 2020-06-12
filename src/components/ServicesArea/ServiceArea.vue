@@ -15,8 +15,8 @@
       <div id="PageArea" v-bind:style="{'min-height': this.Style[this.CurrentService]}">
         <div id="RightSide">
           <img class="Image" v-bind:src="this.images[this.CurrentService]" alt="None">
-          <div v-if="this.CurrentService < 6" class="Title">{{this.Title[this.CurrentService]}}</div>
-          <div v-if="this.CurrentService >= 6" class="Title2">{{this.Title[this.CurrentService]}}</div>
+          <div v-if="this.CurrentService < 6 | this.CurrentService > 7" class="Title">{{this.Title[this.CurrentService]}}</div>
+          <div v-if="this.CurrentService === 6 | this.CurrentService === 7" class="Title2">{{this.Title[this.CurrentService]}}</div>
           <div  ><pre class="Desc">{{this.Desc[this.CurrentService]}}</pre></div>
         </div>
         <ServiceSelector id="LeftSide"></ServiceSelector>
@@ -61,6 +61,10 @@
                     require('../../assets/images/Icons/ApplactionIcon.png') ,
                     require('../../assets/images/Icons/PropSecurityIcon.png') ,
                     require('../../assets/images/Icons/ManagmentIcon.png') ,
+                    require('../../assets/images/Icons/FeildVisitsIcon.png'),
+                    require('../../assets/images/Icons/BackgroundCheckIcon.png'),
+                    require('../../assets/images/Icons/InvestigationsIcon.png'),
+                    require('../../assets/images/Icons/DocumentServingIcon.png'),
                 ],
                 Title: [
 
@@ -71,7 +75,11 @@
                     'Credit Control',
                     'Forms and Terms of Trade',
                     'Personal Property Security Registration & Searches',
-                    'Full Customer/Debtor Management'
+                    'Full Customer/Debtor Management',
+                    'Field Visits',
+                    'Background Checks',
+                    'Investigations',
+                    'Document Serving'
                 ],
                 Desc: [
 
@@ -155,7 +163,11 @@
                     '\n' +
                     'Secure off-site storage of your crucial billing and customer records - your information is safe even if there is a fire or burglary or other disaster at your premises \n' +
                     '\n' +
-                    'Reduction of risk of fraud by employees - because we are keeping an eye on the money that is coming in, there is less risk of it being syphoned off by an unscrupulous employee.'
+                    'Reduction of risk of fraud by employees - because we are keeping an eye on the money that is coming in, there is less risk of it being syphoned off by an unscrupulous employee.',
+                    'None',
+                    'None',
+                    'None',
+                    'None'
                 ],
                 Style: [
                     '120vh',
@@ -372,7 +384,8 @@
   background-image: url("../../assets/images/Patterns/dot-grid-blue.png");
   background-size: 15%;
   width: 20vw;
-  height: 80vh;
+  height: 105vh;
+  margin-bottom: 5vh;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
 }
@@ -431,9 +444,9 @@
     width: 85%;
     top: 29vh;
     left: 20%;
-    padding: 1%;
+    padding: 2%;
     background-image: url("../../assets/images/Patterns/dot-grid-white.png");
-    border-radius: 50px;
+    border-radius: 25px;
     background-size: 30%;
     -moz-box-shadow: 0 0 10px black;
     -webkit-box-shadow: 0 0 3px black;

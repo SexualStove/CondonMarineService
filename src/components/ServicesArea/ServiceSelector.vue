@@ -1,6 +1,6 @@
 <template>
   <div id="Selector">
-    <div id="Title"> <router-link to="/Services"> Services </router-link> </div>
+    <div id="Title"> <router-link style="text-decoration: none; color: black" to="/Services"> Services </router-link> </div>
     <div class="SubTitle" v-on:click="ChangeService(1)">   Debt Collection  </div>
     <div class="SubTitle" v-on:click="ChangeService(0)"> Ledger Management  </div>
     <div class="SubTitle" v-on:click="ChangeService(2)">Credit Checking  </div>
@@ -9,6 +9,10 @@
     <div class="SubTitle" v-on:click="ChangeService(5)">  Credit application forms and Terms of Trade  </div>
     <div class="SubTitle" v-on:click="ChangeService(6)"> P P S R  </div>
     <div class="SubTitle" v-on:click="ChangeService(7)"> Full Customer/Debtor Management</div>
+    <div class="SubTitle" v-on:click="ChangeService(8)"> Field Visits </div>
+    <div class="SubTitle" v-on:click="ChangeService(9)"> Background checks </div>
+    <div class="SubTitle" v-on:click="ChangeService(10)"> Investigations</div>
+    <div class="SubTitle" v-on:click="ChangeService(11)"> Document Serving </div>
   </div>
 </template>
 
@@ -44,6 +48,7 @@
     padding-top: 5vh;
     font-size: 2vw;
     color: black;
+    font-weight: 700;
     font-family: 'Play', sans-serif;
   }
   .SubTitle {
