@@ -10,15 +10,19 @@
 
         <div id="line"></div>
       </div>
-      <navbar style="width: 100vw" :Animation="NoAnimation"></navbar>
+      <navbar style="width: 100vw" v-bind:Animation="false"></navbar>
       <div style="height: 15vh"></div>
       <div id="PageArea" v-bind:style="{'min-height': this.Style[this.CurrentService]}">
         <div id="RightSide">
-          <img class="Image" v-bind:src="this.images[this.CurrentService]" alt="None">
-          <div v-if="this.CurrentService < 5 | this.CurrentService > 7" class="Title">{{this.Title[this.CurrentService]}}</div>
-          <div v-if="this.CurrentService === 5 | this.CurrentService === 7" class="Title2">{{this.Title[this.CurrentService]}}</div>
-          <div v-if="this.CurrentService === 6" class="Title3">{{this.Title[this.CurrentService]}}</div>
-          <div  ><pre class="Desc">{{this.Desc[this.CurrentService]}}</pre></div>
+          <transition name="fade" >
+            <img class="Image" v-bind:src="this.images[this.CurrentService]" alt="None" :key="this.images[this.CurrentService]">
+          </transition>
+          <transition name="fade" >
+          <div :key="this.Title[this.CurrentService]" v-bind:style="{'top': this.Style2[this.CurrentService]}" class="Title">{{this.Title[this.CurrentService]}}</div>
+          </transition>
+          <transition name="fade">
+          <div :key="this.Desc[this.CurrentService]" ><pre class="Desc">{{this.Desc[this.CurrentService]}}</pre></div>
+          </transition>
         </div>
         <ServiceSelector id="LeftSide"></ServiceSelector>
       </div>
@@ -85,7 +89,9 @@
                 Desc: [
 
 
-                    'Need some kind of text',
+                    'We offer litigation support services – including scanning, OCR, coding and indexing, electronic discovery etc. We have a fully qualified legal team ready to support your company covering all aspects of work, and can reproduce and store legal documents and case files. \n\n'+
+                    'Our experience has taught us how best to approach legal action. Our legal team use a variety of tools – from a simple notice of claims through to filing for bankruptcy. Always we will ensure you’re 100% on board with our recommendation before any action is taken. \n\n'+
+                    'Approaching legal proceedings through Coast to Coast is likely to be significantly less expensive than working directly with a law firm. We’ll try to get a result in the shortest possible time, so that you’re not paying hours and hours of legal costs.',
 
 
                     'You may have your receivables under good control in-house - (if you haven\'t - we really need to talk) (0800 223 724)  but sometimes you have one that just will not pay and it\'s time to call in the big guns.\n' +
@@ -120,7 +126,7 @@
                     'If needed, we can create your quotations and then convert those quotations into invoices upon acceptance by your customer.\n' +
                     'If you would like more information on this service, please contact us. We will be very happy to customise the right solution for you. ',
 
-                    'We contact your customers on your behalf.  Your customers get regular, personalised serivce, and in most cases they don\'t need to know we are involved, except for paying you sooner!   Fast results that are more cost-effective than in-house credit control. More time to spend on making money - not chasing yesterdays.  A custom-designed credit control service ideally for businesses with 10 to 300 monthly debtors. \n \n'+
+                    'We contact your customers on your behalf.  Your customers get regular, personalised service, and in most cases they don\'t need to know we are involved, except for paying you sooner!   Fast results that are more cost-effective than in-house credit control. More time to spend on making money - not chasing yesterdays.  A custom-designed credit control service ideally for businesses with 10 to 300 monthly debtors. \n \n'+
                       'A monthly fee is charged for Credit Control based on the average number of debtors invoiced monthly (not the dollar value of the billing).  Calculated in the fee is an amount for phone, stationery and postage charges.  The total fee will depend on whether you typically have recurring trade customers or a mix of trade and retail customers and also whether your customers are mostly local or nationwide. We are happy to give you a no-obligation free quotation.',
 
                     'Comprehensive credit application forms and customised terms of trade\n' +
@@ -141,7 +147,7 @@
                     '\n' +
                     'Provided your Terms of Trade have the correct clauses, Be Paid Limited can arrange registration of all your completed credit applications or other security documents on the Personal Property Securities Register.\n' +
                     '\n' +
-                    'This register is maintained by the Companies Office and can only be accessed on-line.   We have been registering and maintaining security agreements on the regidster since the register began in 2002.\n' +
+                    'This register is maintained by the Companies Office and can only be accessed on-line.   We have been registering and maintaining security agreements on the register since the register began in 2002.\n' +
                     '\n' +
                     'Be Paid Limited - caring for your most important assets - your customers and your cash.',
 
@@ -165,10 +171,52 @@
                     'Secure off-site storage of your crucial billing and customer records - your information is safe even if there is a fire or burglary or other disaster at your premises \n' +
                     '\n' +
                     'Reduction of risk of fraud by employees - because we are keeping an eye on the money that is coming in, there is less risk of it being syphoned off by an unscrupulous employee.',
-                    'None',
-                    'None',
-                    'None',
-                    'None'
+
+
+                    'I honestly dont understand what this is',
+
+
+                    'Background checks covers the verification of someone and the negative records of that someone for employment/tenant screening or general due diligence purposes.\n' +
+                    '\n' +
+                    'Background investigations can get into an in-depth history and character of a subject.\n' +
+                    '\n' +
+                    'The kinds of information we can investigate include but are not limited to- past histories with family, neighbors, employers, friends, education, co-workers, professions, professional licenses, and much more. Our background investigations will help you to understand a character and profile of the one you send us to investigate.',
+
+
+
+
+                    'Research Investigation:\n\n' +
+                    'Investigators can conduct research in order to find information about companies that you do business with for acquisitions, mergers, joint ventures, venture capital, private equity, and investments. They can also perform in-depth employee background checks.\n\n' +
+                    'Financial Investigation:\n\n' +
+                    'An investigator conducting a financial investigation can discover embezzlement, money laundering, fraud, and other white collar crime.\n\n' +
+                    'Computer & Systems Investigation:\n\n' +
+                    'Our team of IT experts can undertake investigations into your computers, tablets, phones and networks, whether to uncover cyber crime, improper dealing, recover lost (or password protected) items, gain access to locked systems or restore lost data.\n' +
+                    'We have access to a full forensic data recovery lab and can offer recovery success rates higher than is normally available in the civilian market place.\n' +
+                    'We can also advise on systems security and implement measures to secure your network from unwanted action.\n\n' +
+                    '' +
+                    'Undercover Investigation:\n\n' +
+                    'By blending in with the company, an investigator can look into employee misconduct like theft, substance abuse, or harassment. Investigators will often use covert surveillance as a part of their inspection.',
+
+
+
+
+                    'We serve these types of documents:\n\n' +
+                    '• District Court Proceedings\n' +
+                    '• Divorce Proceedings (Dissolution of Marriage papers)\n' +
+                    '• Domestic Related documents\n' +
+                    '• Employment Court Proceedings\n' +
+                    '• Family Court orders\n' +
+                    '• High Court Proceedings\n' +
+                    '• Insolvency related documents\n' +
+                    '• Judgements\n' +
+                    '• New Zealand Family Proceedings Act 1980\n' +
+                    '• Orders for Examination\n' +
+                    '• Property Law Act Notices\n' +
+                    '• Property Related documents\n' +
+                    '• Protection Orders\n' +
+                    '• Statement of Claim, Notice of Proceeding, List of documents relied on\n' +
+                    '• Trespass Notices\n' +
+                    '• Witness Summons'
                 ],
                 Style: [
                     '120vh',
@@ -179,6 +227,24 @@
                     '120vh',
                     '120vh',
                     '180vh',
+                    '120vh',
+                    '120vh',
+                    '180vh',
+                    '120vh'
+                ],
+                Style2: [
+                  '13%',
+                    '13%',
+                    '13%',
+                    '13%',
+                    '13%',
+                    '7%',
+                    '0',
+                    '5%',
+                    '13%',
+                    '13%',
+                    '10%',
+                    '13%'
                 ]
             }
         },
@@ -387,6 +453,7 @@
   width: 20vw;
   height: 105vh;
   margin-bottom: 5vh;
+  padding-top: 5vh;
   border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
 }
@@ -402,6 +469,7 @@
   top: 0;
 }
 .Title, .Title2, .Title3 {
+  line-height: 85%;
   color: black;
   font-family: 'Play', sans-serif;
   font-size: 5vw;
@@ -458,5 +526,20 @@
     box-shadow: 0 0 5px black;
     white-space: pre-wrap !important; word-break: keep-all; border: 0; background-color: transparent;
   }
+
+
+  .fade-leave-active,
+  .fade-enter-active {
+    transition: 1s;
+  }
+  .fade-enter {
+    opacity: 0;
+    transform: translate(5%, 100%) scale(1.2);
+  }
+  .fade-leave-to {
+    opacity: 0;
+    transform: translate(-5%, 100%) scale(0.8);
+  }
+
 
 </style>

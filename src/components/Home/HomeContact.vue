@@ -1,5 +1,5 @@
 <template>
-  <div id="Wrapper">
+  <div id="ContactUs" herf="ContactUs">
     <div id="MoreAreas">
       <img src="../../assets/images/Icons/LocationIcon.png" id="AreaIcon">
       <div id="Text">
@@ -115,7 +115,7 @@
     z-index: 1;
     text-align: right;
   }
-  #Wrapper {
+  #ContactUs {
     background-image: url("../../assets/images/Patterns/dot-grid-blue.png");
     background-size: 15%;
     display: grid;

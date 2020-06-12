@@ -28,6 +28,7 @@
         <IconStrip></IconStrip>
         <HomeAbout style="box-shadow: inset 0 8px 6px -6px  rgba(0,0,0,0.2);"></HomeAbout >
         <HomeRecomendations style="box-shadow:  0 0 10px  rgba(0,0,0,0.2); z-index: 3"></HomeRecomendations>
+
         <HomeContact style="box-shadow: inset 0 8px 6px -6px  rgba(0,0,0,0.2); z-index: 1;"></HomeContact>
     <div style="position: relative">
         <div class="Divider">
@@ -42,7 +43,7 @@
           </div>
         </div>
     </div>
-        <HomeFooter></HomeFooter>
+        <HomeFooter ></HomeFooter>
 
 
   </div>
@@ -59,6 +60,8 @@
     import HomeRecomendations from "./HomeRecomendations";
     import HomeContact from "./HomeContact";
     import HomeFooter from "./HomeFooter";
+    import JQuery from 'jquery';
+    let $ = JQuery;
     export default {
         name: "HomePage",
         components: {
@@ -74,6 +77,20 @@
             var LogoStringTimeline = new TimelineMax({});
             LogoStringTimeline.from('#Top-Info', 4, {opacity: 0}, '+=3.5'
             );
+            function offsetAnchor() {
+                if (location.hash.length !== 0) {
+                    window.scrollTo(window.scrollX, window.scrollY - 300);
+                }
+            }
+
+            // Captures click events of all a elements with href starting with #
+            $(document).on('click', 'a[href^="#"]', function() {
+                window.setTimeout(function() {
+                    offsetAnchor();
+                }, 0);
+            });
+
+
         }
     }
 </script>

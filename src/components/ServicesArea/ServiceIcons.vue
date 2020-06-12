@@ -50,6 +50,37 @@
       <div class="Title">Customer/Debtor <br>Management</div>
       </router-link>
     </div>
+
+
+
+
+    <div id="FeildVisit" style="grid-area: A; transform: translateX(50%)" class="Service" v-on:mousedown="ChangeService(8)">
+      <router-link to="/Services/ServiceArea">
+        <img class="Icon" src="../../assets/images/Icons/FeildVisitsIcon.png" alt="None">
+        <div class="Title">Field Visits</div>
+      </router-link>
+    </div>
+
+    <div id="Background" style="grid-area: B; transform: translateX(75%)" class="Service" v-on:mousedown="ChangeService(9)">
+      <router-link to="/Services/ServiceArea">
+        <img class="Icon" src="../../assets/images/Icons/BackgroundCheckIcon.png" alt="None">
+        <div class="Title">Background Checks</div>
+      </router-link>
+    </div>
+
+    <div id="Invest" style="grid-area: C; transform: translateX(125%)" class="Service" v-on:mousedown="ChangeService(10)">
+      <router-link to="/Services/ServiceArea">
+        <img class="Icon" src="../../assets/images/Icons/InvestigationsIcon.png" alt="None">
+        <div class="Title">Investigations</div>
+      </router-link>
+    </div>
+
+    <div id="Doc" style="grid-area: D; transform: translateX(150%)" class="Service" v-on:mousedown="ChangeService(11)">
+      <router-link to="/Services/ServiceArea">
+        <img class="Icon" src="../../assets/images/Icons/DocumentServingIcon.png" alt="None">
+        <div class="Title">Document <br>Serving</div>
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -70,7 +101,8 @@
 
 <style scoped>
 #IconsArea {
-  height: 35vh;
+  overflow: hidden;
+  height: 50vh;
   width: 100%;
   border-radius: 40px 40px 0 0;
   background-image: url("../../assets/images/Patterns/dot-grid-white.png");
@@ -79,8 +111,11 @@
   bottom: 0;
   display: grid;
   grid-template-columns: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "1 2 3 4 5 6 7 8"
+ "P A B C D X X X";
   z-index: 10;
-  padding: 2vw;
+  padding: 0 2vw 0 2vw;
   align-items: center;
   align-content: center;
   justify-items: center;

@@ -9,7 +9,7 @@
 
       <div id="line"></div>
     </div>
-    <navbar style="width: 100vw" :Animation="NoAnimation"></navbar>
+    <navbar style="width: 100vw" v-bind:Animation="false"></navbar>
     <div id="Title"> Services </div>
     <ServiceIcons></ServiceIcons>
   </div>
@@ -41,10 +41,10 @@
   #Title {
     color: black;
     font-family: 'Play', sans-serif;
-    font-size: 4.7vw;
+    font-size: 6.7vw;
     font-weight: 700;
     position: absolute;
-    top: 35%;
+    top: 30%;
     width: 100%;
     overflow: hidden;
     text-align: center;

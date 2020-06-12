@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import HomePage from '@/components/Home/HomePage'
 import Services from '@/components/ServicesArea/ServicePage'
 import ServicesArea from '@/components/ServicesArea/ServiceArea'
+//import App from "../App";
 //import OurServices from '@/components/OurServicesGroup/OurServices'
 //import ContactUSPage from '@/components/ContactUsGroup/ContactUsPage'
 //import Blog from '@/components/Blog'
@@ -16,6 +17,7 @@ import ServicesArea from '@/components/ServicesArea/ServiceArea'
 Vue.use(Router);
 
 export default new Router({
+
   mode: 'history',
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) { // if has a hash...
@@ -26,6 +28,8 @@ export default new Router({
       return { x: 0, y: 0 }
     }
   },
+
+
   routes: [
     {
       path: '',
@@ -44,7 +48,12 @@ export default new Router({
       component: ServicesArea
     },
   ]
-})
+});
+
+
+
+
+
 /*
 {
       path:'/Blog/:blogId',

@@ -11,7 +11,7 @@
     </div>
 
       <div class="NavItem" id="Services">
-        <router-link style="text-decoration:none; color: white" to="/Services">
+        <router-link class="Link" to="/Services">
         Services
         <div  class="Line"></div>
         </router-link>
@@ -21,14 +21,22 @@
       About Us
       <div class="Line"></div>
     </div>
-    <div class="NavItem" id="Contact">
+    <div v-if="Animation" style="grid-area: Contact" v-on:mousedown="ScrollDown()" class="NavItem" id="Contact">
       Contact
       <div class="Line"></div>
+    </div>
+    <div v-else style="grid-area: Contact"  class="NavItem">
+      <router-link class="Link" to="/#ContactUs">
+      Contact
+      <div class="Line"></div>
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
+    import JQuery from 'jquery';
+    let $ = JQuery;
     import {  TimelineMax } from "gsap"
     export default {
         name: "Navbar",
@@ -46,6 +54,15 @@
           return {
 
           }
+        },
+        methods: {
+           ScrollDown() {
+
+                  $('html, body').animate({
+                      scrollTop: $('#ContactUs').offset().top
+                  }, 2000);
+
+            }
         },
         mounted() {
             if(this.Animation === true) {
@@ -66,6 +83,16 @@
 </script>
 
 <style scoped>
+  router-link:hover {
+
+  }
+  .Link {
+    text-decoration:none; color: white;
+    transition: 1s;
+  }
+  .Link:hover {
+    color: #e71d36;
+  }
  #NavArea {
    grid-template-areas: "Logo LogoPad Services About Contact";
    grid-template-columns: 15% 49% 12% 12% 12% ;
@@ -104,9 +131,7 @@
     grid-area: Services;
   }
 
-  #Contact {
-    grid-area: Contact;
-  }
+
   .NavItem {
     transition: 0.7s;
   }
