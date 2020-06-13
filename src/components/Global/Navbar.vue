@@ -18,8 +18,10 @@
       </div>
 
     <div class="NavItem" id="About">
-      About Us
+      <router-link class="Link" to="/DebtLodgement">
+      Debt Lodgement
       <div class="Line"></div>
+      </router-link>
     </div>
     <div v-if="Animation" style="grid-area: Contact" v-on:mousedown="ScrollDown()" class="NavItem" id="Contact">
       Contact

@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import HomePage from '@/components/Home/HomePage'
 import Services from '@/components/ServicesArea/ServicePage'
 import ServicesArea from '@/components/ServicesArea/ServiceArea'
+import DebtLodgement from '@/components/DebtPage/DebtLodgementPage'
 //import App from "../App";
 //import OurServices from '@/components/OurServicesGroup/OurServices'
 //import ContactUSPage from '@/components/ContactUsGroup/ContactUsPage'
@@ -36,7 +37,11 @@ export default new Router({
       name: 'HomePage',
       component: HomePage
     },
-
+    {
+        path: '/DebtLodgement',
+        name: 'DebtLodgement',
+        component: DebtLodgement
+    },
     {
       path: '/Services',
       name: 'Services',
