@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controller/BlogController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/BlogController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/BlogServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BlogServices.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -75,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
+            <state relative-caret-position="210">
+              <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
               <folding>
                 <element signature="e#3780#3968#0" />
                 <element signature="e#4002#4241#0" />
@@ -376,12 +372,12 @@
       <workItem from="1591757859344" duration="121000" />
       <workItem from="1591762019061" duration="9385000" />
       <workItem from="1591865839633" duration="31198000" />
-      <workItem from="1592022122920" duration="23752000" />
+      <workItem from="1592022122920" duration="24438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271674000" />
+    <option name="totallyTimeSpent" value="272360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,7 +390,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1881663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -857,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="95" column="49" selection-start-line="95" selection-start-column="49" selection-end-line="95" selection-end-column="49" />
+        <state relative-caret-position="210">
+          <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
           <folding>
             <element signature="e#3780#3968#0" />
             <element signature="e#4002#4241#0" />
