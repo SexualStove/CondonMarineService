@@ -5,11 +5,13 @@ const SubscribersController = require("./controller/SubscribersController");
 // const AuthenticationControllerPolicy = require('./policies/BlogPolicies')
 
 module.exports = (app) => {
+    app.post('/DebtLodgement', BlogController.SendForm);
+
     app.post('/create', BlogController.createBlog);
     // AuthenticationControllerPolicy.register
     app.get('/blog/:blogId', BlogController.getBlog);
 
-    app.delete('/blog/:blogId', BlogController.deleteBlog)
+    app.delete('/blog/:blogId', BlogController.deleteBlog);
 
     app.get('/blog', BlogController.getAll);
 

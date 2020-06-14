@@ -50,6 +50,7 @@
 </template>
 
 <script>
+    import BlogController from '@/services/BlogServices'
     export default {
         name: "DebtLodgementForm",
         data() {
@@ -79,15 +80,20 @@
                     Mobile: '',
                     Description: ''
                 },
-                Errors: []
+                Errors: [],
+                CompiledString: '',
             }
         },
         methods: {
-            SendForm() {
+            async SendForm() {
                 console.log("Start Send");
                 let UnFilledAreas = this.AreasFilled();
-                if(UnFilledAreas.length === 0) {
-                  console.log("Sent mail")
+                if (UnFilledAreas.length === 0) {
+                    console.log("Sent mail");
+                   /* const response = await BlogController.SendForm({
+                        From: this.CompiledString
+                    });
+                    console.log(response.Date);*/
                 } else {
                     this.Errors = UnFilledAreas;
                 }
@@ -105,20 +111,29 @@
 
 
                 let Errors = [];
+                this.CompiledString = '';
+                this.CompiledString += ' Your Details: \n \n';
                 for (let prop in this.YourDetails) {
                     if(this.YourDetails[prop] === '') {
-                        Errors.push("Please fill out in the field: "+prop)
+                        Errors.push("You are missing "+prop+" in the Your Details Area");
+                    } else {
+                        this.CompiledString += prop + ":  " + this.YourDetails[prop] + "\n"
                     }
                 }
+                this.CompiledString += '\n\n\n Debtors Details: \n \n';
                 for (let prop in this.DebtorsDetails) {
                     if(this.DebtorsDetails[prop] === '') {
-                        Errors.push("Please fill in the field: "+prop);
+                        Errors.push("You are missing "+prop+" in the Debtors Details Area");
+                    } else {
+                        this.CompiledString += prop + ":  "  + this.DebtorsDetails[prop] + "\n"
                     }
                 }
-
+                this.CompiledString += '\n\n\n Debt Details: \n \n';
                 for (let prop in this.DebtDetails) {
                     if(this.DebtDetails[prop] === '') {
-                        Errors.push("Please fill in the field: "+prop);
+                        Errors.push("You are missing "+prop+" in the Debt Details Area");
+                    } else {
+                        this.CompiledString += prop + ":  "  +  this.DebtDetails[prop] + "\n"
                     }
                 }
                 return Errors;

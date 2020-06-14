@@ -11,10 +11,10 @@
     </div>
     <navbar style="width: 100vw" v-bind:Animation="false"></navbar>
     <div id="ContentArea">
-      <transition name="fade">
+      <transition name="fade"  mode="out-in">
         <DebtLodgementForm v-if="AcceptTerms" :key="AcceptTerms"></DebtLodgementForm>
       </transition>
-      <transition name="fade">
+      <transition name="fade"  mode="out-in">
         <DebtLodgementTerms :key="AcceptTerms" v-if="!AcceptTerms"></DebtLodgementTerms>
       </transition>
     </div>
