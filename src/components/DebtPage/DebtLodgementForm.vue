@@ -52,7 +52,7 @@
 </template>
 
 <script>
-    import BlogController from '@/services/BlogServices'
+    import BlogController from '../../services/BlogServices'
     export default {
         name: "DebtLodgementForm",
         data() {
