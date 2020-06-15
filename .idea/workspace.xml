@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="" />
+    <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/services/BlogServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BlogServices.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,34 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="161" selection-start-line="8" selection-start-column="161" selection-end-line="8" selection-end-column="161" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#b-button#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServicePage.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomePageTitle.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
@@ -114,6 +88,20 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/services/BlogServices.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="39" selection-start-column="39" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/services/Api.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -226,7 +214,6 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomeContact.vue" />
         <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue" />
         <option value="$PROJECT_DIR$/server/routes.js" />
-        <option value="$PROJECT_DIR$/src/services/BlogServices.js" />
         <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeFooter.vue" />
         <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" />
@@ -241,6 +228,7 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomePage.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" />
+        <option value="$PROJECT_DIR$/src/services/BlogServices.js" />
       </list>
     </option>
   </component>
@@ -396,12 +384,12 @@
       <workItem from="1591762019061" duration="9385000" />
       <workItem from="1591865839633" duration="31198000" />
       <workItem from="1592022122920" duration="24806000" />
-      <workItem from="1592200975351" duration="10497000" />
+      <workItem from="1592200975351" duration="10746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283225000" />
+    <option name="totallyTimeSpent" value="283474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -414,8 +402,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -434,7 +423,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49946696" visible="true" weight="0.32998884" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49946696" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.32998884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -643,16 +632,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/models/blog.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/BlogServices.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/Api.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/SubsServices.js">
@@ -882,6 +861,16 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/Api.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/BlogServices.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="39" selection-start-column="39" selection-end-column="39" />
         </state>
       </provider>
     </entry>
