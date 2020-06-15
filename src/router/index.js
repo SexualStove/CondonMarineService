@@ -5,6 +5,7 @@ import HomePage from '@/components/Home/HomePage'
 import Services from '@/components/ServicesArea/ServicePage'
 import ServicesArea from '@/components/ServicesArea/ServiceArea'
 import DebtLodgement from '@/components/DebtPage/DebtLodgementPage'
+import Payment from '@/components/Payment/PaymentPage'
 //import App from "../App";
 //import OurServices from '@/components/OurServicesGroup/OurServices'
 //import ContactUSPage from '@/components/ContactUsGroup/ContactUsPage'
@@ -36,6 +37,11 @@ export default new Router({
       path: '',
       name: 'HomePage',
       component: HomePage
+    },
+    {
+      path: '/Payment',
+      name: 'Payment',
+      component: Payment
     },
     {
         path: '/DebtLodgement',

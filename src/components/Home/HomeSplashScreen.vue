@@ -8,7 +8,7 @@
     <div id="vimeo-wrapper">
 
       <div id="FadeZone">
-        <img id="LogoImage" style="position: absolute; top: 33.5%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+        <img id="LogoImage" style="position: absolute; top: 29%; left: 15%; transform: translate(14.5vw  , 3vw); width: 40vw" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </div>
 
       <iframe src="https://player.vimeo.com/video/422637484?&muted=1&autoplay=1&loop=1&background=1" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow="autoplay; encrypted-media" id="iFrameId"></iframe>
@@ -54,9 +54,6 @@
                 $('#LogoImage').addClass("fadeInPic");
 
             });
-
-
-
 
             var LogoStringTimeline = new TimelineMax({});
             LogoStringTimeline.from('#LogoImage', 2, {top: '12%', scale: 1.4}, "+=0.6"

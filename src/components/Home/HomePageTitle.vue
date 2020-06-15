@@ -1,11 +1,12 @@
 <template>
   <div id="TextArea" style="position: absolute; top: 15%; left: 20%; z-index: 0">
-    <div style="transform: translateY(-7vw)">
+    <div style="transform: translateY(-9vw)">
       <div id="Title"> Across the nation big or small, Be Paid brings professionalism to your door </div>
       <div id="Line"></div>
       <div id="Line2"></div>
     </div>
-    <div style="transform: translateY(7vw);">
+    <div style="transform: translateY(64vh); font-size: 2vw; color: white; font-family: 'Play', sans-serif;">Cellphone: 021 222 1099, 24/7</div>
+    <div style="transform: translateY(8vh);">
 
     <div id="ButtonArea">
 
@@ -28,7 +29,6 @@
 </template>
 
 <script>
-    import {  TimelineMax } from "gsap"
     export default {
         name: "HomePageTitle",
         data() {
@@ -37,16 +37,9 @@
             }
         },
         mounted() {
-
-            var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#Line', 2, {width: 0}, '+=2').from('#Line2', 2, {width: 0}, '-=1.5').from(
-                '#Title', 2, {translateY: '2vw', opacity: 0}).from('#SubTitle', 2, {opacity: 0, translateY: '-2vw'}, '-=1').from(
-                '#Button1', 2, {opacity: 0}, '-=2').from('#Button2', 2, {opacity: 0}, '-=2'
-            );
         },
         methods: {
             ServiceClick2(Int) {
-                console.log("Ahhhhhh")
                 this.$cookie.set('Service', Int, { expires: '10m' });
             },
 

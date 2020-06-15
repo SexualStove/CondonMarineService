@@ -2,12 +2,12 @@
   <div id="NavArea">
     <div id="Logo">
       <router-link to="/">
-        <img id="LogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+        <img id="NavLogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </router-link>
     </div>
     <div id="LogoPad">
       With Offices now in Invercargill, Dunedin and Christchurch. <br>
-      And agents from every island in NZ to every territory in Australia
+      And agents across New Zealand and Australia.
     </div>
 
       <div class="NavItem" id="Services">
@@ -39,7 +39,6 @@
 <script>
     import JQuery from 'jquery';
     let $ = JQuery;
-    import {  TimelineMax } from "gsap"
     export default {
         name: "Navbar",
         props: {
@@ -67,19 +66,6 @@
             }
         },
         mounted() {
-            if(this.Animation === true) {
-                var LogoStringTimeline = new TimelineMax({});
-                LogoStringTimeline.from('#NavArea', 4, {opacity: 0}, '+=3.5'
-                );
-            } else {
-                console.log('Did not trigger');
-                console.log(Animation);
-            }
-
-           /* var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#Logo', 4, {opacity: 0}, '+=2').from('#Services', 4, {opacity: 0}, '-=4').from(
-                '#About', 4, {opacity: 0}, '-=4').from('#Contact', 4, {opacity: 0}, '-=4'
-            );*/
         }
     }
 </script>
@@ -119,11 +105,11 @@
     grid-area: Logo;
     transform: translate(2vw, -2.7vw) scale(1.7);
   }
-  #LogoImage {
+  #NavLogoImage {
     padding-top: 1vw;
     width: 7vw;
   }
-  #LogoImage:hover {
+  #NavLogoImage:hover {
     cursor: pointer;
   }
   #About {

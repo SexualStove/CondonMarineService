@@ -41,9 +41,9 @@ module.exports = {
             // send mail with defined transport object
             let info = await transporter.sendMail({
                 from: '"Do not reply" <contact@inhouseweb.nz>', // sender address
-                to: "rt_condon@hotmail.com, inhouseweb@hotmail.com", // list of receivers
+                to: "rt_condon@hotmail.com", // list of receivers
                 subject: "From Filled Out" ,// Subject line
-                html: "<pre>"+req.body.From+"</pre>" // html body
+                html: "<pre style='font-size: 20px'>"+req.body.From+"</pre>" // html body
             });
 
             console.log("Message sent: %s", info.messageId);

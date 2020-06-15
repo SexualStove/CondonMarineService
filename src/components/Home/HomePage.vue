@@ -1,17 +1,21 @@
 <template>
   <div>
+    <div id="FadeArea">
     <div id="Top-Info" class="Contact-Top-Box" style="background-color: black; position: relative; ">
 
       <h2 class="Contact-Top Top-Text" style="color: white">  0800 223 724 </h2>
       <h2 class="Contact-Top Top-Text" style="color: white"> PO Box 447, Rangiora, 7440 </h2>
 
-      <b-button class="Contact-Top" id="PortalButton" style="color: white" variant="outline-danger">Pay Now</b-button>
+      <router-link to="/Payment"><b-button class="Contact-Top" id="PortalButton" style="color: white" variant="outline-danger">Pay Now</b-button></router-link>
 
       <div id="line"></div>
     </div>
-    <div id="Splash">
+
       <Navbar id="NavArea" style="z-index: 4" v-bind:Animation="true"></Navbar>
-     <HomeSplashScreen style="z-index: -1"></HomeSplashScreen>
+      <HomePageTitle style="z-index: 1"></HomePageTitle>
+    </div>
+     <HomeSplashScreen style="z-index: -1; position: relative"></HomeSplashScreen>
+
       <div class="Divider">
         <div class="LineDivider"></div>
         <div class="DiamondHolder">
@@ -21,9 +25,9 @@
           <div class="diamond-shieldW"></div>
         </div>
       </div>
-    </div>
 
-    <HomePageTitle style="z-index: 1"></HomePageTitle>
+
+
 
         <IconStrip></IconStrip>
         <HomeAbout style="box-shadow: inset 0 8px 6px -6px  rgba(0,0,0,0.2);"></HomeAbout >
@@ -75,7 +79,7 @@
         },
         mounted() {
             var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#Top-Info', 4, {opacity: 0}, '+=3.5'
+            LogoStringTimeline.from('#FadeArea', 4, {opacity: 0}, '+=3.5'
             );
             function offsetAnchor() {
                 if (location.hash.length !== 0) {
@@ -114,7 +118,7 @@
   }
   .Contact-Top {
     display: inline-block;
-    font-size: 1vw;
+    font-size: 1.4vw;
     color: whitesmoke;
     padding-right: 3vw;
 
@@ -145,7 +149,7 @@
 
   .Divider {
     position: absolute;
-    bottom: 0;
+    bottom: 6%;
     width: 100vw;
     z-index: 100;
   }

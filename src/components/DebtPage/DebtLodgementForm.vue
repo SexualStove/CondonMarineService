@@ -4,30 +4,32 @@
       <div id="ContactTitle"> Debt Lodgement From </div>
       <form id="form" class="topBefore" >
         <div class="SectionTitle"> Your Details </div>
-        <input v-model="YourDetails.Business" class="input" name ="business_name" type="text" placeholder="BUSINESS NAME">
-        <input v-model="YourDetails.Name" class="input" name="full_name" type="text" placeholder="FULL NAME">
-        <input v-model="YourDetails.Phone" class="input" name="phone" type="text" placeholder="CONTACT NO">
-        <input v-model="YourDetails.Fax" class="input" name="fax" type="text" placeholder="FAX NO">
-        <input v-model="YourDetails.Mobile" class="input" name="mobile" type="text" placeholder="MOBILE">
-        <input v-model="YourDetails.Description" class="input" name="business_description" type="text" placeholder="BUSINESS DESCRIPTION">
+        <input v-model="YourDetails.Business" class="input" name ="BUSINESS NAME" type="text" placeholder="BUSINESS NAME">
+        <input v-model="YourDetails.Name" class="input" name="FULL NAME" type="text" placeholder="FULL NAME">
+        <input v-model="YourDetails.Phone" class="input" name="CONTACT NO" type="text" placeholder="CONTACT NO">
+        <input v-model="YourDetails.Fax" class="input" name="fax" type="text" placeholder="FAX NO (ENTER '-' FOR NONE)">
+        <input v-model="YourDetails.Mobile" class="input" name="MOBILE" type="text" placeholder="MOBILE">
+        <input v-model="YourDetails.Email" class="input" name="user_email" type="text" placeholder="E-MAIL">
+        <input v-model="YourDetails.SIGNATURE" class="input" name="SIGNATURE" type="text" placeholder="SIGNATURE (JUST IN TEXT)">
+        <input v-model="YourDetails.Description" class="input" name="BUSINESS DESCRIPTION" type="text" placeholder="BUSINESS DESCRIPTION">
 
         <div class="SectionTitle"> Debtors Details </div>
-        <input v-model="DebtorsDetails.Business" class="input" name ="business_name" type="text" placeholder="BUSINESS NAME">
+        <input v-model="DebtorsDetails.Business" class="input" name ="BUSINESS NAME" type="text" placeholder="BUSINESS NAME">
         <div class="SemiTitle">Legal Entity of Company</div>
         <div id="RaidoButtons">
-          <input type="radio" id="Ltd" value="Ltd" v-model="picked">
+          <input type="radio" id="Ltd" value="Ltd" v-model="DebtorsDetails.Legal_Entity_Of_Company">
           <label class="RadioLabel" for="Ltd" >Ltd</label>
-          <input type="radio" id="Trust" value="Trust" v-model="picked">
+          <input type="radio" id="Trust" value="Trust" v-model="DebtorsDetails.Legal_Entity_Of_Company">
           <label class="RadioLabel" for="Trust">Trust</label>
-          <input type="radio" id="Partnership" value="Partnership" v-model="picked">
+          <input type="radio" id="Partnership" value="Partnership" v-model="DebtorsDetails.Legal_Entity_Of_Company">
           <label class="RadioLabel" for="Partnership">Partnership</label>
-          <input type="radio" id="SoleTrader" value="SoleTrader" v-model="picked">
+          <input type="radio" id="SoleTrader" value="SoleTrader" v-model="DebtorsDetails.Legal_Entity_Of_Company">
           <label class="RadioLabel" for="SoleTrader">Sole Trader</label>
-          <input type="radio" id="Individual" value="Individual" v-model="picked">
+          <input type="radio" id="Individual" value="Individual" v-model="DebtorsDetails.Legal_Entity_Of_Company">
           <label class="RadioLabel" for="Individual">Individual</label>
         </div>
         <input v-model="DebtorsDetails.Name" class="input" name="full_name" type="text" placeholder="CONTRACT OR PERSONAL GUARANTOR">
-        <input v-model="DebtorsDetails.DOB" class="input" name="date_of_birth" type="text" placeholder="DATE OF BIRTH">
+        <input v-model="DebtorsDetails.DATE_OF_BIRTH" class="input" name="date_of_birth" type="text" placeholder="DATE OF BIRTH">
         <input v-model="DebtorsDetails.Address" class="input" name="address" type="text" placeholder="PHYSICAL ADDRESS">
         <input v-model="DebtorsDetails.Phone" class="input" name="phone" type="text" placeholder="CONTACT NO">
         <input v-model="DebtorsDetails.Mobile" class="input" name="mobile" type="text" placeholder="MOBILE">
@@ -50,7 +52,7 @@
 </template>
 
 <script>
-    //import BlogController from '@/services/BlogServices'
+    import BlogController from '@/services/BlogServices'
     export default {
         name: "DebtLodgementForm",
         data() {
@@ -66,7 +68,8 @@
                 DebtorsDetails: {
                     Business: '',
                     Name: '',
-                    DOB: '',
+                    Legal_Entity_Of_Company: '',
+                    DATE_OF_BIRTH: '',
                     Email: '',
                     Phone: '',
                     Address: '',
@@ -78,8 +81,11 @@
                     Phone: '',
                     Fax: '',
                     Mobile: '',
-                    Description: ''
+                    Description: '',
+                    SIGNATURE: '',
+                    Email: '',
                 },
+                Sent: false,
                 Errors: [],
                 CompiledString: '',
             }
@@ -88,12 +94,13 @@
             async SendForm() {
                 console.log("Start Send");
                 let UnFilledAreas = this.AreasFilled();
-                if (UnFilledAreas.length === 0) {
+                if (UnFilledAreas.length === 0 && this.Sent === false) {
                     console.log("Sent mail");
-                   /* const response = await BlogController.SendForm({
+                    const response = await BlogController.SendForm({
                         From: this.CompiledString
                     });
-                    console.log(response.Date);*/
+                    console.log(response.Date);
+                    this.Sent = true;
                 } else {
                     this.Errors = UnFilledAreas;
                 }
@@ -117,7 +124,7 @@
                     if(this.YourDetails[prop] === '') {
                         Errors.push("You are missing "+prop+" in the Your Details Area");
                     } else {
-                        this.CompiledString += prop + ":  " + this.YourDetails[prop] + "\n"
+                        this.CompiledString += prop.toUpperCase() + ":  " + this.YourDetails[prop] + "\n"
                     }
                 }
                 this.CompiledString += '\n\n\n Debtors Details: \n \n';
@@ -125,7 +132,7 @@
                     if(this.DebtorsDetails[prop] === '') {
                         Errors.push("You are missing "+prop+" in the Debtors Details Area");
                     } else {
-                        this.CompiledString += prop + ":  "  + this.DebtorsDetails[prop] + "\n"
+                        this.CompiledString += prop.toUpperCase() + ":  "  + this.DebtorsDetails[prop] + "\n"
                     }
                 }
                 this.CompiledString += '\n\n\n Debt Details: \n \n';
@@ -133,7 +140,7 @@
                     if(this.DebtDetails[prop] === '') {
                         Errors.push("You are missing "+prop+" in the Debt Details Area");
                     } else {
-                        this.CompiledString += prop + ":  "  +  this.DebtDetails[prop] + "\n"
+                        this.CompiledString += prop.toUpperCase() + ":  "  +  this.DebtDetails[prop] + "\n"
                     }
                 }
                 return Errors;
