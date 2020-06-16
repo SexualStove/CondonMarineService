@@ -3,7 +3,141 @@
   <component name="ChangeListManager">
     <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controller/BlogController.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/controller/BlogController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/acorn.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/acorn.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/detect-libc.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/detect-libc.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/eslint.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/eslint.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/esparse.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/esparse.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/esvalidate.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/esvalidate.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/is-ci.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/is-ci.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/js-yaml.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/js-yaml.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/mime.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/mime.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/mkdirp.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/mkdirp.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/needle.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/needle.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/node-pre-gyp.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/node-pre-gyp.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/nodemon.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/nodemon.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/nodetouch.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/nodetouch.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/nopt.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/nopt.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/rc.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/rc.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/rimraf.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/rimraf.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/sshpk-conv.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/sshpk-conv.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/sshpk-sign.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/sshpk-sign.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/sshpk-verify.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/sshpk-verify.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/uuid.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/uuid.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/.bin/which.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/.bin/which.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/geojson/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/geojson/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/geojson/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/geojson/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/geojson/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/geojson/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/color-name/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/color-name/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/color-name/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/color-name/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/color-name/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/color-name/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/color-name/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/color-name/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/color-name/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/color-name/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/cross-spawn/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/cross-spawn/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/eslint-plugin-vue/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/eslint-plugin-vue/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/flat-cache/changelog.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/flat-cache/changelog.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/hoek/.npmignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/hoek/.npmignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/hyper-schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/hyper-schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/json-ref" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/json-ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/links" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-00/schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/hyper-schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/hyper-schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/json-ref" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/json-ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/links" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-01/schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/hyper-schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/hyper-schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/json-ref" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/json-ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/links" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-02/schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/address" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/address" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/calendar" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/calendar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/card" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/card" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/geo" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/geo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/interfaces" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/examples/interfaces" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/hyper-schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/hyper-schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/json-ref" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/json-ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/links" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-03/schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-04/hyper-schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-04/hyper-schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-04/links" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-04/links" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-04/schema" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-04/schema" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-zyp-json-schema-03.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-zyp-json-schema-03.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/draft-zyp-json-schema-04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/draft-zyp-json-schema-04.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/lib/links.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/lib/links.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/lib/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/lib/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/json-schema/test/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/json-schema/test/tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/needle/examples/parsed-stream2.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/needle/examples/parsed-stream2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/needle/test/compression_spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/needle/test/compression_spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/node-pre-gyp/node_modules/.bin/nopt.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/node-pre-gyp/node_modules/.bin/nopt.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/node-pre-gyp/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/node-pre-gyp/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/nodemon/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/nodemon/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/package-json/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/package-json/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/path/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/path/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/path/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/path/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/path/path.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/path/path.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/regexpp/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/regexpp/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/rxjs/bundles/rxjs.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/rxjs/bundles/rxjs.umd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/semver-diff/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/semver-diff/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/sequelize/node_modules/.bin/semver.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/sequelize/node_modules/.bin/semver.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/tslib/CopyrightNotice.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/tslib/CopyrightNotice.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/tslib/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/tslib/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/tslib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/tslib/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/tslib/tslib.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/tslib/tslib.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/tslib/tslib.es6.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/tslib/tslib.es6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/tslib/tslib.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/tslib/tslib.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/es5/uri.all.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/es5/uri.all.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/es5/uri.all.min.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/es5/uri.all.min.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-iri.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-iri.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-iri.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-iri.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-uri.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-uri.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-uri.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/regexps-uri.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/http.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/http.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/https.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/https.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/https.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/https.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/mailto.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/mailto.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn-uuid.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn-uuid.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn-uuid.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn-uuid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/schemes/urn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/uri.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/uri.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/util.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/util.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/dist/esnext/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/tests/qunit.css" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/tests/qunit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/uri-js/tests/qunit.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/uri-js/tests/qunit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/vue-eslint-parser/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/vue-eslint-parser/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/dist/wkx.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/dist/wkx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/binaryreader.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/binaryreader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/binarywriter.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/binarywriter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/geometry.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/geometry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/geometrycollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/geometrycollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/linestring.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/linestring.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/multilinestring.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/multilinestring.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/multipoint.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/multipoint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/multipolygon.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/multipolygon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/point.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/point.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/polygon.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/polygon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/wktparser.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/wktparser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/wkx.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/wkx.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/wkx.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/wkx.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/node_modules/wkx/lib/zigzag.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/node_modules/wkx/lib/zigzag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeContact.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeContact.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/BlogServices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BlogServices.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
@@ -19,47 +153,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/config/config.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/policies/BlogPolicies.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/subs.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/blog.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controller/SubscribersController.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controller/BlogController.js">
+        <entry file="file://$PROJECT_DIR$/src/services/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-              <folding>
-                <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="138">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+            <state relative-caret-position="171">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -68,31 +174,16 @@
         <entry file="file://$PROJECT_DIR$/src/services/BlogServices.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/services/api.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/HomePage.vue">
+        <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1081">
-              <caret line="81" column="46" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#Navbar#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#HomePageTitle#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#HomeSplashScreen#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#HomeContact#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="333">
+              <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -108,10 +199,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>IconArea</find>
-      <find>#e71d36</find>
-      <find>rgba(231 ,29 ,54, 0.5),</find>
-      <find>rgba(231 ,29 ,54, 0.5)</find>
       <find>TextArea</find>
       <find>contact</find>
       <find>green</find>
@@ -138,6 +225,10 @@
       <find>LogoImage</find>
       <find>Splash</find>
       <find>Divider</find>
+      <find>personalised</find>
+      <find>customise</find>
+      <find>length</find>
+      <find>error</find>
     </findStrings>
     <replaceStrings>
       <replace>rgba(231 ,29 ,54, 0.5)</replace>
@@ -170,25 +261,25 @@
         <option value="$PROJECT_DIR$/src/components/ServicesArea/ServicePage.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/IconStrip.vue" />
         <option value="$PROJECT_DIR$/Costings" />
-        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue" />
-        <option value="$PROJECT_DIR$/src/components/Home/HomeContact.vue" />
-        <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue" />
-        <option value="$PROJECT_DIR$/server/routes.js" />
-        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeFooter.vue" />
-        <option value="$PROJECT_DIR$/server/controller/BlogController.js" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue" />
-        <option value="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" />
-        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" />
         <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Global/Navbar.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomePage.vue" />
+        <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" />
-        <option value="$PROJECT_DIR$/src/services/BlogServices.js" />
+        <option value="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" />
+        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue" />
+        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" />
+        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue" />
+        <option value="$PROJECT_DIR$/src/components/Home/HomeContact.vue" />
+        <option value="$PROJECT_DIR$/server/routes.js" />
+        <option value="$PROJECT_DIR$/server/controller/BlogController.js" />
         <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" />
+        <option value="$PROJECT_DIR$/src/services/BlogServices.js" />
       </list>
     </option>
   </component>
@@ -217,36 +308,7 @@
             <path>
               <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
               <item name="condonmarineservicesgit" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="condonmarineservicesgit" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="condonmarineservicesgit" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="condonmarineservicesgit" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="condonmarineservicesgit" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="condonmarineservicesgit" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="policies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
@@ -274,7 +336,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CondonMarineService-ad81fdfa33124af4aad7d107c07848262589f8ac" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="C:\Users\Robert Condon\WebstormProjects\my-project\node_modules\eslint" />
@@ -339,12 +401,13 @@
       <workItem from="1591762019061" duration="9385000" />
       <workItem from="1591865839633" duration="31198000" />
       <workItem from="1592022122920" duration="24806000" />
-      <workItem from="1592200975351" duration="11030000" />
+      <workItem from="1592200975351" duration="20775000" />
+      <workItem from="1592319988856" duration="2429000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="283758000" />
+    <option name="totallyTimeSpent" value="295932000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,7 +422,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19029851" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1924307" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="DB Browser" order="3" />
@@ -378,7 +441,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49946696" visible="true" weight="0.32998884" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.49946696" visible="true" weight="0.32998884" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.32998884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -417,24 +480,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/WhyUsMobile.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Blog.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="e#555#607#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BlogHome.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/AllServices.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -443,11 +488,6 @@
         <state relative-caret-position="92">
           <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="50" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomePageMobile.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-591" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer.vue">
@@ -495,16 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HomePage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="284" column="19" lean-forward="true" selection-start-line="283" selection-start-column="3" selection-end-line="284" selection-end-column="19" />
-          <folding>
-            <element signature="e#11348#11385#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -540,23 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeContact.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="24" column="96" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CreateBlog.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -567,40 +580,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/SubsServices.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="140" column="13" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="44" selection-start-line="44" selection-end-line="44" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
-          <folding>
-            <element signature="n#style#0;n#div#8;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#9;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#10;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#11;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -614,52 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="62" selection-start-line="62" selection-end-line="87" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#105#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="159" selection-start-line="7" selection-start-column="159" selection-end-line="7" selection-end-column="159" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b-button#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Payment/PaymentPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="159" selection-start-line="7" selection-start-column="159" selection-end-line="7" selection-end-column="159" />
-          <folding>
-            <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1671#1709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/OurServicesGroup/OurServices.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11109">
@@ -668,23 +605,6 @@
             <element signature="n#style#0;n#p#0;n#transition#0;n#div#0;n#div#6;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="e#31175#31225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="161" selection-start-line="8" selection-start-column="161" selection-end-line="8" selection-end-column="161" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b-button#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,23 +626,6 @@
             <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b-button#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -758,18 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomePageTitle.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomePage.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1081">
@@ -787,45 +678,204 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
+    <entry file="file://$PROJECT_DIR$/src/components/HomePageMobile.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HomePage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+        <state relative-caret-position="276">
+          <caret line="284" column="19" lean-forward="true" selection-start-line="283" selection-start-column="3" selection-end-line="284" selection-end-column="19" />
+          <folding>
+            <element signature="e#11348#11385#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomePageTitle.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Payment/PaymentPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1051">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#8;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#9;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#10;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#11;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="197" column="245" selection-start-line="197" selection-start-column="245" selection-end-line="197" selection-end-column="245" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="49" column="236" selection-start-line="49" selection-start-column="236" selection-end-line="49" selection-end-column="236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeContact.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="91" column="28" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#form#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#div#2;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#105#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/services/SubsServices.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-292">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/babel.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/policies/BlogPolicies.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/blog.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/models/subs.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/blog.js">
+    <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controller/SubscribersController.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/controller/BlogController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="3979">
+          <caret line="173" column="2" selection-start-line="173" selection-start-column="2" selection-end-line="173" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="97" column="33" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/api.js">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/services/BlogServices.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>

@@ -7,7 +7,6 @@
         <input v-model="YourDetails.Business" class="input" name ="BUSINESS NAME" type="text" placeholder="BUSINESS NAME">
         <input v-model="YourDetails.Name" class="input" name="FULL NAME" type="text" placeholder="FULL NAME">
         <input v-model="YourDetails.Phone" class="input" name="CONTACT NO" type="text" placeholder="CONTACT NO">
-        <input v-model="YourDetails.Fax" class="input" name="fax" type="text" placeholder="FAX NO (ENTER '-' FOR NONE)">
         <input v-model="YourDetails.Mobile" class="input" name="MOBILE" type="text" placeholder="MOBILE">
         <input v-model="YourDetails.Email" class="input" name="user_email" type="text" placeholder="E-MAIL">
         <input v-model="YourDetails.SIGNATURE" class="input" name="SIGNATURE" type="text" placeholder="SIGNATURE (JUST IN TEXT)">
@@ -79,7 +78,6 @@
                     Business: '',
                     Name: '',
                     Phone: '',
-                    Fax: '',
                     Mobile: '',
                     Description: '',
                     SIGNATURE: '',
@@ -97,8 +95,9 @@
                 if (UnFilledAreas.length === 0 && this.Sent === false) {
                     console.log("Sent mail");
                     const response = await BlogController.SendForm({
-                        From: this.CompiledString
+                        From: "No"
                     });
+                    console.log("Ahhhhhhhh");
                     console.log(response.Date);
                     this.Sent = true;
                 } else {

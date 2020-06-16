@@ -1,8 +1,8 @@
-import Api from './api'
+import Api from '@/services/api'
 
 export default {
     SendForm (data) {
-      return Api().post('/DebtLodement', data)
+      return Api().post('/DebtLodgement', data)
     },
 
     createBlog (data) {

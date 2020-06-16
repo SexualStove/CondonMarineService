@@ -19,13 +19,13 @@
 
 
 
-        MAIL CHECK - PO Box 447, Rangiora, 7440
+        MAIL CHEQUE - PO Box 447, Rangiora, 7440
         made out to Be Paid Limited
 
 
 
-        If you would like to discuss other payment arrangements, please call us on Freephone 0800 223 724.
-        Cellphone: 021 222 1099, 24/7
+       If you would like to discuss other payment arrangements please call us on 0800223724 or email us on info@bepaid.co.nz.
+
         Or even use the contact us page.
       </pre>
     </div>

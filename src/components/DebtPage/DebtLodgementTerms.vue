@@ -27,7 +27,8 @@ agents as may be necessary to assist Be Paid Ltd and conduct legal proceedings f
 11. The client will indemnify Be paid Ltd and hold It harmless for any losses, costs, expenses damages, actions and proceedings
     a.	Arising out of any Court proceedings initiated or conducted by Be Paid Ltd on the client's behalf.
     b.	Arising out of the seizure or repossession of any goods or assets on the client's behalf.
-    c.	Concerning the use of information supplied to be Paid Ltd by the client.
+    c.  Arising out any execution process initiated or conducted on the client's behalf.
+    d.	Concerning the use of information supplied to be Paid Ltd by the client.
 
 12. The client will notify Be Paid Ltd immediately when any debt is paid direct by the debtor to the client and will provide Be Pald Ltd with all correspondence that passes between client and the debtor after Be Paid Ltd has received Instructions from the client in respect of that debt.
 
@@ -46,7 +47,7 @@ and the bank does not honour the transaction the client will refund Be Paid Ltd 
 
 19. The -guarantor' hereby personally guarantees the due and punctual payment and performance of an the client's obligations under this agreement.
 
-20. The client understands that Be Paid Ltd receives commission on any monies collected whether the debtor makes payment to Be Pald Ltd or the client, Including whether the debtor is taken to the Disputes Tribunal or the
+20. The client understands that Be Paid Ltd receives commission on any monies collected whether the debtor makes payment to Be Pald Ltd or the client, Including whether the debtor is taken to the Disputes Tribunal or the District Court.
 
     </pre>
   </div>

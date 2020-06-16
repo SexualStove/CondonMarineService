@@ -57,7 +57,7 @@
     <div id="FeildVisit" style="grid-area: A; transform: translateX(50%)" class="Service" v-on:mousedown="ChangeService(8)">
       <router-link to="/Services/ServiceArea">
         <img class="Icon" src="../../assets/images/Icons/FeildVisitsIcon.png" alt="None">
-        <div class="Title">Field Visits</div>
+        <div class="Title">Family</div>
       </router-link>
     </div>
 

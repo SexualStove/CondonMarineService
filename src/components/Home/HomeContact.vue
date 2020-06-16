@@ -19,11 +19,12 @@
       <div id="ContactCard">
         <div id="ContactTitle"> Quick Enquiries </div>
         <form id="form" class="topBefore" >
-          <input class="input" name ="user_name" type="text" placeholder="NAME">
-          <input class="input" name="user_email" type="text" placeholder="E-MAIL">
-          <input class="input" name="phone" type="text" placeholder="CONTACT NO">
-          <textarea class="message" name="message" type="text" placeholder="MESSAGE"></textarea>
-           <a id="Submit" style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">Send</a>
+          <input v-model="YourDetails.Name" class="input" name ="user_name" type="text" placeholder="NAME">
+          <input v-model="YourDetails.Email" class="input" name="user_email" type="text" placeholder="E-MAIL">
+          <input v-model="YourDetails.Phone" class="input" name="phone" type="text" placeholder="CONTACT NO">
+          <textarea v-model="YourDetails.Message" class="message" name="message" type="text" placeholder="MESSAGE"></textarea>
+           <a v-on:click="SendForm" id="Submit" style="font-size: 1.5vw" class="btn btn-sm animated-button thar-two">Send</a>
+          <div v-if="Errors.length !== 0" style="color: red; font-size: 1vw">{{this.Errors}}</div>
         </form>
 
       </div>
@@ -48,7 +49,8 @@
       <div class="RSA" id="Phone">
         <img style="transform: translate(1vw, -1vw);" class="Image" id="PhoneHours" src="../../assets/images/Icons/PhoneIconNorm.png" alt="None">
         <div class="Text">
-        0800 223 724
+        0800 223 724 <br>
+        021 222 1099, 24/7
         </div>
 
       </div>
@@ -64,8 +66,62 @@
 </template>
 
 <script>
+    import BlogController from '../../services/BlogServices'
     export default {
-        name: "HomeContact"
+        name: "HomeContact",
+        data() {
+          return {
+              YourDetails: {
+                  Name: '',
+                  Email: '',
+                  Phone: '',
+                  Message: '',
+              },
+              Sent: false,
+              Errors: [],
+              CompiledString: '',
+          }
+        },
+        methods: {
+            async SendForm() {
+                console.log("Start Send");
+                let UnFilledAreas = this.AreasFilled();
+                if (UnFilledAreas.length === 0 && this.Sent === false) {
+                    console.log("Sent mail");
+                    const response = await BlogController.SendContact({
+                        From: this.CompiledString
+                    });
+                    console.log(response.Date);
+                    this.Sent = true;
+                } else {
+                    this.Errors = UnFilledAreas;
+                }
+            },
+            AreasFilled() {
+                let form = document.getElementById("form");
+                var inputs = form.querySelectorAll("input");
+                [].forEach.call(inputs, function (input) {
+                    if (input.value === "") {
+                        input.classList.add("error");
+                    } else {
+                        input.classList.remove("error");
+                    }
+                });
+
+
+                let Errors = [];
+                this.CompiledString = '';
+                this.CompiledString += ' Your Details: \n \n';
+                for (let prop in this.YourDetails) {
+                    if (this.YourDetails[prop] === '') {
+                        Errors.push("You are missing " + prop + " in the Your Details Area");
+                    } else {
+                        this.CompiledString += prop.toUpperCase() + ":  " + this.YourDetails[prop] + "\n"
+                    }
+                }
+                return Errors;
+            }
+        }
     }
 </script>
 
@@ -298,5 +354,8 @@
     width: 10vw;
     margin: 2vw auto;
     transform: translateX(0);
+  }
+  input[type=text].error {
+    border: 1px solid red;
   }
 </style>

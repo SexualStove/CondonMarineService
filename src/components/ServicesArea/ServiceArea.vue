@@ -81,7 +81,7 @@
                     'Forms and Terms of Trade',
                     'Personal Property Security Registration & Searches',
                     'Full Customer/Debtor Management',
-                    'Field Visits',
+                    'Family',
                     'Background Checks',
                     'Investigations',
                     'Document Serving'
@@ -94,16 +94,29 @@
                     'Approaching legal proceedings through Coast to Coast is likely to be significantly less expensive than working directly with a law firm. We’ll try to get a result in the shortest possible time, so that you’re not paying hours and hours of legal costs.',
 
 
-                    'You may have your receivables under good control in-house - (if you haven\'t - we really need to talk) (0800 223 724)  but sometimes you have one that just will not pay and it\'s time to call in the big guns.\n' +
+                    'All types of debt\n' +
+                    'Coast to Coast is an experienced and successful debt collector, recovering consumer and commercial debt in New Zealand and overseas. Whether you’re owed a hundred or a million, it’s our business to get your debtor problem sorted. Unlike most debt collection agencies, our people are private investigators who operate discreetly to ensure the best-possible outcome without making waves.\n' +
                     '\n' +
-                    'You want to use a service you can trust that uses ethical and effective practices to ensure your customers pay their debts.\n' +
+                    'Members of NZIPI – the New Zealand Institute of Professional Investigators\n' +
                     '\n' +
-                    'You will find our debt collection service prompt, persistent and efficient (not to mention incredibly cost-effective if you have the right processes in place) - and we will help you with that.\n' +
+                    'Collection strategies customised to each job\n' +
+                    'We collaborate with you to develop a unique strategy for each assignment. This is typically based on the size and age of the debt, the nature of the debtor and your preferred outcomes.\n' +
                     '\n' +
-                    'Your reinforcements - Be Paid Limited - are ready to back you up whenever you need us.\n' +
+                    'Our approach can range from level one (kid gloves) to level 10 (bankruptcy action). As a rule, we find that non-threatening person-to-person contact is far more successful than letters. Often a phone call or a chat is all that’s required.\n' +
                     '\n' +
-                    'We can fix it!\n' +
-                    '\n',
+                    'Your debtors don’t want to be black-listed for failing to pay; when faced with the necessity to meet their debts, they usually oblige. At all times, we will operate in a manner that’s consistent with the values of your business and your immediate community.\n' +
+                    '\n' +
+                    'Less cost than you expect\n' +
+                    'Our clients are pleasantly surprised by our approach to costing. Initially they think it will be more expensive to use private investigators for debt collection, but they soon realise that our service represents great value for money.\n' +
+                    '\n' +
+                    'Legal action when required\n' +
+                    'In situations where a debtor is steadfastly refusing to pay, or even to negotiate payment arrangements, we can escalate our activities by calling on the expertise of our legal team.\n' +
+                    '\n' +
+                    'Keeping you fully informed\n' +
+                    'We’ll discuss the strategy with you and provide regular progress updates. We’ll also keep you informed of any partial or staged repayment offers from the debtor, before accepting or declining on your behalf.\n' +
+                    '\n' +
+                    'Letting you get on with your business\n' +
+                    'The often hidden impact of chasing bad debt is a drop in productivity for you and your staff. Stress, demotivation, distraction and down-time all combine to work against you. By handing your debt collection over to us, you’re free to focus on managing and growing your business. Call us today on 0064 800 463 578.',
 
                     'Can they pay?  \n' +
                     'Will they pay?  \n' +
@@ -124,12 +137,12 @@
                     'Often invoicing is left to evenings and weekends or when you find some time which means invoices go out late, resulting in late payment. Wouldn\'t your time be better spent on the work that earns you money?  \n' +
                     'We can process invoices for any business including those that charge by time, quotation, time and materials or time and travel.  We can input your payments and send out monthly statements and supply you with an up to date report of who owes you what, at any time.\n' +
                     'If needed, we can create your quotations and then convert those quotations into invoices upon acceptance by your customer.\n' +
-                    'If you would like more information on this service, please contact us. We will be very happy to customise the right solution for you. ',
+                    'If you would like more information on this service, please contact us. We will be very happy to customize the right solution for you. ',
 
-                    'We contact your customers on your behalf.  Your customers get regular, personalised service, and in most cases they don\'t need to know we are involved, except for paying you sooner!   Fast results that are more cost-effective than in-house credit control. More time to spend on making money - not chasing yesterdays.  A custom-designed credit control service ideally for businesses with 10 to 300 monthly debtors. \n \n'+
+                    'We contact your customers on your behalf.  Your customers get regular, personalized service, and in most cases they don\'t need to know we are involved, except for paying you sooner!   Fast results that are more cost-effective than in-house credit control. More time to spend on making money - not chasing yesterdays.  A custom-designed credit control service ideally for businesses with 10 to 300 monthly debtors. \n \n'+
                       'A monthly fee is charged for Credit Control based on the average number of debtors invoiced monthly (not the dollar value of the billing).  Calculated in the fee is an amount for phone, stationery and postage charges.  The total fee will depend on whether you typically have recurring trade customers or a mix of trade and retail customers and also whether your customers are mostly local or nationwide. We are happy to give you a no-obligation free quotation.',
 
-                    'Comprehensive credit application forms and customised terms of trade\n' +
+                    'Comprehensive credit application forms and customized terms of trade\n' +
                     '\n' +
                     'Nobody starts a business relationship intending to see it end in failure. We would like to think a handshake should be sufficient - but often its not.\n' +
                     '\n' +
@@ -173,14 +186,23 @@
                     'Reduction of risk of fraud by employees - because we are keeping an eye on the money that is coming in, there is less risk of it being syphoned off by an unscrupulous employee.',
 
 
-                    'I honestly dont understand what this is',
+                    'We appreciate that dealing with family issues requires sensitivity and a gentle touch. We have a special team of investigators who provide this service. They are sensitive, caring and trained to guide you through what can be an emotionally difficult time.\n' +
+                    'Our team includes female investigators, as many women who are dealing with matrimonial and other family-related issues prefer to talk to a supportive and understanding woman. \n\n\n' +
+                    'The family-related services we provide include:\n\n' +
+                    'Matrimonial Issues\n' +
+                    'We provide a confidential service focusing on your objectives and keep you updated at every stage of the process.' +
+                    'Our professional surveillance team understands your need to get answers and the sensitivity of your circumstances.' +
+                    'We are always aware of the turmoil that you will have gone through to come to the decision to employ a matrimonial investigator to investigate your relationship, and always provide a sensitive and supportive service.' +
+                    '\n\n' +
+                    'Debt Collection\n' +
+                    'Collecting debts is often a difficult process, and it is made more complex when family is involved. We will work with you to reach your preferred outcomes. If necessary, we can also call on the expertise of our legal team.',
 
 
                     'Background checks covers the verification of someone and the negative records of that someone for employment/tenant screening or general due diligence purposes.\n' +
                     '\n' +
                     'Background investigations can get into an in-depth history and character of a subject.\n' +
                     '\n' +
-                    'The kinds of information we can investigate include but are not limited to- past histories with family, neighbors, employers, friends, education, co-workers, professions, professional licenses, and much more. Our background investigations will help you to understand a character and profile of the one you send us to investigate.',
+                    'The kinds of information we can investigate include but are not limited to- past histories with family, neighbours, employers, friends, education, co-workers, professions, professional licenses, and much more. Our background investigations will help you to understand a character and profile of the one you send us to investigate.',
 
 
 
@@ -200,6 +222,7 @@
 
 
 
+                    'Be Paid can take care of all of your process serving requirements throughout New Zealand, Australia, the Pacific Islands and around the world.\n\n\n' +
                     'We serve these types of documents:\n\n' +
                     '• District Court Proceedings\n' +
                     '• Divorce Proceedings (Dissolution of Marriage papers)\n' +
@@ -216,25 +239,27 @@
                     '• Protection Orders\n' +
                     '• Statement of Claim, Notice of Proceeding, List of documents relied on\n' +
                     '• Trespass Notices\n' +
-                    '• Witness Summons'
+                    '• Witness Summons \n\n\n\n' +
+                      'We are authorised to serve criminal documents pursuant to the Summary Proceedings Act 1957.\n' +
+                    'Process Serving New Zealand, Australia and the Pacific Islands Wide.'
                 ],
                 Style: [
                     '120vh',
-                    '120vh',
+                    '190vh',
                     '120vh',
                     '120vh',
                     '120vh',
                     '120vh',
                     '120vh',
                     '180vh',
-                    '120vh',
+                    '150vh',
                     '120vh',
                     '180vh',
-                    '120vh'
+                    '150vh'
                 ],
                 Style2: [
                   '13%',
-                    '13%',
+                    '9%',
                     '13%',
                     '13%',
                     '13%',
@@ -244,7 +269,7 @@
                     '13%',
                     '13%',
                     '10%',
-                    '13%'
+                    '11%'
                 ]
             }
         },

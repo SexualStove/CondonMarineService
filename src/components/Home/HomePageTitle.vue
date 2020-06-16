@@ -5,7 +5,6 @@
       <div id="Line"></div>
       <div id="Line2"></div>
     </div>
-    <div style="transform: translateY(64vh); font-size: 2vw; color: white; font-family: 'Play', sans-serif;">Cellphone: 021 222 1099, 24/7</div>
     <div style="transform: translateY(8vh);">
 
     <div id="ButtonArea">
