@@ -7,6 +7,8 @@ const SubscribersController = require("./controller/SubscribersController");
 module.exports = (app) => {
     app.post('/DebtLodgement', BlogController.SendForm);
 
+    app.post('/', BlogController.SendContact);
+
     app.post('/create', BlogController.createBlog);
     // AuthenticationControllerPolicy.register
     app.get('/blog/:blogId', BlogController.getBlog);

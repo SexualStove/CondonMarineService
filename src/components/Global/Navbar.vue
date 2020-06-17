@@ -7,7 +7,7 @@
     </div>
     <div id="LogoPad">
       With Offices now in Invercargill, Dunedin and Christchurch. <br>
-      And agents across New Zealand and Australia.
+      And agents across New Zealand, Australia and Pacific Islands.
     </div>
 
       <div class="NavItem" id="Services">

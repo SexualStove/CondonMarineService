@@ -41,6 +41,9 @@
         <input v-model="DebtDetails.Guarantee" class="input" name ="guarantee" type="text" placeholder="PERSONAL GUARANTEE ON ACCOUNT (YES/NO)">
         <textarea v-model="DebtDetails.DebtDetails" class="message" name="description" type="text" placeholder="DESCRIPTION OF DEBT"></textarea>
         <a v-on:click="SendForm" id="Submit"   class="btn btn-sm animated-button thar-two">Send</a>
+
+        <div style="font-family: 'Play', sans-serif; font-size: 1.5vw; text-align: center;">if you have any issues submitting this form please call this number.</div>
+        <div style="font-family: 'Play', sans-serif; font-size: 3vw; text-align: center;">0800 223 724</div>
         <div id="Errors" v-for="Error in Errors" v-bind:key="Error">
           {{Error}}
         </div>
@@ -91,17 +94,16 @@
         methods: {
             async SendForm() {
                 console.log("Start Send");
-                let UnFilledAreas = this.AreasFilled();
-                if (UnFilledAreas.length === 0 && this.Sent === false) {
+                if (this.Sent === false) {
                     console.log("Sent mail");
+                    this.Sent = true;
                     const response = await BlogController.SendForm({
                         From: "No"
                     });
-                    console.log("Ahhhhhhhh");
                     console.log(response.Date);
-                    this.Sent = true;
+
                 } else {
-                    this.Errors = UnFilledAreas;
+                    console.log("Ahhhhhhhh");
                 }
             },
             AreasFilled() {

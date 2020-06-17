@@ -81,7 +81,7 @@
                     'Forms and Terms of Trade',
                     'Personal Property Security Registration & Searches',
                     'Full Customer/Debtor Management',
-                    'Family',
+                    'Family/Marriage',
                     'Background Checks',
                     'Investigations',
                     'Document Serving'
@@ -97,7 +97,6 @@
                     'All types of debt\n' +
                     'Coast to Coast is an experienced and successful debt collector, recovering consumer and commercial debt in New Zealand and overseas. Whether you’re owed a hundred or a million, it’s our business to get your debtor problem sorted. Unlike most debt collection agencies, our people are private investigators who operate discreetly to ensure the best-possible outcome without making waves.\n' +
                     '\n' +
-                    'Members of NZIPI – the New Zealand Institute of Professional Investigators\n' +
                     '\n' +
                     'Collection strategies customised to each job\n' +
                     'We collaborate with you to develop a unique strategy for each assignment. This is typically based on the size and age of the debt, the nature of the debtor and your preferred outcomes.\n' +
@@ -116,7 +115,7 @@
                     'We’ll discuss the strategy with you and provide regular progress updates. We’ll also keep you informed of any partial or staged repayment offers from the debtor, before accepting or declining on your behalf.\n' +
                     '\n' +
                     'Letting you get on with your business\n' +
-                    'The often hidden impact of chasing bad debt is a drop in productivity for you and your staff. Stress, demotivation, distraction and down-time all combine to work against you. By handing your debt collection over to us, you’re free to focus on managing and growing your business. Call us today on 0064 800 463 578.',
+                    'The often hidden impact of chasing bad debt is a drop in productivity for you and your staff. Stress, demotivation, distraction and down-time all combine to work against you. By handing your debt collection over to us, you’re free to focus on managing and growing your business. Call us today on 0800 223 724.',
 
                     'Can they pay?  \n' +
                     'Will they pay?  \n' +
@@ -192,7 +191,8 @@
                     'Matrimonial Issues\n' +
                     'We provide a confidential service focusing on your objectives and keep you updated at every stage of the process.' +
                     'Our professional surveillance team understands your need to get answers and the sensitivity of your circumstances.' +
-                    'We are always aware of the turmoil that you will have gone through to come to the decision to employ a matrimonial investigator to investigate your relationship, and always provide a sensitive and supportive service.' +
+                    'We are always aware of the turmoil that you will have gone through to come to the decision to employ a matrimonial investigator to investigate your relationship, and always provide a sensitive and supportive service. \n' +
+                    'This also includes cheating and infidelity, where we will be taking the utmost care.' +
                     '\n\n' +
                     'Debt Collection\n' +
                     'Collecting debts is often a difficult process, and it is made more complex when family is involved. We will work with you to reach your preferred outcomes. If necessary, we can also call on the expertise of our legal team.',

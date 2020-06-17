@@ -66,7 +66,7 @@
 </template>
 
 <script>
-    import BlogController from '../../services/BlogServices'
+    import BlogController from '../../services/BlogServices';
     export default {
         name: "HomeContact",
         data() {
@@ -85,42 +85,16 @@
         methods: {
             async SendForm() {
                 console.log("Start Send");
-                let UnFilledAreas = this.AreasFilled();
-                if (UnFilledAreas.length === 0 && this.Sent === false) {
-                    console.log("Sent mail");
-                    const response = await BlogController.SendContact({
-                        From: this.CompiledString
-                    });
-                    console.log(response.Date);
+                //let UnFilledAreas = this.AreasFilled();
+                if (this.Sent === false) {
+                    const response = await BlogController.SendContact({});
                     this.Sent = true;
+                    console.log(response);
                 } else {
-                    this.Errors = UnFilledAreas;
+                    this.Sent = true;
                 }
             },
-            AreasFilled() {
-                let form = document.getElementById("form");
-                var inputs = form.querySelectorAll("input");
-                [].forEach.call(inputs, function (input) {
-                    if (input.value === "") {
-                        input.classList.add("error");
-                    } else {
-                        input.classList.remove("error");
-                    }
-                });
 
-
-                let Errors = [];
-                this.CompiledString = '';
-                this.CompiledString += ' Your Details: \n \n';
-                for (let prop in this.YourDetails) {
-                    if (this.YourDetails[prop] === '') {
-                        Errors.push("You are missing " + prop + " in the Your Details Area");
-                    } else {
-                        this.CompiledString += prop.toUpperCase() + ":  " + this.YourDetails[prop] + "\n"
-                    }
-                }
-                return Errors;
-            }
         }
     }
 </script>

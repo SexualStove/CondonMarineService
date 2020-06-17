@@ -4,7 +4,9 @@ export default {
     SendForm (data) {
       return Api().post('/DebtLodgement', data)
     },
-
+    SendContact (data) {
+        return Api().post('/', data)
+    },
     createBlog (data) {
         return Api().post('/create', data)
     },
