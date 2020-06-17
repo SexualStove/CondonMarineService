@@ -12,6 +12,7 @@
         <div class="STitle"> Agents in: </div>
         New Zealand<br>
         Australia<br>
+        Pacific Islands<br>
       </div>
     </div>
     <div id="Header"> Let's Talk </div>

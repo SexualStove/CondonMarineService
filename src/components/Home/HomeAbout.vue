@@ -18,7 +18,7 @@
         When managing your ledger, we are experts in diplomacy. We calmly work with your debt to ensure you get paid without any drama, come-back or fall-out.
         And if we think there's a legitimate reason why they haven't paid, we'll liaise between them and you to sort out the problem.
 
-        Of course, if they just simply won't pay, then we will take off the kid gloves....  but only as a very last resort and only with your permission.      <a class="link-1" href="#"> Read More...</a>
+        Of course, if they just simply won't pay, then we will take off the kid gloves....  but only as a very last resort and only with your permission.
       </p>
 
     </div>

@@ -81,7 +81,7 @@
                     'Forms and Terms of Trade',
                     'Personal Property Security Registration & Searches',
                     'Full Customer/Debtor Management',
-                    'Family/Marriage',
+                    'Family/Marriage Issues',
                     'Background Checks',
                     'Investigations',
                     'Document Serving'
@@ -89,13 +89,16 @@
                 Desc: [
 
 
-                    'We offer litigation support services – including scanning, OCR, coding and indexing, electronic discovery etc. We have a fully qualified legal team ready to support your company covering all aspects of work, and can reproduce and store legal documents and case files. \n\n'+
-                    'Our experience has taught us how best to approach legal action. Our legal team use a variety of tools – from a simple notice of claims through to filing for bankruptcy. Always we will ensure you’re 100% on board with our recommendation before any action is taken. \n\n'+
-                    'Approaching legal proceedings through Coast to Coast is likely to be significantly less expensive than working directly with a law firm. We’ll try to get a result in the shortest possible time, so that you’re not paying hours and hours of legal costs.',
+                    'Let us take on your ledger management so you can focus on what’s needed within your company without being distracted. \n\n' +
+                    'We at Be paid can provide full ledger management systems that cover not only invoicing but also payments. Ensuring payment from your clients while also making sure you keep a professional and good faith relationships with those clients. Using strategies that will improve your payment compliance, making sure that you have a steady and reliable source of cashflow to continue doing business even at break neck speeds. Reducing bad debt, and creating instant cost savings because you know longer have to put valuable time/business resources into a problem you are not in the business to do.\n' +
+                    '\nOur values when it comes to ledger management are:\n\n' +
+                    'Cost effective: Having us follow up on those late payers is the most efficient way to have costumers follow up. Doing it quick and fast, therefore making sure you get your money quicker then anyone else could have. While also reducing your costs.\n' +
+                    '\nClient Relationships: If you do not enjoy, or want to go after your own clients who are late payers. We can take that awkwardness off your shoulders. While also making sure that your clients don’t feel attacked, our experience in this field allow us to get your money back without any ‘ill will’ against any side of this relationship. \n' +
+                    '\nFocus On Your Business: By allowing us to take on your ledgers, you can focus on what makes you money. Rather then trying to catch on people who didn’t.\n',
 
 
                     'All types of debt\n' +
-                    'Coast to Coast is an experienced and successful debt collector, recovering consumer and commercial debt in New Zealand and overseas. Whether you’re owed a hundred or a million, it’s our business to get your debtor problem sorted. Unlike most debt collection agencies, our people are private investigators who operate discreetly to ensure the best-possible outcome without making waves.\n' +
+                    'Be Paid is an experienced and successful debt collector, recovering consumer and commercial debt in New Zealand and overseas. Whether you’re owed a hundred or a million, it’s our business to get your debtor problem sorted. Unlike most debt collection agencies, our people are private investigators who operate discreetly to ensure the best-possible outcome without making waves.\n' +
                     '\n' +
                     '\n' +
                     'Collection strategies customised to each job\n' +
@@ -244,7 +247,7 @@
                     'Process Serving New Zealand, Australia and the Pacific Islands Wide.'
                 ],
                 Style: [
-                    '120vh',
+                    '140vh',
                     '190vh',
                     '120vh',
                     '120vh',

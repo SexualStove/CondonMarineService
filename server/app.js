@@ -8,9 +8,14 @@ const {sequelize} = require('./models');
 
 const config = require('./config/config');
 
-
+const corsOptions = {
+    origin: true,
+    credentials: true
+};
 
 const app = express();
+
+app.options('*', cors(corsOptions));
 app.use(morgan('combined'));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(cors());

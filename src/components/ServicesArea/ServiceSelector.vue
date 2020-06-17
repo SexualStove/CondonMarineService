@@ -9,7 +9,7 @@
     <div class="SubTitle" v-on:click="ChangeService(5)">  Credit application forms and Terms of Trade <div class="Line"></div> </div>
     <div class="SubTitle" v-on:click="ChangeService(6)"> P P S R <div class="Line"></div> </div>
     <div class="SubTitle" v-on:click="ChangeService(7)"> Full Customer/Debtor Management <div class="Line"></div></div>
-    <div class="SubTitle" v-on:click="ChangeService(8)"> Family/Marriage <div class="Line"></div> </div>
+    <div class="SubTitle" v-on:click="ChangeService(8)"> Family/Marriage Issues<div class="Line"></div> </div>
     <div class="SubTitle" v-on:click="ChangeService(9)"> Background checks <div class="Line"></div> </div>
     <div class="SubTitle" v-on:click="ChangeService(10)"> Investigations <div class="Line"></div></div>
     <div class="SubTitle" v-on:click="ChangeService(11)"> Document Serving<div class="Line"></div> </div>
