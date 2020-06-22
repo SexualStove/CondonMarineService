@@ -216,7 +216,7 @@ module.exports = {
             console.log("Already Sent");
             Times.pop();
         } else {
-            //SendMail().catch(console.error);
+            SendMail().catch(console.error);
             Times.push(req.body.Time);
 
         }
@@ -298,7 +298,7 @@ module.exports = {
             console.log("Already Sent");
             DebtLodgementTimes.pop();
         } else {
-            //SendMail().catch(console.error);
+            SendMail().catch(console.error);
             DebtLodgementTimes.push(req.body.Time);
         }
         res.sendStatus(200);
