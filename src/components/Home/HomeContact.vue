@@ -20,10 +20,11 @@
       <div id="ContactCard">
         <div id="ContactTitle"> Quick Enquiries </div>
         <form id="form" class="topBefore" >
-          <input v-model="YourDetails.Name" class="input" name ="user_name" type="text" placeholder="NAME">
+          <input v-model="YourDetails.Name" id="Name" class="input" name ="user_name" type="text" placeholder="NAME">
+          <input v-model="TestZone" class="input" style="display: none;" name="address" type="text" placeholder="ADDRESS REQUIRED">
           <input v-model="YourDetails.Email" class="input" name="user_email" type="text" placeholder="E-MAIL">
           <input v-model="YourDetails.Phone" class="input" name="phone" type="text" placeholder="CONTACT NO">
-          <textarea v-model="YourDetails.Message" class="message" name="message" type="text" placeholder="MESSAGE"></textarea>
+          <textarea v-model="YourDetails.Message" id="message" class="message" name="message" type="text" placeholder="MESSAGE"></textarea>
            <a v-on:click="SendForm" id="Submit" style="font-size: 1.5vw" class="btn btn-sm animated-button thar-two">Send</a>
           <div v-if="Errors.length !== 0" style="color: red; font-size: 1vw">{{this.Errors}}</div>
         </form>
@@ -78,6 +79,7 @@
                   Phone: '',
                   Message: '',
               },
+              TestZone: '',
               Sent: false,
               Errors: [],
               CompiledString: '',
@@ -86,15 +88,57 @@
         methods: {
             async SendForm() {
                 console.log("Start Send");
+                let pass = this.JustifyFrom();
+                console.log("Got pass of: "+pass);
                 //let UnFilledAreas = this.AreasFilled();
-                if (this.Sent === false) {
-                    const response = await BlogController.SendContact({});
+                if (this.Sent === false && pass == true) {
+                    console.log("This got the this.sent of; "+this.Sent);
                     this.Sent = true;
+                    console.log("Changed this.sent to: "+this.Sent);
+                    let date = new Date();
+                    const response = await BlogController.SendContact({
+                       Details: this.YourDetails,
+                        Time: date
+                    });
+
                     console.log(response);
                 } else {
+                    console.log("Faill");
                     this.Sent = true;
                 }
+
             },
+            /**
+             * @return {boolean}
+             */
+            JustifyFrom() {
+                console.log();
+                if(this.TestZone !== '') {
+                    console.log("autofilled");
+                    return false;
+                }
+                let Pass = true;
+                if(this.YourDetails.Message === '') {
+                    console.log("Message");
+                    document.getElementById("message").classList.add("error");
+                    Pass = false;
+                } else {
+                    document.getElementById("message").classList.remove("error");
+                }
+                if(this.YourDetails.Name === '') {
+                    console.log("Name");
+                    document.getElementById("Name").classList.add("error");
+                    Pass = false;
+                } else {
+                    document.getElementById("Name").classList.remove("error");
+                }
+                console.log("Returning "+Pass);
+                if(Pass === true) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
 
         }
     }
@@ -331,6 +375,9 @@
     transform: translateX(0);
   }
   input[type=text].error {
+    border: 1px solid red;
+  }
+  textarea[type=text].error {
     border: 1px solid red;
   }
 </style>

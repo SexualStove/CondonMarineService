@@ -94,11 +94,14 @@
         methods: {
             async SendForm() {
                 console.log("Start Send");
+                this.AreasFilled();
                 if (this.Sent === false) {
                     console.log("Sent mail");
                     this.Sent = true;
+                    let Time = new Date();
                     const response = await BlogController.SendForm({
-                        From: "No"
+                        CompiledString: this.CompiledString,
+                        Time: Time
                     });
                     console.log(response.Date);
 
@@ -118,12 +121,11 @@
                 });
 
 
-                let Errors = [];
                 this.CompiledString = '';
                 this.CompiledString += ' Your Details: \n \n';
                 for (let prop in this.YourDetails) {
                     if(this.YourDetails[prop] === '') {
-                        Errors.push("You are missing "+prop+" in the Your Details Area");
+                        this.CompiledString += prop.toUpperCase() + ":  ---- \n"
                     } else {
                         this.CompiledString += prop.toUpperCase() + ":  " + this.YourDetails[prop] + "\n"
                     }
@@ -131,7 +133,7 @@
                 this.CompiledString += '\n\n\n Debtors Details: \n \n';
                 for (let prop in this.DebtorsDetails) {
                     if(this.DebtorsDetails[prop] === '') {
-                        Errors.push("You are missing "+prop+" in the Debtors Details Area");
+                        this.CompiledString += prop.toUpperCase() + ":  ---- \n"
                     } else {
                         this.CompiledString += prop.toUpperCase() + ":  "  + this.DebtorsDetails[prop] + "\n"
                     }
@@ -139,12 +141,11 @@
                 this.CompiledString += '\n\n\n Debt Details: \n \n';
                 for (let prop in this.DebtDetails) {
                     if(this.DebtDetails[prop] === '') {
-                        Errors.push("You are missing "+prop+" in the Debt Details Area");
+                        this.CompiledString += prop.toUpperCase() + ":  ---- \n"
                     } else {
                         this.CompiledString += prop.toUpperCase() + ":  "  +  this.DebtDetails[prop] + "\n"
                     }
                 }
-                return Errors;
             }
         }
     }

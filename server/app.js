@@ -1,4 +1,4 @@
-const express = require('express');
+var express = require('express');
 const bodyParser = require('body-parser');
 const exphbs = require('express-handlebars');
 
@@ -10,26 +10,22 @@ const config = require('./config/config');
 
 const corsOptions = {
     origin: true,
-    credentials: true
+    credentials: true,
 };
 
-const app = express();
+var app = express();
+//app.options('*', cors(corsOptions));
+//app.options('*', cors(corsOptions));
 
-app.options('*', cors(corsOptions));
 app.use(morgan('combined'));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(cors());
+
 //View Engine
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 require('./routes')(app);
-sequelize.sync()
-    .then(() => {
-
-        app.listen(process.env.PORT || 8081);
-        console.log(`Server started on port ${config.port}`)
-
-    });
+app.listen(process.env.PORT || 8081);
 
 
 
