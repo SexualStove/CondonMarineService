@@ -5,7 +5,7 @@ module.exports ={
         user: process.env.DB_USER || 'MITBlogger',
         password: process.env.DB_PASS || 'password',
         database: process.env.DB_NAME || 'MITBlog',
-        host: process.env.HOST || 'localhost',
+        host: 'http://157.245.188.181' || 'localhost',
         dialect: 'sqlite',
         storage: './MITBlog.sqlite'
     }
