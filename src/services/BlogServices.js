@@ -5,7 +5,7 @@ export default {
       return Api().post('/DebtLodgement', data)
     },
     SendContact (data) {
-        return Api().post('http://localhost:8081/', data)
+        return Api().post('', data)
     },
 
 }

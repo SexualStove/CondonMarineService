@@ -7,7 +7,7 @@ const BlogController = require('./controller/BlogController');
 module.exports = (app) => {
 
     app.post('/DebtLodgement', BlogController.SendForm);
-    app.post('/', BlogController.SendContact);
+    app.post('', BlogController.SendContact);
 
 
 };
