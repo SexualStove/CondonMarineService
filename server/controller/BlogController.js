@@ -150,17 +150,17 @@ module.exports = {
 
             // create reusable transporter object using the default SMTP transport
             let transporter = nodemailer.createTransport({
-                host: "mail.smtp2go.com",
+                host: "smtpauth.discountdomains.co.nz",
                 tls: {
                     rejectUnauthorized:false,
                     ignoreTLS: true,
                 },
                 to: 'rt_condon@hotmail.com',
-                port: 2525,
+                port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'BePaid', // generated ethereal user
-                    pass: 'cWRiM21jdzlqMGsw' // generated ethereal password
+                    user: 'contact@inhouseweb.nz', // generated ethereal user
+                    pass: 'buster' // generated ethereal password
                 }
             });
 
@@ -170,7 +170,7 @@ module.exports = {
                 from: '"Do not reply" <contact@inhouseweb.nz>', // sender address
                 name: 'example.com',
                 to: 'rt_condon@hotmail.com', // list of receivers
-                subject: "Hello ✔", // Subject line
+                subject: "Contact Us Form", // Subject line
                 html: "<b>Your details</b><br>"+
                     "Name: "+req.body.Details.Name+"<br>"+
                     "Email: "+req.body.Details.Email+"<br>"+
