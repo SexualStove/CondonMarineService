@@ -158,8 +158,8 @@ module.exports = {
                 port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'inhouseweb@hotmail.com', // generated ethereal user
-                    pass: 'LaI47fDYpJw25A0x' // generated ethereal password
+                    user: process.env.Mail_User, // generated ethereal user
+                    pass: process.env.Pass // generated ethereal password
                 }
             });
 
@@ -243,8 +243,8 @@ module.exports = {
                 port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'inhouseweb@hotmail.com', // generated ethereal user
-                    pass: 'LaI47fDYpJw25A0x' // generated ethereal password
+                    user: process.env.Mail_User, // generated ethereal user
+                    pass: process.env.Pass // generated ethereal password
                 }
             });
             // send mail with defined transport object
