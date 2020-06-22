@@ -1,3 +1,4 @@
+
 <template>
   <div id="ContactUs" herf="ContactUs">
     <div id="MoreAreas">
@@ -66,6 +67,9 @@
     </div>
   </div>
 </template>
+
+/* eslint-disable no-alert, no-console */
+/* eslint-enable no-alert, no-console */
 
 <script>
     import BlogController from '../../services/BlogServices';

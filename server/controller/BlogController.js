@@ -41,8 +41,8 @@ module.exports = {
             let transporter = nodemailer.createTransport({
                 host: "smtpauth.discountdomains.co.nz",
                 tls: {
-                    rejectUnauthorized:false,
-                    ignoreTLS: true,
+                    //rejectUnauthorized:false,
+                    //ignoreTLS: true,
                 },
                 port: 587,
                 secure: false, // true for 465, false for other ports
@@ -150,17 +150,16 @@ module.exports = {
 
             // create reusable transporter object using the default SMTP transport
             let transporter = nodemailer.createTransport({
-                host: "smtpauth.discountdomains.co.nz",
+                host: "smtp-relay.sendinblue.com",
                 tls: {
-                    rejectUnauthorized:false,
-                    ignoreTLS: true,
+                    //rejectUnauthorized:false,
+                    //ignoreTLS: true,
                 },
-                to: 'rt_condon@hotmail.com',
                 port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'contact@inhouseweb.nz', // generated ethereal user
-                    pass: 'buster' // generated ethereal password
+                    user: 'inhouseweb@hotmail.com', // generated ethereal user
+                    pass: 'LaI47fDYpJw25A0x' // generated ethereal password
                 }
             });
 
@@ -168,7 +167,6 @@ module.exports = {
             console.log("New massage by "+req.body.Details.Name);
             let info = {
                 from: '"Do not reply" <contact@inhouseweb.nz>', // sender address
-                name: 'example.com',
                 to: 'rt_condon@hotmail.com', // list of receivers
                 subject: "Contact Us Form", // Subject line
                 html: "<b>Your details</b><br>"+

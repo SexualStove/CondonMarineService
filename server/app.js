@@ -18,6 +18,7 @@ app.use(cors());
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 require('./routes')(app);
+
 sequelize.sync()
     .then(() => {
 
