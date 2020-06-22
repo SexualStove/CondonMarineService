@@ -159,8 +159,8 @@ module.exports = {
                 port: 2525,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'InHouseWebNZ', // generated ethereal user
-                    pass: 'opPkxrrHh6RC' // generated ethereal password
+                    user: 'BePaid', // generated ethereal user
+                    pass: 'cWRiM21jdzlqMGsw' // generated ethereal password
                 }
             });
 
