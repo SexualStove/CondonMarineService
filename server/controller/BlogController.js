@@ -235,20 +235,18 @@ module.exports = {
 
             // create reusable transporter object using the default SMTP transport
             let transporter = nodemailer.createTransport({
-                host: "mail.smtp2go.com",
+                host: "smtp-relay.sendinblue.com",
                 tls: {
-                    rejectUnauthorized:false,
-                    ignoreTLS: true,
+                    //rejectUnauthorized:false,
+                    //ignoreTLS: true,
                 },
-                to: 'rt_condon@hotmail.com',
-                port: 2525,
+                port: 587,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'InHouseWebNZ', // generated ethereal user
-                    pass: 'opPkxrrHh6RC' // generated ethereal password
+                    user: 'inhouseweb@hotmail.com', // generated ethereal user
+                    pass: 'LaI47fDYpJw25A0x' // generated ethereal password
                 }
             });
-
             // send mail with defined transport object
             let info = {
                 from: '"Do not reply" <contact@inhouseweb.nz>', // sender address
