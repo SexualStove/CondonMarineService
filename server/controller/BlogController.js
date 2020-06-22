@@ -159,8 +159,8 @@ module.exports = {
                 port: 2525,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'InHouseWeb', // generated ethereal user
-                    pass: 'L3tm31n' // generated ethereal password
+                    user: 'InHouseWebNZ', // generated ethereal user
+                    pass: 'opPkxrrHh6RC' // generated ethereal password
                 }
             });
 
@@ -216,9 +216,12 @@ module.exports = {
             console.log("Already Sent");
             Times.pop();
         } else {
-            SendMail().catch(console.error);
+            //SendMail().catch(console.error);
             Times.push(req.body.Time);
+
         }
+        res.sendStatus(200);
+        res.end();
     },
 
 
@@ -243,8 +246,8 @@ module.exports = {
                 port: 2525,
                 secure: false, // true for 465, false for other ports
                 auth: {
-                    user: 'InHouseWeb', // generated ethereal user
-                    pass: 'L3tm31n' // generated ethereal password
+                    user: 'InHouseWebNZ', // generated ethereal user
+                    pass: 'opPkxrrHh6RC' // generated ethereal password
                 }
             });
 
@@ -295,8 +298,10 @@ module.exports = {
             console.log("Already Sent");
             DebtLodgementTimes.pop();
         } else {
-            SendMail().catch(console.error);
+            //SendMail().catch(console.error);
             DebtLodgementTimes.push(req.body.Time);
         }
+        res.sendStatus(200);
+        res.end();
     }
 };
