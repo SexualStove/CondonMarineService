@@ -5,7 +5,7 @@ module.exports ={
         user: process.env.DB_USER || 'MITBlogger',
         password: process.env.DB_PASS || 'password',
         database: process.env.DB_NAME || 'MITBlog',
-        host: 'http://157.245.188.181' || 'localhost',
+        host: `https://www.bepaid.co.nz` || 'localhost',
         dialect: 'sqlite',
         storage: './MITBlog.sqlite'
     }

@@ -1,9 +1,9 @@
 <template>
   <div>
     <div id="IconStrip">
-      <div class="Break"></div>
+      <div class="Break" style="grid-area: L"></div>
       <router-link style="text-decoration:none" to="/Services/ServiceArea">
-        <div id="DebtArea" class="IconArea" v-on:mousedown="ServiceClick(0)">
+        <div id="DebtArea" style="grid-area: I!" class="IconArea" v-on:mousedown="ServiceClick(0)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>
@@ -16,7 +16,7 @@
         </div>
       </router-link>
       <router-link style="text-decoration:none"  to="/Services/ServiceArea">
-        <div id="LitigationArea" class="IconArea" v-on:mousedown="ServiceClick(1)">
+        <div id="LitigationArea" style="grid-area: I2" class="IconArea" v-on:mousedown="ServiceClick(1)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>
@@ -29,7 +29,7 @@
         </div>
       </router-link>
       <router-link style="text-decoration:none"  to="/Services/ServiceArea">
-        <div id="BussinesstArea" class="IconArea" v-on:mousedown="ServiceClick(2)">
+        <div id="BussinesstArea" style="grid-area: I3" class="IconArea" v-on:mousedown="ServiceClick(2)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>
@@ -42,7 +42,7 @@
         </div>
       </router-link>
       <router-link style="text-decoration:none" to="/Services/ServiceArea">
-        <div id="privateDomesticArea" class="IconArea" v-on:mousedown="ServiceClick(3)">
+        <div id="privateDomesticArea" style="grid-area: I4"  class="IconArea" v-on:mousedown="ServiceClick(3)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>
@@ -55,7 +55,7 @@
           </div>
         </div>
       </router-link>
-      <div class="Break"></div>
+      <div class="Break" style="grid-area: R" ></div>
     </div>
 
   </div>
@@ -85,16 +85,16 @@
   padding: 10vh 0 10vh 0;
   width: 100%;
   grid-template-columns: 15% 17.5% 17.5% 17.5% 17.5% 15%;
+  grid-template-areas: "L I1 I2 I3 I4 R";
   display: grid;
   justify-items: center;
   text-align: center;
-
 }
   .Icon {
     top: 0;
     vertical-align: top;
     vert-align: top;
-    width: 8.5vw;
+    width: 70%;
   }
   .Title {
     color: black;
@@ -126,8 +126,8 @@
     border-radius: 60%;
     transform: translate(-2vw, -3vh);
     //max-width: 1vw;
-    width: 17vw;
-    font-size: 1.4vw;
+    width: 135%;
+    font-size: 250%;
     font-family: 'Play', sans-serif;
     transition: 0.7s;
   }
@@ -135,12 +135,12 @@
     font-size: 1.5vw;
   }
   .IconArea {
-    width: 15vw;
+    width: 80%;
     padding: 1vw;
     position: relative;
   }
   .SubTitle {
-    font-size: 0.8vw;
+    font-size: 140%;
     transform: translate(0, -2vh);
     color: black;
     font-family: 'Roboto', sans-serif;
@@ -194,4 +194,20 @@
   .IconArea:hover {
     cursor: pointer;
   }
+
+@media screen and (max-width: 1000px) {
+  #IconStrip {
+    background-image: url("../../assets/images/Patterns/dot-grid-white.png");
+    background-size: 15%;
+    padding: 10vh 0 10vh 0;
+    width: 100%;
+    grid-template-columns: 5% 45% 45% 5%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "L I1 I2 R"
+                          "L I3 I4 R";
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+}
 </style>

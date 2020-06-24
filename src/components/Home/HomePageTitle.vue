@@ -1,15 +1,15 @@
 <template>
-  <div id="TextArea" style="position: absolute; top: 15%; left: 20%; z-index: 0">
+    <div id="TextArea" style="position: absolute;  z-index: 0">
     <div style="transform: translateY(-9vw)">
       <div id="Title"> Across the nation big or small, Be Paid brings professionalism to your door </div>
-      <div id="Line"></div>
-      <div id="Line2"></div>
+      <div class="Line" id="Line"></div>
+      <div class="Line" id="Line2"></div>
     </div>
     <div style="transform: translateY(8vh);">
 
     <div id="ButtonArea">
 
-      <div id="Button1" v-on:mousedown="ServiceClick2(0)" style=" z-index: 99; margin-right: 10vw" class="col-md-3 col-sm-3 col-xs-6 button">
+      <div id="Button1" v-on:mousedown="ServiceClick2(0)" style=" z-index: 99;" class="col-md-3 col-sm-3 col-xs-6 button">
         <router-link style="text-decoration: none; color: white" to="/Services/ServiceArea">
         <a style="border-radius: 30px" href="#" class="btn btn-sm animated-button thar-two">
         Ledger management
@@ -61,6 +61,7 @@
     width: 60vw;
     height: 30vw;
     text-align: center;
+    top: 15%; left: 20%;
   }
   #Title {
     padding-top: 9.6vw;
@@ -123,6 +124,8 @@
   }
   #ButtonArea {
     margin-top: 2vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
   .button, .btn {
     padding: 0.5vw 0.3vw;
@@ -219,5 +222,50 @@
     color: #000 !important;
     background: #eF1F3F;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  @media screen and (max-width: 1000px) {
+    #TextArea {
+      position: relative;
+      width: 90%;
+      height: 30vw;
+      text-align: center;
+      top: 15%; left: 5%;
+    }
+    #Title {
+      padding-top: 9.6vw;
+      color: white;
+      font-family: 'Play', sans-serif;
+      font-size: 250%;
+      font-weight: 700;
+      width: 100%;
+
+    }
+    #ButtonArea {
+      transform: translate(-5%, 1400%);
+    }
+    .Line {
+      display: none;
+    }
+    a.animated-button:link, a.animated-button:visited {
+      position: relative;
+      width: 100%;
+      align-self: center;
+      justify-items: center;
+      transform: translateX(6vw);
+      display: inline-block;
+      color: #fff;
+      margin: initial;
+      font-size:100%;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      overflow: hidden;
+      letter-spacing: .08em;
+      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+    }
   }
 </style>

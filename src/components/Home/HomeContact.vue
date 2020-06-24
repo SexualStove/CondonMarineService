@@ -26,7 +26,7 @@
           <input v-model="YourDetails.Email" class="input" name="user_email" type="text" placeholder="E-MAIL">
           <input v-model="YourDetails.Phone" class="input" name="phone" type="text" placeholder="CONTACT NO">
           <textarea v-model="YourDetails.Message" id="message" class="message" name="message" type="text" placeholder="MESSAGE"></textarea>
-           <a v-on:click="SendForm" id="Submit" style="font-size: 1.5vw" class="btn btn-sm animated-button thar-two">Send</a>
+           <a v-on:click="SendForm" id="Submit" class="btn btn-sm animated-button thar-two">Send</a>
           <div v-if="Errors.length !== 0" style="color: red; font-size: 1vw">{{this.Errors}}</div>
         </form>
 
@@ -151,10 +151,13 @@
 <style scoped>
   #MoreAreas {
     position: absolute;
-    transform: translate(144%, 17%);
+    right: -80%;
+    top: 10%;
+    width: 100%;
+    height: 100%;
   }
   #AreaIcon {
-    width: 75%;
+    width: 45%;
     opacity: 0.5;
   }
   .STitle {
@@ -202,6 +205,8 @@
     grid-template-areas: 'Header Header'
   'Left Right';
     padding: 2.5vw 2.5vw 1vw 2.5vw;
+    position: relative;
+    overflow: hidden;
   }
   #RightSide {
     transform: translateX(-15%);
@@ -213,7 +218,7 @@
   }
   #Header {
     font-family: 'Play', sans-serif;
-    font-size: 3.5vw;
+    font-size: 650%;
   }
   #LeftSide {
     grid-area: Left;
@@ -261,7 +266,7 @@
   }
   .Image {
     z-index: 0;
-    width: 5vw;
+    width: 20%;
     opacity: 0.5;
     top: 30%;
     left:3%;
@@ -289,31 +294,32 @@
   }
   #ContactTitle {
     font-family: 'Play', sans-serif;
-    font-size: 2.5vw;
+    font-size: 500%;
     padding-bottom: 1vw;
   }
   .input {
-    width: 25vw;
+    width: 90%;
     margin: 0.5vw auto 0.5vw auto;
-    height: 2.1vw;
+    height: 200%;
     display: block;
     //margin: 0 auto;
     transition: 1s;
     border: rgba(0, 0, 0, 0.2)  solid 1px;
-    padding-left: 0.2vw;
     border-radius: 10px;
   }
   .input, .message {
     //transform: scale(1.6);
-    font-size: 1vw;
+    padding-left: 2%;
+    font-size: 200%;
   }
   .message {
     transition: 1s;
     border-radius: 10px;
     border: rgba(0, 0, 0, 0.2)  solid 1px;
-    width: 25vw;
+    width: 90%;
     padding-left: 0.2vw;
-    height: 8vw;
+    min-height: 8vw;
+    height: 400%;
     display: block;
     margin: 0 auto;
   }
@@ -330,7 +336,7 @@
     transform: translateX(8vw);
     display: inline-block;
     color: black;
-    font-size:1vw;
+    font-size: 500%;
 
     //font-weight: bold;
     text-align: center;
@@ -374,14 +380,77 @@
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
   #Submit {
-    width: 10vw;
+    width: 40%;
     margin: 2vw auto;
     transform: translateX(0);
+    font-size: 300%
   }
   input[type=text].error {
     border: 1px solid red;
   }
   textarea[type=text].error {
     border: 1px solid red;
+  }
+  @media screen and (max-width: 1000px) {
+    #ContactUs {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: 'Header Header'
+      'Left Left'
+      'Right Right';
+      padding: 2.5vw 2.5vw 1vw 2.5vw;
+    }
+    #Header {
+      font-family: 'Play', sans-serif;
+      font-size: 350%;
+    }
+    #ContactTitle {
+      font-family: 'Play', sans-serif;
+      font-size: 300%;
+    }
+    .input, .message {
+    //transform: scale(1.6);
+      margin-top: 2%;
+    }
+    #ContactCard {
+      width: 90%;
+    }
+    #RightSide {
+      margin-top: 10%;
+      transform: translateX(-4%);
+      display: grid;
+      grid-template-rows: 20% 20% 20% 20% 40%;
+      height: 100%;
+      justify-items: left;
+      align-items: center;
+    }
+    .Text {
+      font-size: 300%;
+    }
+    #MoreAreas {
+      position: absolute;
+      right: -70%;
+      top: 55%;
+      width: 100%;
+      height: 100%;
+
+    }
+    #AreaIcon {
+      width: 70%;
+      opacity: 0.5;
+    }
+    .STitle {
+      transform: translateX(15%);
+      font-size: 150%;
+    }
+    #Text {
+      transform: translate(0, -95%);
+      left: 0;
+      text-align: left;
+      position: absolute;
+      font-family: 'Play', sans-serif;
+      font-size: 160%;
+
+    }
   }
 </style>

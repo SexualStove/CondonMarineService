@@ -24,7 +24,7 @@
                 Quotes: [
                     {
                         Quote: "Great to deal with, quick and clear communication, with a great result - got paid!  Very helpful and would recommend",
-                        By: 'Chris Nelson, Taieri Tehcnology Ltd'
+                        By: 'Chris Nelson, Taieri Technology Ltd'
                     },
                     {
                         Quote: 'We\'ve been working with Be Paid Ltd for the past 6 months and its been a game changer for us.  Not only does it save us time but it also allows us to maintain better relationships with our clients, as we\'re not the ones on the end of the phone asking for payment when things have been missed.',
@@ -140,5 +140,18 @@
 
   #QuoteArea, * {
     transition: 1s;
+  }
+
+  @media screen and (max-width: 1000px) {
+    #Quote {
+      grid-area: Quote;
+      font-family: 'Play', sans-serif;
+      font-size: 200%;
+    }
+    #By {
+      grid-area: By;
+      font-size: 150%;
+      font-family: 'Roboto', sans-serif;
+    }
   }
 </style>

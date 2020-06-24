@@ -37,7 +37,7 @@
   background-size: 15%;
   display: grid;
   grid-template-columns: 35% 65%;
-  height: 80vh;
+  min-height: 80vh;
   width: 100vw;
   background-color: whitesmoke;
 }
@@ -51,22 +51,23 @@
     padding-top: 7vw;
     width: 50vw;
   }
-  #Title {
-    font-family: 'Play', sans-serif;
-    font-size: 2.4vw;
-    text-align: left;
-  }
+#Title {
+  font-family: 'Play', sans-serif;
+  font-size: 2.4vw;
+  text-align: left;
+}
+#SubTitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  text-align: left;
+  padding-top: 2vw;
+}
   #Line {
     background-color: #1d2f6f;
     height: 2px;
     width: 50vw;
   }
-  #SubTitle {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1vw;
-    text-align: left;
-    padding-top: 2vw;
-  }
+
 
 @import 'https://fonts.googleapis.com/css?family=Lora:400,700';
 
@@ -124,4 +125,36 @@ a.animated-button.thar-two:before {
   transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
 }
 
+@media screen and (max-width: 1000px) {
+  #ImageArea {
+    position: absolute;
+    opacity: 0.1;
+    width: 50vw;
+    left:0;
+  }
+  #WordArea {
+    margin-left: 60vw;
+    width: 80vw;
+    text-align: center;
+  }
+  #AboutGrid {
+    position: relative;
+    justify-items: center;
+    align-content: center;
+    padding: 5vh 0 5vh 0;
+  }
+
+  #Title {
+    font-family: 'Play', sans-serif;
+    font-size: 350%;
+    text-align: left;
+    max-font-size: 30px;
+  }
+  #SubTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+    text-align: left;
+    padding-top: 2vw;
+  }
+}
 </style>
