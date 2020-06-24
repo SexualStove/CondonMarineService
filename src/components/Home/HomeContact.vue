@@ -91,6 +91,7 @@
         },
         methods: {
             async SendForm() {
+                alert("Sorry Email is not working at the moment, please email us at info@bepaid.co.nz");
                 console.log("Start Send");
                 let pass = this.JustifyFrom();
                 console.log("Got pass of: "+pass);
