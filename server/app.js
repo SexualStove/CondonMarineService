@@ -4,10 +4,16 @@ const exphbs = require('express-handlebars');
 
 const cors = require('cors');
 const morgan = require('morgan');
+const https = require("https"),
+    fs = require("fs");
+
 const {sequelize} = require('./models');
 
 const config = require('./config/config');
-
+const options = {
+    key: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/privkey.pem"),
+    cert: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/fullchain.pem") // thes
+};
 
 
 const app = express();
@@ -24,6 +30,7 @@ sequelize.sync()
     .then(() => {
 
         app.listen(process.env.PORT || 8081);
+        https.createServer(options, app).listen(process.env.PORT || 8081);
         console.log(`Server started on port ${config.port}`)
 
     });
