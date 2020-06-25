@@ -211,16 +211,16 @@
   }
 
   #Doc {
-    transform: translateX(12%);
+    transform: translateX(15%);
   }
   #Invest {
-    transform: translateX(10%);
+    transform: translateX(13%);
   }
   #Background {
-    transform: translateX(10%);
+    transform: translateX(13%);
   }
   #FeildVisit {
-    transform: translateX(5%)
+    transform: translateX(3%)
   }
 }
 </style>

@@ -104,6 +104,7 @@
   }
 
   #Title {
+    top: 20%;
     font-size: 300%;
   }
 }
