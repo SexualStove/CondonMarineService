@@ -26,8 +26,8 @@ app.set('view engine', 'handlebars');
 require('./routes')(app);
 
 
-app.listen(process.env.PORT || 8081);
-
+//app.listen(process.env.PORT || 8081);
+https.createServer(options,app).listen(process.env.PORT || 8081);
 
 
 console.log("Listening");
