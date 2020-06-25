@@ -138,7 +138,7 @@
     #LogoImage {
       transition: 1s;
       position: absolute;
-      top: 35%;
+      top: 40%;
       left: 15%;
       transform: translate(-10%, 3vw);
       width: 90%;
