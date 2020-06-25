@@ -127,7 +127,7 @@
     transform: translate(-2vw, -3vh);
     //max-width: 1vw;
     width: 135%;
-    font-size: 250%;
+    font-size: 200%;
     font-family: 'Play', sans-serif;
     transition: 0.7s;
   }
@@ -140,7 +140,7 @@
     position: relative;
   }
   .SubTitle {
-    font-size: 140%;
+    font-size: 90%;
     transform: translate(0, -2vh);
     color: black;
     font-family: 'Roboto', sans-serif;

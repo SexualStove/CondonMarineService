@@ -384,7 +384,7 @@
     width: 40%;
     margin: 2vw auto;
     transform: translateX(0);
-    font-size: 300%
+    font-size: 250%
   }
   input[type=text].error {
     border: 1px solid red;
@@ -431,7 +431,7 @@
     #MoreAreas {
       position: absolute;
       right: -70%;
-      top: 55%;
+      top: 58%;
       width: 100%;
       height: 100%;
 
@@ -442,7 +442,7 @@
     }
     .STitle {
       transform: translateX(15%);
-      font-size: 150%;
+      font-size: 100%;
     }
     #Text {
       transform: translate(0, -95%);
@@ -450,7 +450,7 @@
       text-align: left;
       position: absolute;
       font-family: 'Play', sans-serif;
-      font-size: 160%;
+      font-size: 110%;
 
     }
   }

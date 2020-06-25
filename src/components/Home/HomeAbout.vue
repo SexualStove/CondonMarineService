@@ -146,13 +146,13 @@ a.animated-button.thar-two:before {
 
   #Title {
     font-family: 'Play', sans-serif;
-    font-size: 350%;
+    font-size: 300%;
     text-align: left;
     max-font-size: 30px;
   }
   #SubTitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 200%;
+    font-size: 150%;
     text-align: left;
     padding-top: 2vw;
   }

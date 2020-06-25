@@ -235,13 +235,14 @@
       padding-top: 9.6vw;
       color: white;
       font-family: 'Play', sans-serif;
-      font-size: 250%;
+      font-size: 200%;
       font-weight: 700;
       width: 100%;
 
     }
     #ButtonArea {
       transform: translate(-5%, 1400%);
+      display: None;
     }
     .Line {
       display: none;
