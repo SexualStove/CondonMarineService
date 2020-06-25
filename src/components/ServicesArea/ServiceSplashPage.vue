@@ -9,7 +9,8 @@
 
       <div id="line"></div>
     </div>
-    <navbar style="width: 100vw" v-bind:Animation="false"></navbar>
+    <navbar id="NavArea" style="width: 100vw" v-bind:Animation="false"></navbar>
+    <home-page-mobile id="NavMobile"></home-page-mobile>
     <div id="Title"> Services </div>
     <ServiceIcons></ServiceIcons>
   </div>
@@ -18,9 +19,10 @@
 <script>
     import Navbar from "../Global/Navbar";
     import ServiceIcons from "./ServiceIcons";
+    import HomePageMobile from "../Global/HomePageMobile";
     export default {
         name: "ServiceSplashPage",
-        components: {ServiceIcons, Navbar},
+        components: {HomePageMobile, ServiceIcons, Navbar},
 
         data() {
             return {
@@ -84,5 +86,22 @@
 }
 .Top-Text {
   transform: translateY(0.5vw);
+}
+
+@media screen and (min-width: 1000px) {
+  #NavMobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+
+  #NavArea {
+    display: none;
+  }
+
+  #Top-Info {
+    display: none;
+  }
+
 }
 </style>

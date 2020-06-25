@@ -10,7 +10,8 @@
 
         <div id="line"></div>
       </div>
-      <navbar style="width: 100vw" v-bind:Animation="false"></navbar>
+      <navbar id="NavArea" style="width: 100vw" v-bind:Animation="false"></navbar>
+      <home-page-mobile style="z-index: 99999" id="NavMobile"></home-page-mobile>
       <div style="height: 15vh"></div>
       <div id="PageArea" v-bind:style="{'min-height': this.Style[this.CurrentService]}">
         <div id="RightSide">
@@ -18,8 +19,10 @@
             <img class="Image" v-bind:src="this.images[this.CurrentService]" alt="None" :key="this.images[this.CurrentService]">
           </transition>
           <transition name="fade" >
-          <div :key="this.Title[this.CurrentService]" v-bind:style="{'top': this.Style2[this.CurrentService]}" class="Title">{{this.Title[this.CurrentService]}}</div>
+          <div v-if="!isMobile" :key="this.Title[this.CurrentService]" v-bind:style="{'top': this.Style2[this.CurrentService]}" class="Title">{{this.Title[this.CurrentService]}}</div>
+            <div v-else :key="this.Title[this.CurrentService]" v-bind:style="{'top': this.Style3[this.CurrentService]}" class="Title">{{this.Title[this.CurrentService]}}</div>
           </transition>
+
           <transition name="fade">
           <div :key="this.Desc[this.CurrentService]" ><pre class="Desc">{{this.Desc[this.CurrentService]}}</pre></div>
           </transition>
@@ -46,12 +49,14 @@
 
 <script>
     import {EventBus} from "../../App";
+
     import HomeFooter from "../Home/HomeFooter";
     import Navbar from "../Global/Navbar";
     import ServiceSelector from "./ServiceSelector";
+    import HomePageMobile from "../Global/HomePageMobile";
     export default {
         name: "ServiceArea",
-        components: {ServiceSelector, Navbar, HomeFooter},
+        components: {HomePageMobile, ServiceSelector, Navbar, HomeFooter},
         data() {
             return {
                 Load: false,
@@ -261,7 +266,7 @@
                     '150vh'
                 ],
                 Style2: [
-                  '13%',
+                    '13%',
                     '9%',
                     '13%',
                     '13%',
@@ -273,8 +278,29 @@
                     '13%',
                     '10%',
                     '11%'
-                ]
+                ],
+                Style3: [
+                    '3%',
+                    '3%',
+                    '3%',
+                    '3%',
+                    '3%',
+                    '0%',
+                    '0',
+                    '0%',
+                    '3%',
+                    '3%',
+                    '3%',
+                    '1%'
+                ],
+                isMobile: false,
             }
+        },
+        methods: {
+            onResize () {
+                this.isMobile = window.innerWidth < 800;
+                console.log(window.innerHeight +" therefore: "+ this.isMobile);
+            },
         },
         beforeMount() {
           if(this.$cookie.get('Service') === null) {
@@ -294,6 +320,11 @@
                 console.log("Did this even ping!?");
                 self.CurrentService = changed;
             });
+
+            this.onResize();
+            window.addEventListener('resize', this.onResize, { passive: true });
+
+
         }
     }
 </script>
@@ -492,13 +523,13 @@
   line-height: 85%;
   top: 5%
 }
-.Title3 {
-  line-height: 85%;
-  top: 0;
-}
-.Title, .Title2, .Title3 {
-  line-height: 85%;
-  color: black;
+  .Title3 {
+    line-height: 85%;
+    top: 0;
+  }
+  .Title, .Title2, .Title3 {
+    line-height: 85%;
+    color: black;
   font-family: 'Play', sans-serif;
   font-size: 5vw;
   font-weight: 700;
@@ -569,5 +600,45 @@
     transform: translate(-5%, 100%) scale(0.8);
   }
 
+  @media screen and (min-width: 1000px) {
+    #NavMobile {
+      display: none;
+    }
+    #Mob {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
 
+    .Title, .Title2, .Title3 {
+      font-size: 250%;
+    }
+
+    #NavArea {
+      display: none;
+    }
+
+    #Top-Info {
+      display: none;
+    }
+    #LeftSide {
+      display: none;
+    }
+    .Desc {
+      font-size: 110%;
+      width: 95%;
+      top: 10vh;
+      left: 2.5%;
+    }
+    #PageArea {
+      width: 100vw;
+      position: relative;
+    //margin-bottom: 10vh; display: grid;
+      grid-template-columns: 0% 100%;
+      grid-template-areas: "Left Right";
+    }
+    #Desk {
+      ///display: none;
+    }
+  }
 </style>

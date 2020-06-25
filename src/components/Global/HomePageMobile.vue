@@ -11,14 +11,56 @@
             <span></span>
             <span></span>
             <ul id="menu" >
-              <router-link  to="/">
-              <li><a class="a" href="#">Home</a></li>
+              <router-link   to="/">
+              <li class="MainItem"><a class="a" href="#">Home</a></li>
               </router-link>
-              <router-link  to="/Services">
-              <li><a class="a" href="#">Our Services</a></li>
+              <router-link   to="/Services">
+              <li style="padding-bottom: 5px;" class="MainItem"><a class="a" href="#">Our Services</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(1)"><a class="a" href="#">Debt Collections</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(0)"><a class="a" href="#">Ledger Management</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(2)"><a class="a" href="#">Credit Checking</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(3)"><a class="a" href="#">Invoice | Billing</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(4)"><a class="a" href="#">Credit Controls</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(5)"><a class="a" href="#">Credit application forms and Terms</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(5)"><a class="a" href="#">of the trade</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(6)"><a class="a" href="#">P P S R</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(7)"><a class="a" href="#">Full Customer/Debtor Management</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(8)"><a class="a" href="#">Family/Marriage Issues</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(9)"><a class="a" href="#">Background checks</a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(10)"><a class="a" href="#">Investigations </a></li>
+              </router-link>
+              <router-link  to="/Services/ServiceArea">
+                <li v-on:click="ChangeService(11)"><a class="a" href="#">Document Serving </a></li>
               </router-link>
               <router-link  to="/#ContactUs">
-              <li><a class="a" href="#">Contact Us</a></li>
+              <li class="MainItem"><a class="a" href="#">Contact Us</a></li>
+              </router-link>
+              <router-link  to="/DebtLodgement">
+                <li class="MainItem"><a class="a" href="#">Debt Lodgement</a></li>
               </router-link>
             </ul>
           </div>
@@ -29,13 +71,22 @@
 </template>
 
 <script>
+    import {EventBus} from "../../App";
+
     export default {
         name: "HomePageMobile",
       data() {
         return {
 
         }
-      }
+      },
+        methods: {
+            ChangeService(Int)
+            {
+                this.$cookie.set('Service', Int, {expires: '10m'});
+                EventBus.$emit('Service', Int);
+            }
+        }
 
     }
 </script>
@@ -54,10 +105,11 @@
     opacity:1;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.6em;
+    font-size: 1.4em;
     padding-left: 20px;
     transition: 200ms;
     text-shadow: 0.001em 0.001em forestgreen;
+    width: auto;
   }
   .a:hover {
     opacity:0.5;
@@ -84,6 +136,7 @@
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
+
   }
 
   #menuToggle input
@@ -140,12 +193,17 @@
     transform: rotate(-45deg) translate(0, -1px);
   }
 
+  input:checked ~ #menu {
+    transition: 1s;
+    box-shadow: 0px 0px 100vw #444444;
+  }
   #menu
   {
+
     position: absolute;
-    width: 200px;
+    width: 300px;
     height: 100vh;
-    box-shadow: 0px 0px 100vw #444444;
+
     margin: -50px 0 0 -50px;
     padding-left: 20px;
     padding-top: 90px;
@@ -158,15 +216,22 @@
     background-size: 15%;
   }
 
-  #menu li
+  #menu .MainItem
+   {
+     padding-top: 15px;
+     padding-bottom: 5px;
+     transition-delay: 2s;
+    font-size: 1.7em;
+   }
+
+  #menu .SecondItem
   {
-    padding-top: 30px;
-    padding-bottom: 30px;
     transition-delay: 2s;
   }
 
   #menuToggle input:checked ~ ul
   {
     transform: none;
+
   }
 </style>

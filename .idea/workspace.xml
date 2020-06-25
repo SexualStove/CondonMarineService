@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -33,15 +33,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="55" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomeContact.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -55,11 +46,71 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Global/HomePageMobile.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+            <state relative-caret-position="69">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#router-link#1;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServicePage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-69">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7">
+              <caret line="90" selection-start-line="90" selection-end-line="105" selection-end-column="1" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#727#765#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="293" column="21" lean-forward="true" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#home-page-mobile#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="e#2058#2093#0" expanded="true" />
+                <element signature="e#2379#3340#0" />
+                <element signature="e#3365#3924#0" />
+                <element signature="e#3948#21872#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomePage.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="277" column="20" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
+            <state relative-caret-position="421">
+              <caret line="278" column="5" lean-forward="true" selection-start-line="261" selection-start-column="2" selection-end-line="278" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#HomePageMobile#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#Navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -102,37 +153,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="184" column="28" lean-forward="true" selection-start-line="184" selection-start-column="28" selection-end-line="184" selection-end-column="28" />
-              <folding>
-                <element signature="n#style#0;n#div#6;n#form#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/HomePageTitle.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="244" column="19" selection-start-line="244" selection-start-column="19" selection-end-line="244" selection-end-column="19" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#router-link#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#router-link#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#router-link#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Home/IconStrip.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1548">
@@ -150,15 +170,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -170,10 +181,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>LogoImage</find>
-      <find>Splash</find>
-      <find>Divider</find>
-      <find>personalised</find>
       <find>customise</find>
       <find>length</find>
       <find>error</find>
@@ -200,6 +207,10 @@
       <find>ButtonArea</find>
       <find>font-size: 2</find>
       <find>font-size</find>
+      <find>LeftSide</find>
+      <find>PageArea</find>
+      <find>Title</find>
+      <find>font-</find>
     </findStrings>
     <replaceStrings>
       <replace>rgba(231 ,29 ,54, 0.5)</replace>
@@ -231,14 +242,12 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomeFooter.vue" />
         <option value="$PROJECT_DIR$/src/router/index.js" />
         <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue" />
-        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" />
         <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementTerms.vue" />
         <option value="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" />
         <option value="$PROJECT_DIR$/src/components/Global/Navbar.vue" />
         <option value="$PROJECT_DIR$/src/services/SubsServices.js" />
         <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue" />
         <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue" />
-        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" />
         <option value="$PROJECT_DIR$/src/services/BlogServices.js" />
         <option value="$PROJECT_DIR$/server/routes.js" />
         <option value="$PROJECT_DIR$/smtp.js" />
@@ -256,7 +265,9 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomeAbout.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeContact.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomePage.vue" />
+        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" />
         <option value="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" />
+        <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" />
       </list>
     </option>
   </component>
@@ -348,6 +359,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="condonmarineservicesgit" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ServicesArea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="condonmarineservicesgit" type="b2602c69:ProjectViewProjectNode" />
@@ -445,12 +463,12 @@
       <workItem from="1592783566550" duration="10164000" />
       <workItem from="1592801310799" duration="5396000" />
       <workItem from="1592835224029" duration="16046000" />
-      <workItem from="1592868962737" duration="32783000" />
+      <workItem from="1592868962737" duration="39997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="400755000" />
+    <option name="totallyTimeSpent" value="407969000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,13 +561,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/CreateBlog.vue" />
     <entry file="file://$PROJECT_DIR$/src/services/SubsServices.js" />
     <entry file="file://$PROJECT_DIR$/src/components/ContactUsGroup/ContactUsPage.vue" />
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServicePage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceIcons.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -559,35 +570,6 @@
             <element signature="n#style#0;n#div#9;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#10;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#11;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="159" selection-start-line="7" selection-start-column="159" selection-end-line="7" selection-end-column="159" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2645">
-          <caret line="249" column="28" selection-start-line="249" selection-start-column="28" selection-end-line="249" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -604,13 +586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2852">
           <caret line="130" selection-start-line="130" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="11" column="79" selection-start-line="11" selection-start-column="79" selection-end-line="11" selection-end-column="79" />
         </state>
       </provider>
     </entry>
@@ -866,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomePage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="277" column="20" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
+        <state relative-caret-position="421">
+          <caret line="278" column="5" lean-forward="true" selection-start-line="261" selection-start-column="2" selection-end-line="278" selection-end-column="5" />
           <folding>
             <element signature="n#style#0;n#HomePageMobile#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#Navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -876,10 +851,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSelector.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="55" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="90" selection-start-line="90" selection-end-line="105" selection-end-column="1" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#727#765#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServicePage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Global/HomePageMobile.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state relative-caret-position="69">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#li#0;n#router-link#1;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="293" column="21" lean-forward="true" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#home-page-mobile#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="e#2058#2093#0" expanded="true" />
+            <element signature="e#2379#3340#0" />
+            <element signature="e#3365#3924#0" />
+            <element signature="e#3948#21872#0" />
+          </folding>
         </state>
       </provider>
     </entry>
