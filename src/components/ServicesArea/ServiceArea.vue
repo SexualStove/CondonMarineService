@@ -611,7 +611,7 @@
   @media screen and (max-width: 1000px) {
 
     .Title, .Title2, .Title3 {
-      font-size: 250%;
+      font-size: 200%;
     }
 
     #NavArea {
