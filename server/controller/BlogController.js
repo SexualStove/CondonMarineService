@@ -128,7 +128,7 @@ module.exports = {
             console.log("New massage by "+req.body.Details.Name);
             let info = {
                 from: '"Do not reply" <contact@inhouseweb.nz>', // sender address
-                to: 'rt_condon@hotmail.com', // list of receivers
+                to: 'info@bepaid.co.nz', // list of receivers
                 subject: "Contact Us Form", // Subject line
                 html: "<b>Your details</b><br>"+
                     "Name: "+req.body.Details.Name+"<br>"+
@@ -212,7 +212,7 @@ module.exports = {
             let info = {
                 from: '"Do not reply" <contact@inhouseweb.nz>', // sender address
                 name: 'Do not reply',
-                to: 'rt_condon@hotmail.com', // list of receivers
+                to: 'info@bepaid.co.nz', // list of receivers
                 subject: "Debt Lodgment From", // Subject line
                 html: "<pre>"+req.body.CompiledString+"</pre>", // html body
             };
