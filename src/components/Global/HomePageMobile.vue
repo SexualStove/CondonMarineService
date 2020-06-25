@@ -105,7 +105,7 @@
     opacity:1;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: 1.1em;
     padding-left: 20px;
     transition: 200ms;
     text-shadow: 0.001em 0.001em forestgreen;
@@ -221,7 +221,7 @@
      padding-top: 15px;
      padding-bottom: 5px;
      transition-delay: 2s;
-    font-size: 1.7em;
+    font-size: 1.4em;
    }
 
   #menu .SecondItem

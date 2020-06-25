@@ -146,11 +146,11 @@
     #Quote {
       grid-area: Quote;
       font-family: 'Play', sans-serif;
-      font-size: 200%;
+      font-size: 150%;
     }
     #By {
       grid-area: By;
-      font-size: 150%;
+      font-size: 100%;
       font-family: 'Roboto', sans-serif;
     }
   }

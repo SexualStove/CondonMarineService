@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -58,11 +58,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Global/HomePageMobile.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+            <state relative-caret-position="261">
+              <caret line="219" column="4" lean-forward="true" selection-start-line="219" selection-start-column="4" selection-end-line="219" selection-end-column="4" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#router-link#1;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -95,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="293" column="21" lean-forward="true" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
+            <state relative-caret-position="100">
+              <caret line="623" column="15" lean-forward="true" selection-start-line="623" selection-start-column="15" selection-end-line="623" selection-end-column="15" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -124,20 +133,6 @@
                 <element signature="n#style#0;n#HomePageMobile#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#Navbar#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#HomePageTitle#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Global/Navbar.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="30" column="47" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#router-link#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#4;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#5;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -254,7 +249,6 @@
         <option value="$PROJECT_DIR$/server/Test.env" />
         <option value="$PROJECT_DIR$/server/app.js" />
         <option value="$PROJECT_DIR$/server/controller/BlogController.js" />
-        <option value="$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/server/config/config.js" />
@@ -267,6 +261,7 @@
         <option value="$PROJECT_DIR$/src/components/Home/HomePage.vue" />
         <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" />
         <option value="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" />
+        <option value="$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue" />
         <option value="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" />
       </list>
     </option>
@@ -463,12 +458,12 @@
       <workItem from="1592783566550" duration="10164000" />
       <workItem from="1592801310799" duration="5396000" />
       <workItem from="1592835224029" duration="16046000" />
-      <workItem from="1592868962737" duration="39997000" />
+      <workItem from="1592868962737" duration="40625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="407969000" />
+    <option name="totallyTimeSpent" value="408597000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -652,13 +647,6 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3427">
-          <caret line="151" column="20" lean-forward="true" selection-start-line="151" selection-start-column="20" selection-end-line="151" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -881,18 +869,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Global/HomePageMobile.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        <state relative-caret-position="261">
+          <caret line="219" column="4" lean-forward="true" selection-start-line="219" selection-start-column="4" selection-end-line="219" selection-end-column="4" />
           <folding>
             <element signature="n#style#0;n#li#0;n#router-link#1;n#ul#0;n#div#0;n#nav#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="293" column="21" lean-forward="true" selection-start-line="293" selection-start-column="21" selection-end-line="293" selection-end-column="21" />
+        <state relative-caret-position="100">
+          <caret line="623" column="15" lean-forward="true" selection-start-line="623" selection-start-column="15" selection-end-line="623" selection-end-column="15" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
