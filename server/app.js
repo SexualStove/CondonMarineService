@@ -11,8 +11,8 @@ const {sequelize} = require('./models');
 
 const config = require('./config/config');
 const options = {
-    key: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/privkey.pem"),
-    cert: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/fullchain.pem") // thes
+    //key: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/privkey.pem"),
+    //cert: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/fullchain.pem") // thes
 };
 
 
@@ -26,14 +26,7 @@ app.set('view engine', 'handlebars');
 require('./routes')(app);
 
 
-sequelize.sync()
-    .then(() => {
-
-        app.listen(process.env.PORT || 8081);
-        https.createServer(options, app).listen(process.env.PORT || 8081);
-        console.log(`Server started on port ${config.port}`)
-
-    });
+app.listen(process.env.PORT || 8081);
 
 
 
