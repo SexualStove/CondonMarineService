@@ -195,7 +195,7 @@
 #FeildVisit {
   transform: translateX(50%)
 }
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
   #IconsArea {
     height: 70vh;
     grid-template-columns: 25% 25% 25% 25%;
