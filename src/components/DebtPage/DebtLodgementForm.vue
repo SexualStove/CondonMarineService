@@ -93,7 +93,7 @@
         },
         methods: {
             async SendForm() {
-                alert("Sorry Email is not working at the moment, please email us at info@bepaid.co.nz");
+                //alert("Sorry Email is not working at the moment, please email us at info@bepaid.co.nz");
                 console.log("Start Send");
                 this.AreasFilled();
                 if (this.Sent === false) {
@@ -104,10 +104,10 @@
                         CompiledString: this.CompiledString,
                         Time: Time
                     });
-                    console.log(response.Date);
-
+                    alert("Debt Lodgement from has been sent!");
+                    console.log(response);
                 } else {
-                    console.log("Ahhhhhhhh");
+                    alert("Debt Lodgement from has already been sent!");
                 }
             },
             AreasFilled() {

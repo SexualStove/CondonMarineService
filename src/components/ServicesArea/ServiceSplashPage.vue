@@ -103,5 +103,8 @@
     display: none;
   }
 
+  #Title {
+    font-size: 300%;
+  }
 }
 </style>

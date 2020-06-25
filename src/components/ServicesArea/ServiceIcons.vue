@@ -54,28 +54,28 @@
 
 
 
-    <div id="FeildVisit" style="grid-area: A; transform: translateX(50%)" class="Service" v-on:mousedown="ChangeService(8)">
+    <div id="FeildVisit" style="grid-area: A;" class="Service" v-on:mousedown="ChangeService(8)">
       <router-link to="/Services/ServiceArea">
         <img class="Icon" src="../../assets/images/Icons/FeildVisitsIcon.png" alt="None">
         <div class="Title">Family/Marriage Issues</div>
       </router-link>
     </div>
 
-    <div id="Background" style="grid-area: B; transform: translateX(75%)" class="Service" v-on:mousedown="ChangeService(9)">
+    <div id="Background" style="grid-area: B; " class="Service" v-on:mousedown="ChangeService(9)">
       <router-link to="/Services/ServiceArea">
         <img class="Icon" src="../../assets/images/Icons/BackgroundCheckIcon.png" alt="None">
         <div class="Title">Background Checks</div>
       </router-link>
     </div>
 
-    <div id="Invest" style="grid-area: C; transform: translateX(125%)" class="Service" v-on:mousedown="ChangeService(10)">
+    <div id="Invest" style="grid-area: C;" class="Service" v-on:mousedown="ChangeService(10)">
       <router-link to="/Services/ServiceArea">
         <img class="Icon" src="../../assets/images/Icons/InvestigationsIcon.png" alt="None">
         <div class="Title">Investigations</div>
       </router-link>
     </div>
 
-    <div id="Doc" style="grid-area: D; transform: translateX(150%)" class="Service" v-on:mousedown="ChangeService(11)">
+    <div id="Doc" style="grid-area: D;" class="Service" v-on:mousedown="ChangeService(11)">
       <router-link to="/Services/ServiceArea">
         <img class="Icon" src="../../assets/images/Icons/DocumentServingIcon.png" alt="None">
         <div class="Title">Document <br>Serving</div>
@@ -182,5 +182,45 @@
   transition: 0.7s;
   position: absolute;
   text-align: center;
+}
+#Doc {
+  transform: translateX(150%);
+}
+#Invest {
+  transform: translateX(125%);
+}
+#Background {
+  transform: translateX(75%);
+}
+#FeildVisit {
+  transform: translateX(50%)
+}
+@media screen and (min-width: 1000px) {
+  #IconsArea {
+    height: 70vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "1 2 3 4"
+    "5 6 7 8"
+    "A B C D";
+  }
+  .Title {
+    transform: translate(-15%,10vh);
+    font-size: 100%;
+    line-height: 100%;
+  }
+
+  #Doc {
+    transform: translateX(12%);
+  }
+  #Invest {
+    transform: translateX(10%);
+  }
+  #Background {
+    transform: translateX(10%);
+  }
+  #FeildVisit {
+    transform: translateX(5%)
+  }
 }
 </style>
