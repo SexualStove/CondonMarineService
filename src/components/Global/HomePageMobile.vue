@@ -105,7 +105,7 @@
     opacity:1;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1.1em;
+    font-size: 1em;
     padding-left: 20px;
     transition: 200ms;
     text-shadow: 0.001em 0.001em forestgreen;

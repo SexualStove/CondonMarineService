@@ -625,7 +625,7 @@
       display: none;
     }
     .Desc {
-      font-size: 80%;
+      font-size: 90%;
       width: 95%;
       top: 10vh;
       left: 2.5%;
