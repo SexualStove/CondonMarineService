@@ -10,7 +10,7 @@
       <div id="line"></div>
     </div>
     <navbar id="NavArea" style="width: 100vw" v-bind:Animation="false"></navbar>
-    <home-page-mobile id="NavMobile"></home-page-mobile>
+    <home-page-mobile id="NavMobile" style="z-index: 99999"></home-page-mobile>
     <div id="Title"> Services </div>
     <ServiceIcons></ServiceIcons>
   </div>
