@@ -10,6 +10,7 @@
 
       <div id="line"></div>
     </div>
+      <HomePageMobile id="NavMobile" style="position: fixed; z-index: 99999"></HomePageMobile>
 
       <Navbar id="NavArea" style="z-index: 4" v-bind:Animation="true"></Navbar>
       <HomePageTitle style="z-index: 1"></HomePageTitle>
@@ -65,10 +66,12 @@
     import HomeContact from "./HomeContact";
     import HomeFooter from "./HomeFooter";
     import JQuery from 'jquery';
+    import HomePageMobile from "../Global/HomePageMobile";
     let $ = JQuery;
     export default {
         name: "HomePage",
         components: {
+            HomePageMobile,
             HomeFooter,
             HomeContact,
             HomeRecomendations, HomeAbout, HomePageTitle, IconStrip, Navbar, HomeSplashScreen},
@@ -256,5 +259,23 @@
     border-color: whitesmoke transparent transparent transparent;
     border-width: 2.8vw 2vw 0 2vw;
   }
-
+  @media screen and (min-width: 1000px) {
+    #NavMobile {
+     display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .DiamondHolder {
+      display: none;
+    }
+    #NavArea {
+      display: none;
+    }
+    #Top-Info {
+      display: none;
+    }
+    .LineDivider {
+      display: none;
+    }
+  }
 </style>
