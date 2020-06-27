@@ -2,96 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7abd34b0-c4f6-486b-ab0f-e34848b8befc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/BePaidLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/BePaidLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/DebtCollectionMail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/Icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/LogoFull.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/LogoFull.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/LongLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/ServicesBackground.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/ServicesBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/AddressIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/ApplactionIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/BackgroundCheckIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/BussinessInvestigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/CreditIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/DebtCollection.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/DocumentServingIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/EmailIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/FeildVisitsIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/InvestigationsIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/Invoice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/JudgeHammer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/Litigation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/LocationIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/ManagmentIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/PhoneIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/PhoneIconNorm.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/PropSecurityIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/TimeIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/hammer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/privateDomestic.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Icons/BigImages/scalpel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Patterns/BigImages/DotGrid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Patterns/BigImages/dot-grid-DarkBlue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Patterns/BigImages/dot-grid-blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Patterns/BigImages/dot-grid-white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Patterns/BigImages/funky-lines.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Patterns/BigImages/webb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/Patterns/BigImages/y-so-serious-white.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BePaidLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BePaidLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BePaidLogoSmall.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BePaidLogoSmall.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/DebtCollectionMail.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/DebtCollectionMail.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/DebtCollectionMail.psd" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/BigImages/DebtCollectionMail.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/Icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/Icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/LogoFull.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/LogoFull.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/LogoFull.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/LogoFull.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/LongLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/LongLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/ServicesBackground.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/ServicesBackground.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/ServicesBackground.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/BePaidOrginal/ServicesBackground.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/AddressIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/AddressIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/ApplactionIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/ApplactionIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/BackgroundCheckIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/BackgroundCheckIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/BussinessInvestigation.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/BussinessInvestigation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/CreditIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/CreditIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/DebtCollection.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/DebtCollection.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/DocumentServingIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/DocumentServingIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/EmailIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/EmailIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/FeildVisitsIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/FeildVisitsIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/InvestigationsIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/InvestigationsIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/Invoice.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/Invoice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/JudgeHammer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/JudgeHammer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/Litigation.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/Litigation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/LocationIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/LocationIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/ManagmentIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/ManagmentIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/PhoneIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/PhoneIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/PhoneIconNorm.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/PhoneIconNorm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/PropSecurityIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/PropSecurityIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/TimeIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/TimeIcon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/hammer.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/hammer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/privateDomestic.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/privateDomestic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Icons/scalpel.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Icons/scalpel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Patterns/DotGrid.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Patterns/DotGrid.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Patterns/dot-grid-DarkBlue.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Patterns/dot-grid-DarkBlue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Patterns/dot-grid-blue.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Patterns/dot-grid-blue.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Patterns/dot-grid-white.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Patterns/dot-grid-white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/Patterns/funky-lines.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Patterns/funky-lines.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Global/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Global/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeAbout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeAbout.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeContact.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeContact.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/HomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomePage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceArea.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServicePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServicePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Portal/PortalPage.vue" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/server/node_modules/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -128,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ServicesArea/ServiceSplashPage.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="253">
@@ -145,10 +59,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/Home/HomePageTitle.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
+            <state relative-caret-position="69">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -158,28 +94,6 @@
                 <element signature="n#style#0;n#a#0;n#router-link#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#router-link#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="29" column="156" selection-start-line="29" selection-start-column="156" selection-end-line="29" selection-end-column="156" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="10" column="12" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -295,10 +209,10 @@
       <find>LeftSide</find>
       <find>PageArea</find>
       <find>font-</find>
-      <find>Title</find>
       <find>Lora</find>
       <find>Lato</find>
       <find>img</find>
+      <find>Title</find>
     </findStrings>
     <replaceStrings>
       <replace>rgba(231 ,29 ,54, 0.5)</replace>
@@ -348,7 +262,6 @@
         <option value="$PROJECT_DIR$/src/components/Global/HomePageMobile.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeAbout.vue" />
         <option value="$PROJECT_DIR$/src/App.vue" />
-        <option value="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" />
         <option value="$PROJECT_DIR$/src/components/Payment/PaymentPage.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomePage.vue" />
         <option value="$PROJECT_DIR$/src/components/DebtPage/DebtLodgementPage.vue" />
@@ -358,6 +271,7 @@
         <option value="$PROJECT_DIR$/src/components/Global/Navbar.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeContact.vue" />
         <option value="$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue" />
+        <option value="$PROJECT_DIR$/src/components/Home/HomePageTitle.vue" />
       </list>
     </option>
   </component>
@@ -562,12 +476,12 @@
       <workItem from="1592783566550" duration="10164000" />
       <workItem from="1592801310799" duration="5396000" />
       <workItem from="1592835224029" duration="16046000" />
-      <workItem from="1592868962737" duration="58222000" />
+      <workItem from="1592868962737" duration="61086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="426194000" />
+    <option name="totallyTimeSpent" value="429058000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -806,13 +720,6 @@
     <entry file="file://$PROJECT_DIR$/src/components/Portal/PortalPage.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/DebtPage/DebtLodgementForm.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
@@ -903,38 +810,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomePageTitle.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#router-link#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#router-link#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#router-link#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home/HomeRecomendations.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="29" column="156" selection-start-line="29" selection-start-column="156" selection-end-line="29" selection-end-column="156" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="12" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,6 +897,41 @@
             <element signature="n#style#0;n#h2#1;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#home-page-mobile#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomeSplashScreen.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/HomePageTitle.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#router-link#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#router-link#0;n#div#0;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#router-link#0;n#div#1;n#div#0;n#div#1;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

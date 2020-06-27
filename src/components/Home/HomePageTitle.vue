@@ -1,7 +1,7 @@
 <template>
     <div id="TextArea" style="position: absolute;  z-index: 0">
     <div style="transform: translateY(-9vw)">
-      <div id="Title"> Across the nation big or small, Be Paid brings professionalism to your door </div>
+      <div id="MainTitle"> Across the nation big or small, Be Paid brings professionalism to your door </div>
       <div class="Line" id="Line"></div>
       <div class="Line" id="Line2"></div>
     </div>
@@ -15,7 +15,7 @@
         Ledger management
       </a> </router-link> </div>
 
-
+it a
 
       <div v-on:mousedown="ServiceClick2(1)" id="Button2" style=" z-index: 99; " class="col-md-3 col-sm-3 col-xs-6 button">
         <router-link to="/Services/ServiceArea" style="border-radius: 30px; text-decoration: none; color: white" class="btn btn-sm animated-button thar-two">
@@ -55,7 +55,7 @@
     text-align: center;
     top: 15%; left: 20%;
   }
-  #Title {
+  #MainTitle {
     padding-top: 9.6vw;
     color: white;
     font-family: 'Play', sans-serif;
@@ -185,7 +185,7 @@
       text-align: center;
       top: 15%; left: 5%;
     }
-    #Title {
+    #MainTitle {
       padding-top: 9.6vw;
       color: white;
       font-family: 'Play', sans-serif;

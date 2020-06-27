@@ -11,7 +11,7 @@
         <img id="LogoImage" style="" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </div>
 
-      <iframe src="https://player.vimeo.com/video/422637484?&muted=1&autoplay=1&loop=1&background=1" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow="autoplay; encrypted-media" id="iFrameId"></iframe>
+      <iframe title="BackgroundVideo" rel="preconnect" src="https://player.vimeo.com/video/422637484?&muted=1&autoplay=1&loop=1&background=1" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow="autoplay; encrypted-media" id="iFrameId"></iframe>
       <div id="s"></div>
     </div>
 
