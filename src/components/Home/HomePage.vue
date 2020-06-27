@@ -103,17 +103,9 @@
 </script>
 
 <style scoped>
-  @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto&display=swap');
-  #PlaceHolder {
-    background-image: url("../../assets/images/Patterns/dot-grid-white.png");
-    height: 100vh;
-    background-size: 15%;
-  }
+
   #NavArea {
     position: absolute;
-  }
-  #Splash {
-    position: relative;
   }
   #PortalButton {
     font-size: 1vw; padding: 0.5%;  ;
@@ -123,7 +115,8 @@
     display: inline-block;
     font-size: 1.4vw;
     color: whitesmoke;
-    padding-right: 3vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
 
     font-family: 'Play', sans-serif;
     //font-family: 'Roboto', sans-serif;
@@ -212,52 +205,9 @@
     border-top: 2.4vw solid whitesmoke;
   }
 
-  .Diamond {
-    border-style: solid;
-    border-color: transparent transparent #1d2f6f transparent;
-    border-width: 0 1vw 1vw 1vw;
-    height: 0;
-    width: 2vw;
-    box-sizing: content-box;
-    position: relative;
-    margin: 0.8vw 0 2vw 0;
-  }
-  #Diamond:after {
-    content: "";
-    position: absolute;
-    top: 1vw;
-    left: -1vw;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: #1d2f6f transparent transparent transparent;
-    border-width: 2.8vw 2vw 0 2vw;
-  }
-
   .DiamondHolderW {
     position: absolute;
     transform: translate(0.5vw, -1vh) scale(0.9);
-  }
-  #DiamondW {
-    border-style: solid;
-    border-color: transparent transparent whitesmoke transparent;
-    border-width: 0 1vw 1vw 1vw;
-    height: 0;
-    width: 2vw;
-    box-sizing: content-box;
-    position: relative;
-    margin: 0.8vw 0 2vw 0;
-  }
-  #DiamondW:after {
-    content: "";
-    position: absolute;
-    top: 1vw;
-    left: -1vw;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: whitesmoke transparent transparent transparent;
-    border-width: 2.8vw 2vw 0 2vw;
   }
   @media screen and (min-width: 1000px) {
     #NavMobile {

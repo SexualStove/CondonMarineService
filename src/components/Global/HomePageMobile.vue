@@ -92,13 +92,6 @@
 </script>
 
 <style scoped>
-  #Logo {
-
-    width: 70%;
-    height:12%;
-    left: 25%;
-    position: absolute;
-  }
   .a {
     text-decoration: none;
     color: #1E1E23;

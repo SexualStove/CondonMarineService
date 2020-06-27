@@ -45,9 +45,7 @@ export default {
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,400,600|Montserrat&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat&display=swap');
-  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500i&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Roboto&display=swap');
   body, html {
     overflow-x: hidden;
     max-width: 100%;

@@ -48,14 +48,6 @@
 </script>
 
 <style scoped>
-  #TitleIcon {
-    opacity: 0 ;
-    width: 40vw;
-    position: absolute;
-    top: 20%;
-    left: 30%;
-    z-index: 1;
-  }
   #TextArea {
     position: relative;
     width: 60vw;
@@ -113,15 +105,6 @@
     width: 54vw;
     position: absolute;
   }
-  #SubTitle {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2vw;
-    font-weight: 400;
-    z-index: 99;
-    position: absolute;
-    padding-top: 15vw;
-  }
   #ButtonArea {
     margin-top: 2vw;
     display: grid;
@@ -130,35 +113,6 @@
   .button, .btn {
     padding: 0.5vw 0.3vw;
   }
-
-
-
-  /*
-  <div id="Collections" class="Block">
-          <img id="Hammer" class="TitleImage" src="../../assets/images/Icons/hammer.png" alt="Missing">
-          <div id="CollectionsText" >
-            <div class="Title">Collections</div>
-            <div class="Line" id="LineA"></div>
-            <div class="SubTitle" id="SubTitleA">
-              Debt, Eviction, Repossessions, Document Serving, Litigation
-            </div>
-          </div>
-        </div>
-        <div id="Investigations" class="Block">
-          <img id="Scalpel" class="TitleImage" src="../../assets/images/Icons/scalpel.png" alt="Missing">
-          <div id="InvestigationsText">
-            <div class="Title">
-              <div class="Title">Investigations</div>
-              <div class="Line" id="LineB"></div>
-            </div>
-            <div class="SubTitle" id="SubTitleB">
-              Corporate, employment, Private & Domestic, Security Consultants
-            </div>
-          </div>
-        </div>
-   */
-  @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
-  @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
 
 
 

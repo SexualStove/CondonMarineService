@@ -52,7 +52,8 @@
     display: inline-block;
     font-size: 1vw;
     color: whitesmoke;
-    padding-right: 3vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
 
     font-family: 'Play', sans-serif;
   //font-family: 'Roboto', sans-serif;

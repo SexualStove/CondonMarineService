@@ -394,61 +394,18 @@
     border-top: 2.4vw solid whitesmoke;
   }
 
-  .Diamond {
-    border-style: solid;
-    border-color: transparent transparent #1d2f6f transparent;
-    border-width: 0 1vw 1vw 1vw;
-    height: 0;
-    width: 2vw;
-    box-sizing: content-box;
-    position: relative;
-    margin: 0.8vw 0 2vw 0;
-  }
-  #Diamond:after {
-    content: "";
-    position: absolute;
-    top: 1vw;
-    left: -1vw;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: #1d2f6f transparent transparent transparent;
-    border-width: 2.8vw 2vw 0 2vw;
-  }
-
   .DiamondHolderW {
     position: absolute;
     transform: translate(0.5vw, -1vh) scale(0.9);
-  }
-  #DiamondW {
-    border-style: solid;
-    border-color: transparent transparent whitesmoke transparent;
-    border-width: 0 1vw 1vw 1vw;
-    height: 0;
-    width: 2vw;
-    box-sizing: content-box;
-    position: relative;
-    margin: 0.8vw 0 2vw 0;
-  }
-  #DiamondW:after {
-    content: "";
-    position: absolute;
-    top: 1vw;
-    left: -1vw;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: whitesmoke transparent transparent transparent;
-    border-width: 2.8vw 2vw 0 2vw;
   }
   .Contact-Top {
     display: inline-block;
     font-size: 1vw;
     color: whitesmoke;
-    padding-right: 3vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
 
     font-family: 'Play', sans-serif;
-  //font-family: 'Roboto', sans-serif;
   }
 
   #line {
@@ -471,16 +428,6 @@
   .Top-Text {
     transform: translateY(0.5vw);
   }
-
-
-
-
-
-
-
-
-
-
 
   #WholeArea {
     background-image: url("../../assets/images/Patterns/dot-grid-white.png");
@@ -518,18 +465,8 @@
 }
 .Title {
   top: 13%;
-}
-.Title2 {
   line-height: 85%;
-  top: 5%
-}
-  .Title3 {
-    line-height: 85%;
-    top: 0;
-  }
-  .Title, .Title2, .Title3 {
-    line-height: 85%;
-    color: black;
+  color: black;
   font-family: 'Play', sans-serif;
   font-size: 5vw;
   font-weight: 700;
@@ -604,13 +541,10 @@
     #NavMobile {
       display: none;
     }
-    #Mob {
-      display: none;
-    }
   }
   @media screen and (max-width: 1000px) {
 
-    .Title, .Title2, .Title3 {
+    .Title {
       font-size: 200%;
     }
 
@@ -636,9 +570,6 @@
     //margin-bottom: 10vh; display: grid;
       grid-template-columns: 0% 100%;
       grid-template-areas: "Left Right";
-    }
-    #Desk {
-      ///display: none;
     }
   }
 </style>

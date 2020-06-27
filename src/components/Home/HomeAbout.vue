@@ -69,62 +69,6 @@
   }
 
 
-@import 'https://fonts.googleapis.com/css?family=Lora:400,700';
-
-
-
-
-a.animated-button:link, a.animated-button:visited {
-  position: relative;
-  margin-top: 25vw;
-  margin-left: 3vw;
-  transform: translateX(8vw);
-  display: inline-block;
-  color: #fff;
-  font-size:1vw;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  overflow: hidden;
-  letter-spacing: .08em;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
-a.animated-button.thar-two {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  border: 2px solid #e71d36;
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
-a.animated-button.thar-two:hover {
-  color: #000 !important;
-  background-color: transparent;
-  text-shadow: blue;
-}
-a.animated-button.thar-two:hover:before {
-  top: 0%;
-  bottom: auto;
-  height: 100%;
-}
-a.animated-button.thar-two:before {
-  display: block;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  height: 0px;
-  width: 100%;
-  z-index: -1;
-  content: '';
-  color: #000 !important;
-  background: #e71d36;
-  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-}
-
 @media screen and (max-width: 1000px) {
   #ImageArea {
     position: absolute;

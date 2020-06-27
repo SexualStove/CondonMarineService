@@ -2,7 +2,7 @@
 <template>
   <div id="ContactUs" herf="ContactUs">
     <div id="MoreAreas">
-      <img src="../../assets/images/Icons/LocationIcon.png" id="AreaIcon">
+      <img src="../../assets/images/Icons/LocationIcon.png" alt="Location" id="AreaIcon">
       <div id="Text">
         <div class="STitle"> Offices: </div>
         Invercargill<br>

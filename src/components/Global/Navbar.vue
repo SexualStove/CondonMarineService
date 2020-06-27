@@ -2,7 +2,7 @@
   <div id="NavArea">
     <div id="Logo">
       <router-link to="/">
-        <img id="NavLogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+        <img id="NavLogoImage" style="transform: translateX(-1vw)" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="LOGO">
       </router-link>
     </div>
     <div id="LogoPad">

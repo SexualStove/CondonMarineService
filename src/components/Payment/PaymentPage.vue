@@ -62,9 +62,6 @@
 </script>
 
 <style scoped>
-  #ContentArea {
-    padding: 10vw 10vw 0 10vw;
-  }
   #Page {
     background-image: url("../../assets/images/Patterns/dot-grid-white.png");
     background-size: 15%;
@@ -75,7 +72,8 @@
     display: inline-block;
     font-size: 1vw;
     color: whitesmoke;
-    padding-right: 3vw;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
 
     font-family: 'Play', sans-serif;
   //font-family: 'Roboto', sans-serif;
@@ -101,92 +99,6 @@
   .Top-Text {
     transform: translateY(0.5vw);
   }
-
-
-
-
-
-
-
-
-  a.animated-button:link, a.animated-button:visited {
-    //border-radius: 30px;
-    position: relative;
-    transform: translateX(8vw);
-    display: inline-block;
-    color: black;
-    font-size:1vw;
-
-  //font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    overflow: hidden;
-    letter-spacing: .08em;
-    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-  a.animated-button.thar-two {
-    color: black;
-    cursor: pointer;
-    display: block;
-    position: relative;
-    border: 2px solid #86CB92;
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-    //border-radius: 30px
-  }
-  a.animated-button.thar-two:hover {
-    color: #000 !important;
-    background-color: transparent;
-    //border-radius: 30px;
-  }
-  a.animated-button.thar-two:hover:before {
-    top: 0%;
-    bottom: auto;
-    height: 100%;
-    //border-radius: 30px;
-  }
-  a.animated-button.thar-two:before {
-    display: block;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    height: 0px;
-    width: 100%;
-    z-index: -1;
-    content: '';
-    color: #000;
-    background: #86CB92;
-    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
-    //border-radius: 30px;
-  }
-  .submit {
-      width: 10vw;
-      margin: 3vw auto;
-      transform: translateX(0);
-      font-size: 1.4vw;
-  }
-
-
-
-
-
-  .fade-leave-active,
-  .fade-enter-active {
-    transition: 1s;
-  }
-  .fade-enter {
-    opacity: 0;
-    //transform: translate(100%, 0) scale(1.2);
-  }
-  .fade-leave-to {
-    opacity: 0;
-    ///transform: translate(-100%, 0) scale(0.8);
-  }
-
-
 
   .Desc {
     font-family: 'Roboto', sans-serif;
@@ -277,27 +189,8 @@
     border-top: 2.4vw solid whitesmoke;
   }
 
-  .Diamond {
-    border-style: solid;
-    border-color: transparent transparent #1d2f6f transparent;
-    border-width: 0 1vw 1vw 1vw;
-    height: 0;
-    width: 2vw;
-    box-sizing: content-box;
-    position: relative;
-    margin: 0.8vw 0 2vw 0;
-  }
-  #Diamond:after {
-    content: "";
-    position: absolute;
-    top: 1vw;
-    left: -1vw;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-color: #1d2f6f transparent transparent transparent;
-    border-width: 2.8vw 2vw 0 2vw;
-  }
+
+
 
   .DiamondHolderW {
     position: absolute;

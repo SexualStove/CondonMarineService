@@ -168,7 +168,6 @@
   .SectionTitle {
     font-size: 2vw;
     padding-top: 3vw;
-    //transform: translateY(3vw);
   }
   #ContactCard {
     width: 70%;
@@ -184,10 +183,6 @@
     justify-items: center;
     justify-content: center;
   }
-  #Header {
-    grid-area: Header;
-    padding: 1vw 0 4vw 0;
-  }
   #ContactTitle {
     font-family: 'Play', sans-serif;
     font-size: 3.5vw;
@@ -201,14 +196,12 @@
     margin: 0.5vw auto 0.5vw auto;
     height: 2.1vw;
     display: block;
-  //margin: 0 auto;
     transition: 1s;
     border: rgba(0, 0, 0, 0.2)  solid 1px;
     padding-left: 0.2vw;
     border-radius: 10px;
   }
   .input, .message {
-  //transform: scale(1.6);
     font-size: 1vw;
   }
   .message {
@@ -236,8 +229,6 @@
     display: inline-block;
     color: black;
     font-size:1vw;
-
-  //font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     overflow: hidden;
