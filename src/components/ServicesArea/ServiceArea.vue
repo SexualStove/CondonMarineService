@@ -1,5 +1,6 @@
 <template>
   <div>
+    <meta name="description" content="Be Paid's services in more detail. Where you can go into more detail about what we do!">
     <div id="WholeArea">
       <div id="Top-Info" class="Contact-Top-Box" style="background-color: black; position: relative; ">
 

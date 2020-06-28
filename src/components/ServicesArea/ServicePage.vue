@@ -1,5 +1,6 @@
 <template>
   <div>
+    <meta name="description" content="All of the services that be paid New Zealand do! From collections to investigations ">
     <ServiceSplashPage></ServiceSplashPage>
     <div v-if="ServiceAreaOn < -99" class="Divider">
       <div class="LineDivider"></div>

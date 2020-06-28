@@ -1,5 +1,6 @@
 <template>
   <div id="Page">
+    <meta name="description" content="Debt Lodgement page, for customers to fill out a debt lodgement from so that we can work on getting you, your debt!">
     <div id="Top-Info" class="Contact-Top-Box" style="background-color: black; position: relative; ">
 
       <h2 class="Contact-Top Top-Text" style="color: white">  0800 2 BE PAID (0800 223 724) </h2>

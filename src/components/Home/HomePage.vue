@@ -1,5 +1,6 @@
 <template>
   <div>
+    <meta name="description" content="Home page for be paid new zealand site, showing what we do, why we do it and how to contact us!">
     <div id="FadeArea">
     <div id="Top-Info" class="Contact-Top-Box" style="background-color: black; position: relative; ">
 
