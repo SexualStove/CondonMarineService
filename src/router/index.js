@@ -6,6 +6,7 @@ import Services from '@/components/ServicesArea/ServicePage'
 import ServicesArea from '@/components/ServicesArea/ServiceArea'
 import DebtLodgement from '@/components/DebtPage/DebtLodgementPage'
 import Payment from '@/components/Payment/PaymentPage'
+import Page404 from '@/components/Global/404Page'
 //import App from "../App";
 //import OurServices from '@/components/OurServicesGroup/OurServices'
 //import ContactUSPage from '@/components/ContactUsGroup/ContactUsPage'
@@ -58,6 +59,11 @@ export default new Router({
       name: 'ServiceArea',
       component: ServicesArea
     },
+    {
+      path: '*',
+      name: '404Page',
+      component: Page404,
+    }
   ]
 });
 
