@@ -187,7 +187,7 @@
       padding-top: 9.6vw;
       color: white;
       font-family: 'Play', sans-serif;
-      font-size: 200%;
+      font-size: 150%;
       font-weight: 700;
       width: 100%;
 

@@ -8,8 +8,12 @@
     <div id="vimeo-wrapper">
 
       <div id="FadeZone">
-        <img id="LogoImage" style="" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
       </div>
+      <div id="LogoWrapper">
+      </div>
+        <img id="LogoImage" style="" src="../../assets/images/BePaidOrginal/LogoFull.png" alt="None">
+
+
 
       <iframe title="BackgroundVideo" rel="preconnect" src="https://player.vimeo.com/video/422637484?&muted=1&autoplay=1&loop=1&background=1" frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen allow="autoplay; encrypted-media" id="iFrameId"></iframe>
       <div id="s"></div>
@@ -78,6 +82,7 @@
     left: 31%;
     transform: translate(0  , 3vw);
     width: 40vw;
+    z-index: 99;
   }
   #Wrapper {
     display: block;
@@ -145,8 +150,12 @@
     }
 
     .fadeInPic {
-      //background-color: rgba(0,0,0,0);
-      opacity: 0.85;
+      opacity: 0.7;
+    }
+    .fadeInPic:after {
+
+      height: 90%;
+      z-index: 99;
     }
   }
 

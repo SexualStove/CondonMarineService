@@ -1,9 +1,11 @@
 <template>
   <div>
+    <div id="ServiceTitle"><b>⇩ Key Services ⇩</b></div>
     <div id="IconStrip">
+
       <div class="Break" style="grid-area: L"></div>
       <router-link style="text-decoration:none" to="/Services/ServiceArea">
-        <div id="DebtArea" style="grid-area: I!" class="IconArea" v-on:mousedown="ServiceClick(0)">
+        <div id="DebtArea" style="grid-area: I1" class="IconArea" v-on:mousedown="ServiceClick(0)">
           <div class="IconBottomRight"></div>
           <div class="IconBottomLeft"></div>
           <div class="IconTopRight"></div>
@@ -196,18 +198,51 @@
   }
 
 @media screen and (max-width: 1000px) {
+  #ServiceTitle {
+    top: 0;
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Play', sans-serif;
+    color: #eF1F3F;
+
+  }
+
   #IconStrip {
     background-image: url("../../assets/images/Patterns/dot-grid-white.png");
     background-size: 15%;
     padding: 10vh 0 10vh 0;
     width: 100%;
-    grid-template-columns: 5% 45% 45% 5%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "L I1 I2 R"
-                          "L I3 I4 R";
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 25% 25%;
+    grid-template-areas: "L I1 R"
+                          "L I2 R"
+    "L I3 R"
+    "L I4 R";
     display: grid;
     justify-items: center;
     text-align: center;
+  }
+  .Icon {
+    width: 50%;
+  }
+  .Title {
+    transform: translate(-2vw, -3vh);
+    width: 100%;
+    font-size: 200%;
+    line-height: 90%;
+  }
+  .IconArea {
+    width: 80%;
+    margin: 2vh auto;
+    position: relative;
+  }
+  .IconTopLeft, .IconTopRight, .IconBottomLeft, .IconBottomRight {
+    transition: 0.7s;
+    position: absolute;
+    height: 9%;
+    width: 9%;
+    opacity: 0.3;
   }
 }
 </style>

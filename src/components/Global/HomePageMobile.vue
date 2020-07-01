@@ -98,10 +98,10 @@
     opacity:1;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 0.85em;
     padding-left: 20px;
     transition: 200ms;
-    text-shadow: 0.001em 0.001em forestgreen;
+    text-shadow: 0.001em 0.001em #eF1F3F;
     width: auto;
   }
   .a:hover {
@@ -150,7 +150,7 @@
     height: 2px;
     margin-bottom: 5px;
     position: relative;
-    background: #859e30;
+    background: #eF1F3F;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0px;
@@ -214,7 +214,7 @@
      padding-top: 15px;
      padding-bottom: 5px;
      transition-delay: 2s;
-    font-size: 1.4em;
+    font-size: 1.6em;
    }
 
   #menu .SecondItem
