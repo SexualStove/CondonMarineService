@@ -4,7 +4,7 @@
       <a v-on:click="PrevQuote" class="arrow left"></a>
     </div>
     <div id="Quote">
-      {{Quotes[CurrentQuote].Quote}}
+      <b>"</b>  {{Quotes[CurrentQuote].Quote}}  <b>"</b>
     </div>
     <div id="ArrowR">
       <a v-on:click="NextQuote" class="arrow right"></a>
@@ -72,6 +72,7 @@
     padding: 4vw;
     background-image: url("../../assets/images/Patterns/dot-grid-white.png");
     background-size: 15%;
+    line-height: 180%;
   }
   #ArrowL {
     grid-area: ArrowL;

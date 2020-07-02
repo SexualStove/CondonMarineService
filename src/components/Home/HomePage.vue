@@ -83,9 +83,12 @@
           }
         },
         mounted() {
-            var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#FadeArea', 4, {opacity: 0}, '+=3.5'
-            );
+            if(window.innerWidth > 800){
+                var LogoStringTimeline = new TimelineMax({});
+                LogoStringTimeline.from('#FadeArea', 2, {opacity: 0}, '+=1');
+            }
+
+
             function offsetAnchor() {
                 if (location.hash.length !== 0) {
                     window.scrollTo(window.scrollX, window.scrollY - 300);
@@ -217,6 +220,9 @@
     }
   }
   @media screen and (max-width: 1000px) {
+    .DiamondHolderW {
+      display: none;
+    }
     .DiamondHolder {
       display: none;
     }

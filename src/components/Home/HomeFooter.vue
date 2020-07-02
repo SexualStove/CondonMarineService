@@ -66,7 +66,7 @@
     background-size: 15%;
 
     padding:45px 0 20px;
-    font-size:15px;
+    font-size:18px;
     line-height:24px;
     color:#737373;
   }
@@ -157,6 +157,8 @@
 
   @media (max-width:767px)
   {
-
+    li {
+      margin-top: 5px;
+    }
   }
 </style>

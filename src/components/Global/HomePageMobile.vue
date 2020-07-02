@@ -77,7 +77,7 @@
         name: "HomePageMobile",
       data() {
         return {
-
+          Glow: false
         }
       },
         methods: {
@@ -104,6 +104,7 @@
     text-shadow: 0.001em 0.001em #eF1F3F;
     width: auto;
   }
+
   .a:hover {
     opacity:0.5;
   }
@@ -157,6 +158,16 @@
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
     opacity 0.55s ease;
+    animation: glow 2s 6 alternate ease-in-out;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 3px -3px #aef4af;
+    }
+    to {
+      box-shadow: 0 0 3px 3px #aef4af;
+    }
   }
 
   #menuToggle span:first-child

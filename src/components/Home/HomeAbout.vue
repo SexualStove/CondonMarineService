@@ -55,6 +55,7 @@
   font-family: 'Play', sans-serif;
   font-size: 2.4vw;
   text-align: left;
+  line-height: 100%;
 }
 #SubTitle {
   font-family: 'Roboto', sans-serif;
@@ -96,7 +97,7 @@
   }
   #SubTitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 150%;
+    font-size: 120%;
     text-align: left;
     padding-top: 2vw;
   }

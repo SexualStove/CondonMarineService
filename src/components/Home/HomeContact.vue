@@ -430,8 +430,8 @@
     }
     #MoreAreas {
       position: absolute;
-      right: -70%;
-      top: 58%;
+      right: -66%;
+      top: 66%;
       width: 100%;
       height: 100%;
 

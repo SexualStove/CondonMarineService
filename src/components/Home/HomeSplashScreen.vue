@@ -58,10 +58,12 @@
                 $('#LogoImage').addClass("fadeInPic");
 
             });
+            if(window.innerWidth > 800){
+                var LogoStringTimeline = new TimelineMax({});
+                LogoStringTimeline.from('#LogoImage', 1.5, {top: '12%', scale: 1.4});
+            }
 
-            var LogoStringTimeline = new TimelineMax({});
-            LogoStringTimeline.from('#LogoImage', 2, {top: '12%', scale: 1.4}, "+=0.6"
-            );
+
         }
     }
 </script>
@@ -138,12 +140,17 @@
     //background-color: rgba(0, 0, 30, 0.3);
     //box-shadow: 0 0 1vw rgba(0, 0, 30, 0.5);
   }
-
+  #BePaidTitle {
+    display: none;
+  }
   @media screen and (max-width: 1000px) {
+    #Wrapper {
+      height: 89vh;
+    }
     #LogoImage {
       transition: 1s;
       position: absolute;
-      top: 40%;
+      top: 33%;
       left: 15%;
       transform: translate(-10%, 3vw);
       width: 90%;
@@ -156,6 +163,15 @@
 
       height: 90%;
       z-index: 99;
+    }
+    #BePaidTitle {
+      position: absolute;
+      top: 2%;
+      right: 5%;
+      color: white;
+      font-size: 2rem;
+      font-family: 'Play', sans-serif;
+      display: initial;
     }
   }
 

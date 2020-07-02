@@ -1,12 +1,23 @@
 <template>
     <div id="TextArea" style="position: absolute;  z-index: 0">
+
+      <div class="MainTitle2">
+        Local.
+      </div>
+      <div class="MainTitle2 Highlight">
+        Professional.
+      </div>
+      <div class="MainTitle2">
+        Collections.
+      </div>
     <div style="transform: translateY(-9vw)">
       <div id="MainTitle"> Across the nation big or small, Be Paid brings professionalism to your door </div>
       <div class="Line" id="Line"></div>
       <div class="Line" id="Line2"></div>
     </div>
-    <div style="transform: translateY(8vh);">
 
+    <div style="transform: translateY(8vh);">
+      <div id="Blurb"> We deal with everything and anything collections.</div>
     <div id="ButtonArea">
 
       <div id="Button1" v-on:mousedown="ServiceClick2(0)" style=" z-index: 99;" class="col-md-3 col-sm-3 col-xs-6 button">
@@ -46,6 +57,7 @@
 </script>
 
 <style scoped>
+
   #TextArea {
     position: relative;
     width: 60vw;
@@ -53,16 +65,7 @@
     text-align: center;
     top: 15%; left: 20%;
   }
-  #MainTitle {
-    padding-top: 9.6vw;
-    color: white;
-    font-family: 'Play', sans-serif;
-    font-size: 3.2vw;
-    font-weight: 700;
-    width: 100%;
-    z-index: 99;
-    position: absolute;
-    text-align: center;
+  .Highlight {
     text-shadow: 1px 1px 0 #e71d36,
     -1px 1px 0 #e71d36,
     1px -1px 0 #e71d36,
@@ -88,17 +91,29 @@
     2px -1px 0 #e71d36,
     -2px -1px 0 #e71d36;
   }
+  #MainTitle {
+    padding-top: 9.6vw;
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 3.2vw;
+    font-weight: 700;
+    width: 100%;
+    z-index: 99;
+    position: absolute;
+    text-align: center;
+
+  }
   #Line {
     background-color: #e71d36;
-    height: 3px;
-    margin-top: 13.2vw;
+    height: 2px;
+    margin-top: 13.3vw;
     width: 60vw;
     position: absolute;
   }
   #Line2 {
     background-color: #e71d36;
-    height: 3px;
-    margin-top: 18vw;
+    height: 2px;
+    margin-top: 18.1vw;
     transform: translateX(3vw);
     width: 54vw;
     position: absolute;
@@ -175,7 +190,16 @@
     background: #eF1F3F;
     transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
   }
+  .MainTitle2 {
+    display: none;
+  }
+  #Blurb {
+    display: none;
+  }
   @media screen and (max-width: 1000px) {
+    #MainTitle {
+      display: none;
+    }
     #TextArea {
       position: relative;
       width: 90%;
@@ -183,11 +207,21 @@
       text-align: center;
       top: 15%; left: 5%;
     }
-    #MainTitle {
-      padding-top: 9.6vw;
+    #Blurb {
+      transform: translateY(38vw);
+      display: inline-block;
+      font-family: 'Play', sans-serif;
+      font-size: 200%;
+      width: 100%;
+      color: white;
+      line-height: 95%;
+    }
+    .MainTitle2 {
+      display: inline-block;
+      transform: translateY(-7vw);
       color: white;
       font-family: 'Play', sans-serif;
-      font-size: 150%;
+      font-size: 200%;
       font-weight: 700;
       width: 100%;
 

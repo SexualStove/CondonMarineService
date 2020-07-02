@@ -196,7 +196,9 @@
   .IconArea:hover {
     cursor: pointer;
   }
-
+#ServiceTitle {
+  display: none;
+}
 @media screen and (max-width: 1000px) {
   #ServiceTitle {
     top: 0;
@@ -205,7 +207,8 @@
     font-size: 2rem;
     font-family: 'Play', sans-serif;
     color: #eF1F3F;
-
+    width: 100%;
+    display: inline-block;
   }
 
   #IconStrip {
