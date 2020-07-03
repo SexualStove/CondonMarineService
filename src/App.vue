@@ -6,7 +6,10 @@
 
 <script>
   import Vue from 'vue';
-
+  import VueGtag from "vue-gtag";
+  Vue.use(VueGtag, {
+      config: { id: "AW-618773579" }
+  });
 export const EventBus = new Vue();
 export default {
   name: 'app',
