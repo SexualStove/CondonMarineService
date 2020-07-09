@@ -11,6 +11,7 @@
             <span></span>
             <span></span>
             <ul id="menu" >
+              <li id="Phone">PH: <a style="color: black;" href="tel:0800223724">0800 223 724</a></li>
               <router-link   to="/">
               <li class="MainItem"><a class="a" href="#">Home</a></li>
               </router-link>
@@ -120,7 +121,13 @@
     position: sticky;
   }
 
-
+  #Phone {
+    top: 6.5%;
+    right: 12%;
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
   #menuToggle {
     display: flex;
     flex-direction: column;

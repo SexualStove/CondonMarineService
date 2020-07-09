@@ -56,5 +56,7 @@ export default {
   body, html {
     overflow-x: hidden;
     max-width: 100%;
+
   }
+
 </style>

@@ -4,8 +4,7 @@
     <meta name="description" content="Home page for be paid new zealand site, showing what we do, why we do it and how to contact us!">
     <div id="FadeArea">
     <div id="Top-Info" class="Contact-Top-Box" style="background-color: black; position: relative; ">
-
-      <h2 class="Contact-Top Top-Text" style="color: white">  0800 223 724 </h2>
+      <a class="Contact-Top Top-Text" style="color: white" href="tel:0800223724">0800 223 724</a>
       <h2 class="Contact-Top Top-Text" style="color: white"> PO Box 447, Rangiora, 7440 </h2>
 
       <router-link to="/Payment"><b-button class="Contact-Top" id="PortalButton" style="color: white" variant="outline-danger">Pay Now</b-button></router-link>

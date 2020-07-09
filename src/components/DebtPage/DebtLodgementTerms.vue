@@ -87,4 +87,13 @@ and the bank does not honour the transaction the client will refund Be Paid Ltd 
   justify-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1000px) {
+  .Desc {
+    font-size: initial;
+  }
+  #Terms {
+    width: 100%;
+
+  }
+}
 </style>

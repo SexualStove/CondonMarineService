@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="overflow-x: hidden;">
     <div id="ServiceTitle"><b>⇩ Key Services ⇩</b></div>
     <div id="IconStrip">
 
@@ -140,6 +140,7 @@
     width: 80%;
     padding: 1vw;
     position: relative;
+
   }
   .SubTitle {
     font-size: 90%;

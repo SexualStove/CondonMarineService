@@ -10,7 +10,8 @@
 
       <div id="line"></div>
     </div>
-    <navbar style="width: 100vw" v-bind:Animation="false"></navbar>
+    <navbar id="NavArea" style="width: 100vw" v-bind:Animation="false"></navbar>
+    <HomePageMobile id="NavMobile" style="position: fixed; z-index: 99999"></HomePageMobile>
     <div id="ContentArea">
       <transition name="fade"  mode="out-in">
         <DebtLodgementForm v-if="AcceptTerms" :key="AcceptTerms"></DebtLodgementForm>
@@ -28,9 +29,10 @@
     import Navbar from "../Global/Navbar";
     import DebtLodgementForm from "./DebtLodgementForm";
     import DebtLodgementTerms from "./DebtLodgementTerms";
+    import HomePageMobile from "../Global/HomePageMobile";
     export default {
         name: "DebtLodgementPage",
-        components: {DebtLodgementTerms, DebtLodgementForm, Navbar},
+        components: {HomePageMobile, DebtLodgementTerms, DebtLodgementForm, Navbar},
         data() {
             return{
               AcceptTerms: false
@@ -163,5 +165,24 @@
   .fade-leave-to {
     opacity: 0;
     ///transform: translate(-100%, 0) scale(0.8);
+  }
+  @media screen and (min-width: 1000px) {
+    #NavMobile {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+
+    #NavArea {
+      display: none;
+    }
+
+    #Top-Info {
+      display: none;
+    }
+    .submit {
+      font-size: 2rem;
+      width: initial;
+    }
   }
 </style>

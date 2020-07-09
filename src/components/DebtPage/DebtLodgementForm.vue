@@ -41,9 +41,10 @@
         <input v-model="DebtDetails.Guarantee" class="input" name ="guarantee" type="text" placeholder="PERSONAL GUARANTEE ON ACCOUNT (YES/NO)">
         <textarea v-model="DebtDetails.DebtDetails" class="message" name="description" type="text" placeholder="DESCRIPTION OF DEBT"></textarea>
         <a v-on:click="SendForm" id="Submit"   class="btn btn-sm animated-button thar-two">Send</a>
-
+        <div id="Gone">
         <div style="font-family: 'Play', sans-serif; font-size: 1.5vw; text-align: center;">if you have any issues submitting this form please call this number.</div>
         <div style="font-family: 'Play', sans-serif; font-size: 3vw; text-align: center;">0800 223 724</div>
+        </div>
         <div id="Errors" v-for="Error in Errors" v-bind:key="Error">
           {{Error}}
         </div>
@@ -287,5 +288,34 @@
     color: red;
     font-size: 1vw;
     text-align: center;
+  }
+  @media screen and (max-width: 1000px) {
+    .input, .message {
+      font-size: initial;
+      height: initial;
+      width: 95%;
+    }
+    .SectionTitle {
+      font-size: initial;
+    }
+    #ContactCard {
+      width: 95%;
+    }
+    .SemiTitle {
+      text-align: center;
+      font-size: 1vw;
+    }
+    #RaidoButtons {
+      width: 90%;
+      padding-left: 17%;
+      font-size: initial;
+    }
+    #Gone {
+      display: none;
+    }
+    #Submit {
+      width: initial;
+      font-size: initial;
+    }
   }
 </style>
