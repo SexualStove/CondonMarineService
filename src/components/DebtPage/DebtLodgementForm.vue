@@ -303,7 +303,8 @@
     }
     .SemiTitle {
       text-align: center;
-      font-size: 1vw;
+      font-size: 140%;
+      font-weight: 700;
     }
     #RaidoButtons {
       width: 90%;
