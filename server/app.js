@@ -11,8 +11,8 @@ const {sequelize} = require('./models');
 
 const config = require('./config/config');
 const options = {
-    key: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/privkey.pem"),
-    cert: fs.readFileSync("/etc/letsencrypt/live/bepaid.co.nz/fullchain.pem") // thes
+    key: fs.readFileSync("/etc/letsencrypt/live/manageit.nz/privkey.pem"),
+    cert: fs.readFileSync("/etc/letsencrypt/live/manageit.nz/fullchain.pem") // thes
 };
 
 
