@@ -128,8 +128,8 @@ module.exports = {
             console.log("New massage by "+req.body.Details.Name);
             let info = {
                 from: '"Do not reply" <contact@inhouseweb.nz>', // sender address
-                //to: 'info@bepaid.co.nz',
-                to: 'rt_condon@hotmail.com',
+                to: 'info@bepaid.co.nz',
+                //to: 'rt_condon@hotmail.com',
                 subject: "Contact Us Form", // Subject line
                 html: "<b>Your details</b><br>"+
                     "Name: "+req.body.Details.Name+"<br>"+
