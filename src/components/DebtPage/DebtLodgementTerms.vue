@@ -30,7 +30,7 @@ agents as may be necessary to assist Be Paid Ltd and conduct legal proceedings f
     c.  Arising out any execution process initiated or conducted on the client's behalf.
     d.	Concerning the use of information supplied to be Paid Ltd by the client.
 
-12. The client will notify Be Paid Ltd immediately when any debt is paid direct by the debtor to the client and will provide Be Pald Ltd with all correspondence that passes between client and the debtor after Be Paid Ltd has received Instructions from the client in respect of that debt.
+12. The client will notify Be Paid Ltd immediately when any debt is paid direct by the debtor to the client and will provide Be Paid Ltd with all correspondence that passes between client and the debtor after Be Paid Ltd has received Instructions from the client in respect of that debt.
 
 13. The client acknowledges that Be Paid Ltd may receive uncleared funds from a debtor. In any such case Be Paid Ltd will be under no obligation to account to the client until all funds are cleared, but in the event that it does so
 and the bank does not honour the transaction the client will refund Be Paid Ltd the full amount paid to client upon demand.
@@ -41,13 +41,13 @@ and the bank does not honour the transaction the client will refund Be Paid Ltd 
 
 16. The client will pay all costs and expenses incurred by Be Paid Ltd, including solicitor/ client costs, to recover any outstanding fees, commissions and disbursements from the client.
 
-17. Be Paid Ltd reserves the right to review its rates of fees, commissions and disbursements at any time and such fees, commissions and disbursements will apply from the date of notification to the client. A $20 fee applies to all debts genuinely listed In error tf advised within 2 days.
+17. Be Paid Ltd reserves the right to review its rates of fees, commissions and disbursements at any time and such fees, commissions and disbursements will apply from the date of notification to the client. A $20 fee applies to all debts genuinely listed In error if advised within 2 days.
 
-18. Be Pall Ltd reserved the right to terminate the client's instructions at anytime.
+18. Be Paid Ltd reserved the right to terminate the client's instructions at anytime.
 
 19. The -guarantor' hereby personally guarantees the due and punctual payment and performance of an the client's obligations under this agreement.
 
-20. The client understands that Be Paid Ltd receives commission on any monies collected whether the debtor makes payment to Be Pald Ltd or the client, Including whether the debtor is taken to the Disputes Tribunal or the District Court.
+20. The client understands that Be Paid Ltd receives commission on any monies collected whether the debtor makes payment to Be Paid Ltd or the client, Including whether the debtor is taken to the Disputes Tribunal or the District Court.
 
     </pre>
   </div>
